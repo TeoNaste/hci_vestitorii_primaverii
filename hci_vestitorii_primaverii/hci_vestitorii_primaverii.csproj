@@ -96,5 +96,20 @@
   <ItemGroup>
     <None Include="Resources\start_pluto.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start_birds.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start_snowdrop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_button.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

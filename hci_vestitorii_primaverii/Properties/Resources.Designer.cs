@@ -63,9 +63,49 @@ namespace hci_vestitorii_primaverii.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close_button {
+            get {
+                object obj = ResourceManager.GetObject("close_button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap play_button {
+            get {
+                object obj = ResourceManager.GetObject("play_button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap spring_background {
             get {
                 object obj = ResourceManager.GetObject("spring_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap start_birds {
+            get {
+                object obj = ResourceManager.GetObject("start_birds", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap start_button {
+            get {
+                object obj = ResourceManager.GetObject("start_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +136,16 @@ namespace hci_vestitorii_primaverii.Properties {
         internal static System.Drawing.Bitmap start_pluto {
             get {
                 object obj = ResourceManager.GetObject("start_pluto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap start_snowdrop {
+            get {
+                object obj = ResourceManager.GetObject("start_snowdrop", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
