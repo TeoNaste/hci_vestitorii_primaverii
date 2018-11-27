@@ -1,9 +1,0 @@
-D:\proiect\eu\hci_vestitorii_primaverii\hci_vestitorii_primaverii\bin\Debug\hci_vestitorii_primaverii.exe
-D:\proiect\eu\hci_vestitorii_primaverii\hci_vestitorii_primaverii\bin\Debug\hci_vestitorii_primaverii.pdb
-D:\proiect\eu\hci_vestitorii_primaverii\hci_vestitorii_primaverii\obj\Debug\hci_vestitorii_primaverii.csprojResolveAssemblyReference.cache
-D:\proiect\eu\hci_vestitorii_primaverii\hci_vestitorii_primaverii\obj\Debug\hci_vestitorii_primaverii.mainMenu.resources
-D:\proiect\eu\hci_vestitorii_primaverii\hci_vestitorii_primaverii\obj\Debug\hci_vestitorii_primaverii.Properties.Resources.resources
-D:\proiect\eu\hci_vestitorii_primaverii\hci_vestitorii_primaverii\obj\Debug\hci_vestitorii_primaverii.csproj.GenerateResource.Cache
-D:\proiect\eu\hci_vestitorii_primaverii\hci_vestitorii_primaverii\obj\Debug\hci_vestitorii_primaverii.exe
-D:\proiect\eu\hci_vestitorii_primaverii\hci_vestitorii_primaverii\obj\Debug\hci_vestitorii_primaverii.pdb
-D:\proiect\eu\hci_vestitorii_primaverii\hci_vestitorii_primaverii\obj\Debug\hci_vestitorii_primaverii.differencesFirstLevel.resources
