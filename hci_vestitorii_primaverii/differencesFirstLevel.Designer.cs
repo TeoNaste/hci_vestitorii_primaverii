@@ -460,9 +460,14 @@
             this.Controls.Add(this.close_button);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "differencesFirstLevel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "differencesFirstLevel";
             this.Load += new System.EventHandler(this.differencesFirstLevel_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.differencesFirstLevel_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.differencesFirstLevel_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.differencesFirstLevel_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.diff12a)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff12b)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff11a)).EndInit();

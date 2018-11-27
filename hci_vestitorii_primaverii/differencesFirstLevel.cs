@@ -20,7 +20,7 @@ namespace hci_vestitorii_primaverii
         public differencesFirstLevel()
         {
             InitializeComponent();
-            InitializeLabelBackColor();
+            InitializePictureBoxBackColor();
             next_button.Visible = false;
 
 
@@ -39,7 +39,7 @@ namespace hci_vestitorii_primaverii
             }
         }
 
-        private void InitializeLabelBackColor()
+        private void InitializePictureBoxBackColor()
         {
             Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
             diff1a.Parent = pictureBox1;
@@ -452,6 +452,31 @@ namespace hci_vestitorii_primaverii
         private void play_button_Click(object sender, EventArgs e)
         {
             //next level
+            differencesSecondLevel secondLevel = new differencesSecondLevel();
+            secondLevel.Show();
+            this.Close();
+        }
+
+        private bool dragging = false;
+        private Point offset;
+
+        private void differencesFirstLevel_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.dragging = true;
+
+            this.offset = new Point(e.X, e.Y);
+        }
+
+        private void differencesFirstLevel_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.dragging = false;
+        }
+
+        private void differencesFirstLevel_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (this.dragging)
+
+                this.Location = new Point(this.Left - (this.offset.X - e.X), this.Top - (this.offset.Y - e.Y));
         }
     }
 }
