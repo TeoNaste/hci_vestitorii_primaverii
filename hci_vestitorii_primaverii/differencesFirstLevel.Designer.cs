@@ -416,7 +416,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::hci_vestitorii_primaverii.Properties.Resources.start_pluto;
-            this.pictureBox3.Location = new System.Drawing.Point(528, 242);
+            this.pictureBox3.Location = new System.Drawing.Point(533, 242);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(445, 252);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -427,9 +427,9 @@
             // 
             this.minieKiss.BackColor = System.Drawing.Color.Transparent;
             this.minieKiss.Image = global::hci_vestitorii_primaverii.Properties.Resources.AS002401_02;
-            this.minieKiss.Location = new System.Drawing.Point(522, 210);
+            this.minieKiss.Location = new System.Drawing.Point(519, 215);
             this.minieKiss.Name = "minieKiss";
-            this.minieKiss.Size = new System.Drawing.Size(127, 167);
+            this.minieKiss.Size = new System.Drawing.Size(133, 189);
             this.minieKiss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.minieKiss.TabIndex = 60;
             this.minieKiss.TabStop = false;

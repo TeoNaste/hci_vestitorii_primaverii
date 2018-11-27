@@ -37,6 +37,7 @@ namespace hci_vestitorii_primaverii
             {
                 minieKiss.Visible = true;
                 next_button.Visible = true;
+                next_button.BringToFront();
             }
         }
 

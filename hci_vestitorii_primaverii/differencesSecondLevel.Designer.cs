@@ -50,6 +50,7 @@
             this.diff6b = new System.Windows.Forms.PictureBox();
             this.diff7a = new System.Windows.Forms.PictureBox();
             this.diff7b = new System.Windows.Forms.PictureBox();
+            this.minieKiss = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -68,6 +69,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.diff6b)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff7a)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff7b)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minieKiss)).BeginInit();
             this.SuspendLayout();
             // 
             // finish_button
@@ -76,7 +78,7 @@
             this.finish_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.finish_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.finish_button.Image = global::hci_vestitorii_primaverii.Properties.Resources.finish_button;
-            this.finish_button.Location = new System.Drawing.Point(539, 396);
+            this.finish_button.Location = new System.Drawing.Point(539, 394);
             this.finish_button.Name = "finish_button";
             this.finish_button.Size = new System.Drawing.Size(120, 42);
             this.finish_button.TabIndex = 67;
@@ -153,7 +155,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::hci_vestitorii_primaverii.Properties.Resources.start_pluto;
-            this.pictureBox3.Location = new System.Drawing.Point(528, 242);
+            this.pictureBox3.Location = new System.Drawing.Point(535, 242);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(445, 252);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -300,6 +302,17 @@
             this.diff7b.TabStop = false;
             this.diff7b.Click += new System.EventHandler(this.diff7b_Click);
             // 
+            // minieKiss
+            // 
+            this.minieKiss.BackColor = System.Drawing.Color.Transparent;
+            this.minieKiss.Image = global::hci_vestitorii_primaverii.Properties.Resources.AS002401_02;
+            this.minieKiss.Location = new System.Drawing.Point(523, 215);
+            this.minieKiss.Name = "minieKiss";
+            this.minieKiss.Size = new System.Drawing.Size(133, 189);
+            this.minieKiss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.minieKiss.TabIndex = 82;
+            this.minieKiss.TabStop = false;
+            // 
             // differencesSecondLevel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -307,6 +320,8 @@
             this.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.spring_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.finish_button);
+            this.Controls.Add(this.minieKiss);
             this.Controls.Add(this.diff7b);
             this.Controls.Add(this.diff7a);
             this.Controls.Add(this.diff6b);
@@ -321,7 +336,6 @@
             this.Controls.Add(this.diff3b);
             this.Controls.Add(this.diff3a);
             this.Controls.Add(this.diff1a);
-            this.Controls.Add(this.finish_button);
             this.Controls.Add(this.rimainingDifferences);
             this.Controls.Add(this.labelTextDiff);
             this.Controls.Add(this.pictureBox1);
@@ -354,6 +368,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.diff6b)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff7a)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff7b)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minieKiss)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -382,5 +397,6 @@
         private System.Windows.Forms.PictureBox diff6b;
         private System.Windows.Forms.PictureBox diff7a;
         private System.Windows.Forms.PictureBox diff7b;
+        private System.Windows.Forms.PictureBox minieKiss;
     }
 }
