@@ -20,7 +20,7 @@ namespace hci_vestitorii_primaverii
 
         private void close_button_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void start_snowdrop_MouseEnter(object sender, EventArgs e)
@@ -43,6 +43,9 @@ namespace hci_vestitorii_primaverii
         private void play_button_Click(object sender, EventArgs e)
         {
             //open the game forum i guess
+            differencesFirstLevel f1 = new differencesFirstLevel();
+            this.Hide();
+            f1.Show();
         }
 
         /**  private void start_button_MouseEnter(object sender, EventArgs e)

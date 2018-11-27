@@ -44,11 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="differencesFirstLevel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="differencesFirstLevel.Designer.cs">
+      <DependentUpon>differencesFirstLevel.cs</DependentUpon>
     </Compile>
     <Compile Include="mainMenu.cs">
       <SubType>Form</SubType>
@@ -58,8 +58,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="differencesFirstLevel.resx">
+      <DependentUpon>differencesFirstLevel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainMenu.resx">
       <DependentUpon>mainMenu.cs</DependentUpon>
@@ -110,6 +110,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\play_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redBorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_32348946_6LyWrw8sTY2hwuIRC85khoCh4nva4ir1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_button.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
