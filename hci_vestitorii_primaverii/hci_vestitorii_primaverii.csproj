@@ -141,5 +141,8 @@
   <ItemGroup>
     <None Include="Resources\finish_button.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AS002401_02.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

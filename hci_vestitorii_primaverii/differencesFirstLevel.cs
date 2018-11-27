@@ -22,7 +22,7 @@ namespace hci_vestitorii_primaverii
             InitializeComponent();
             InitializePictureBoxBackColor();
             next_button.Visible = false;
-
+            minieKiss.Visible = false;
 
         }
 
@@ -35,6 +35,7 @@ namespace hci_vestitorii_primaverii
         {
             if(differences == 0)
             {
+                minieKiss.Visible = true;
                 next_button.Visible = true;
             }
         }

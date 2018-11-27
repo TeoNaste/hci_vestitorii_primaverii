@@ -13,7 +13,7 @@ namespace hci_vestitorii_primaverii
 {
     public partial class differencesSecondLevel : Form
     {
-        private int differences = 6;
+        private int differences = 7;
         ResourceManager rm = Resources.ResourceManager;
 
         public differencesSecondLevel()
@@ -60,6 +60,12 @@ namespace hci_vestitorii_primaverii
             
             diff6b.Parent = pictureBox1;
             diff6b.BackColor = Color.Transparent;
+
+            diff7a.Parent = pictureBox1;
+            diff7a.BackColor = Color.Transparent;
+
+            diff7b.Parent = pictureBox1;
+            diff7b.BackColor = Color.Transparent;
             
         }
 
@@ -249,6 +255,30 @@ namespace hci_vestitorii_primaverii
         private void differencesSecondLevel_MouseUp(object sender, MouseEventArgs e)
         {
             this.dragging = false;
+        }
+
+        private void diff7a_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff7b.Image = myImage;
+            diff7a.Image = myImage;
+            diff7a.Enabled = false;
+            diff7b.Enabled = false;
+            checkWin();
+        }
+
+        private void diff7b_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff7b.Image = myImage;
+            diff7a.Image = myImage;
+            diff7a.Enabled = false;
+            diff7b.Enabled = false;
+            checkWin();
         }
     }
 }
