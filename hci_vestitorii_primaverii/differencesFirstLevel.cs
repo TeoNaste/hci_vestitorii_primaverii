@@ -21,8 +21,8 @@ namespace hci_vestitorii_primaverii
         {
             InitializeComponent();
             InitializeLabelBackColor();
-            next_button.Visible = false;
-
+            //next_button.Visible = false;
+            next_button.Visible = true;
 
         }
 
@@ -33,10 +33,10 @@ namespace hci_vestitorii_primaverii
 
         private void checkWin()
         {
-            if(differences == 0)
+            /*if(differences == 0)
             {
                 next_button.Visible = true;
-            }
+            }*/
         }
 
         private void InitializeLabelBackColor()
@@ -451,7 +451,9 @@ namespace hci_vestitorii_primaverii
 
         private void play_button_Click(object sender, EventArgs e)
         {
-            //next level
+            chooseImages cImg = new chooseImages();
+            this.Hide();
+            cImg.Show();
         }
     }
 }
