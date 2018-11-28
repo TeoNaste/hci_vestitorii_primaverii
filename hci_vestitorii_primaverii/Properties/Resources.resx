@@ -124,21 +124,6 @@
   <data name="7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\71.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="finish_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\finish_button.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="spring_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\spring_background.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="start_snowdrop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\start_snowdrop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="start_birds" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\start_birds.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="start_minnie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\start_minnie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="trees" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trees.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -147,9 +132,6 @@
   </data>
   <data name="play_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\play_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="go_back_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\go_back_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MickeyHappy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MickeyHappy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,6 +151,9 @@
   <data name="treesummer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\treesummer.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="treeautumn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treeautumn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="barza" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\barza.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,8 +163,8 @@
   <data name="start_mickey.png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\start_mickey.png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="treeautumn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\treeautumn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="go_back_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\go_back_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="next_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\next_button.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -189,30 +174,24 @@
   </data>
   <data name="bufnita" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bufnita.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-   </data>
-  <data name="redBorder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\redBorder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="start_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\start_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="next_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\next_button.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AS002401_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AS002401_02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-   </data>
   <data name="randunica" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\randunica.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="start_mickey.png" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\start_mickey.png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="start_minnie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\start_minnie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="start_pluto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\start_pluto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="start_randunica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\start_randunica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="play_button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\play_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="go_back_button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\go_back_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="start_pluto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\start_pluto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,16 +214,16 @@
   <data name="spring_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\spring_background.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="finish_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finish_button.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="crizanteme" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\crizanteme.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="go_back_button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\go_back_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AS002401_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AS002401_02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sparkles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sparkles.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

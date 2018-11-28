@@ -201,5 +201,11 @@
   <ItemGroup>
     <None Include="Resources\AS002401_02.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start_randunica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sparkles.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
