@@ -157,8 +157,13 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.Color.Transparent;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "mainMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "mainMenu";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainMenu_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mainMenu_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mainMenu_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
