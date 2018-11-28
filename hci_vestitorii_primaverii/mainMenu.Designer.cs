@@ -117,13 +117,14 @@
             // 
             this.start_snowdrop.BackColor = System.Drawing.Color.Transparent;
             this.start_snowdrop.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.start_snowdrop.Image = global::hci_vestitorii_primaverii.Properties.Resources.start_snowdrop;
+            this.start_snowdrop.Image = global::hci_vestitorii_primaverii.Properties.Resources.glowing_snowdrop;
             this.start_snowdrop.Location = new System.Drawing.Point(323, 279);
             this.start_snowdrop.Name = "start_snowdrop";
             this.start_snowdrop.Size = new System.Drawing.Size(91, 91);
             this.start_snowdrop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.start_snowdrop.TabIndex = 6;
             this.start_snowdrop.TabStop = false;
+            this.start_snowdrop.MouseClick += new System.Windows.Forms.MouseEventHandler(this.start_snowdrop_MouseClick);
             this.start_snowdrop.MouseEnter += new System.EventHandler(this.start_snowdrop_MouseEnter);
             this.start_snowdrop.MouseLeave += new System.EventHandler(this.start_snowdrop_MouseLeave);
             // 

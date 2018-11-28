@@ -152,6 +152,11 @@ namespace hci_vestitorii_primaverii
 
         private void close_button_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
+
+        private void back_button_Click(object sender, EventArgs e)
+        {
             mainMenu mainPage = new mainMenu();
             mainPage.Show();
             this.Close();

@@ -127,9 +127,6 @@
     <None Include="Resources\redBorder.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\240_F_32348946_6LyWrw8sTY2hwuIRC85khoCh4nva4ir1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\6.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -179,6 +176,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\trandafiri.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glowing_snowdrop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go_back_button.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
