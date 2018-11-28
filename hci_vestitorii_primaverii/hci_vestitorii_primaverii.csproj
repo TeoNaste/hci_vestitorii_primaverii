@@ -56,6 +56,12 @@
     <Compile Include="differencesFirstLevel.Designer.cs">
       <DependentUpon>differencesFirstLevel.cs</DependentUpon>
     </Compile>
+    <Compile Include="differencesSecondLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="differencesSecondLevel.Designer.cs">
+      <DependentUpon>differencesSecondLevel.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="differencesFirstLevel.resx">
       <DependentUpon>differencesFirstLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="differencesSecondLevel.resx">
+      <DependentUpon>differencesSecondLevel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainMenu.resx">
       <DependentUpon>mainMenu.cs</DependentUpon>
@@ -182,6 +191,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\go_back_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finish_button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AS002401_02.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
