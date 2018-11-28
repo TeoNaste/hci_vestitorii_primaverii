@@ -51,6 +51,7 @@
             this.diff7a = new System.Windows.Forms.PictureBox();
             this.diff7b = new System.Windows.Forms.PictureBox();
             this.minieKiss = new System.Windows.Forms.PictureBox();
+            this.back_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -313,6 +314,20 @@
             this.minieKiss.TabIndex = 82;
             this.minieKiss.TabStop = false;
             // 
+            // back_button
+            // 
+            this.back_button.BackColor = System.Drawing.Color.Transparent;
+            this.back_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.back_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.back_button.ForeColor = System.Drawing.Color.Transparent;
+            this.back_button.Image = global::hci_vestitorii_primaverii.Properties.Resources.go_back_button1;
+            this.back_button.Location = new System.Drawing.Point(689, 12);
+            this.back_button.Name = "back_button";
+            this.back_button.Size = new System.Drawing.Size(44, 42);
+            this.back_button.TabIndex = 83;
+            this.back_button.UseVisualStyleBackColor = false;
+            this.back_button.Click += new System.EventHandler(this.back_button_Click);
+            // 
             // differencesSecondLevel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -320,6 +335,7 @@
             this.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.spring_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.back_button);
             this.Controls.Add(this.finish_button);
             this.Controls.Add(this.minieKiss);
             this.Controls.Add(this.diff7b);
@@ -398,5 +414,6 @@
         private System.Windows.Forms.PictureBox diff7a;
         private System.Windows.Forms.PictureBox diff7b;
         private System.Windows.Forms.PictureBox minieKiss;
+        private System.Windows.Forms.Button back_button;
     }
 }

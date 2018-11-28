@@ -25,7 +25,7 @@ namespace hci_vestitorii_primaverii
 
         private void start_snowdrop_MouseEnter(object sender, EventArgs e)
         {
-            start_snowdrop.Size = new Size(95, 93);
+            start_snowdrop.Size = new Size(98, 96);
         }
 
         private void start_snowdrop_MouseLeave(object sender, EventArgs e)
@@ -40,13 +40,6 @@ namespace hci_vestitorii_primaverii
 
         }
 
-        private void play_button_Click(object sender, EventArgs e)
-        {
-            //open the game form i guess
-            differencesFirstLevel f1 = new differencesFirstLevel();
-            this.Hide();
-            f1.Show();
-        }
 
         private bool dragging = false;
         private Point offset;
@@ -72,26 +65,35 @@ namespace hci_vestitorii_primaverii
             this.dragging = false;
         }
 
-        /**  private void start_button_MouseEnter(object sender, EventArgs e)
-          {
-              start_button.Size = new Size(148, 136);
-          }
-
-          private void start_button_MouseLeave(object sender, EventArgs e)
-          {
-              while (start_button.Width > 144)
-              {
-                  start_button.Width--;
-                  start_button.Height--;
-                  Application.DoEvents();
-              }
-          }**/
-
         private void start_snowdrop_MouseClick(object sender, MouseEventArgs e)
         {
             chooseImages cImg = new chooseImages();
             this.Hide();
             cImg.Show();
+        }
+
+        private void swallow_button_MouseEnter(object sender, EventArgs e)
+        {
+            swallow_button.Size = new Size(swallow_button.Width + 7, swallow_button.Height + 7);
+        }
+
+        private void swallow_button_MouseLeave(object sender, EventArgs e)
+        {
+            int i = 7;
+            while (i >0)
+            {
+                swallow_button.Width--;
+                swallow_button.Height--;
+                Application.DoEvents();
+                i--;
+            }
+        }
+
+        private void swallow_button_MouseClick(object sender, MouseEventArgs e)
+        {
+            differencesFirstLevel f1 = new differencesFirstLevel();
+            this.Hide();
+            f1.Show();
         }
     }
 }

@@ -35,13 +35,16 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.start_snowdrop = new System.Windows.Forms.PictureBox();
-            this.play_button = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.swallow_button = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.start_snowdrop)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.swallow_button)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -106,7 +109,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::hci_vestitorii_primaverii.Properties.Resources.start_birds;
-            this.pictureBox5.Location = new System.Drawing.Point(132, 12);
+            this.pictureBox5.Location = new System.Drawing.Point(24, 12);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(236, 139);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -118,7 +121,7 @@
             this.start_snowdrop.BackColor = System.Drawing.Color.Transparent;
             this.start_snowdrop.Cursor = System.Windows.Forms.Cursors.Hand;
             this.start_snowdrop.Image = global::hci_vestitorii_primaverii.Properties.Resources.glowing_snowdrop;
-            this.start_snowdrop.Location = new System.Drawing.Point(323, 279);
+            this.start_snowdrop.Location = new System.Drawing.Point(346, 274);
             this.start_snowdrop.Name = "start_snowdrop";
             this.start_snowdrop.Size = new System.Drawing.Size(91, 91);
             this.start_snowdrop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -128,18 +131,31 @@
             this.start_snowdrop.MouseEnter += new System.EventHandler(this.start_snowdrop_MouseEnter);
             this.start_snowdrop.MouseLeave += new System.EventHandler(this.start_snowdrop_MouseLeave);
             // 
-            // play_button
+            // pictureBox6
             // 
-            this.play_button.BackColor = System.Drawing.Color.Transparent;
-            this.play_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.play_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.play_button.Image = global::hci_vestitorii_primaverii.Properties.Resources.play_button;
-            this.play_button.Location = new System.Drawing.Point(323, 167);
-            this.play_button.Name = "play_button";
-            this.play_button.Size = new System.Drawing.Size(174, 58);
-            this.play_button.TabIndex = 7;
-            this.play_button.UseVisualStyleBackColor = false;
-            this.play_button.Click += new System.EventHandler(this.play_button_Click);
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox6.Image = global::hci_vestitorii_primaverii.Properties.Resources.spring_background;
+            this.pictureBox6.Location = new System.Drawing.Point(0, -2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(801, 452);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 8;
+            this.pictureBox6.TabStop = false;
+            // 
+            // swallow_button
+            // 
+            this.swallow_button.BackColor = System.Drawing.Color.Transparent;
+            this.swallow_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.swallow_button.Image = global::hci_vestitorii_primaverii.Properties.Resources.start_randunica;
+            this.swallow_button.Location = new System.Drawing.Point(253, 99);
+            this.swallow_button.Name = "swallow_button";
+            this.swallow_button.Size = new System.Drawing.Size(77, 109);
+            this.swallow_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.swallow_button.TabIndex = 9;
+            this.swallow_button.TabStop = false;
+            this.swallow_button.MouseClick += new System.Windows.Forms.MouseEventHandler(this.swallow_button_MouseClick);
+            this.swallow_button.MouseEnter += new System.EventHandler(this.swallow_button_MouseEnter);
+            this.swallow_button.MouseLeave += new System.EventHandler(this.swallow_button_MouseLeave);
             // 
             // mainMenu
             // 
@@ -149,7 +165,7 @@
             this.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.spring_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.play_button);
+            this.Controls.Add(this.swallow_button);
             this.Controls.Add(this.start_snowdrop);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.close_button);
@@ -157,6 +173,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox6);
             this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "mainMenu";
@@ -171,6 +188,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.start_snowdrop)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.swallow_button)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -184,6 +203,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox start_snowdrop;
-        private System.Windows.Forms.Button play_button;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox swallow_button;
     }
 }
