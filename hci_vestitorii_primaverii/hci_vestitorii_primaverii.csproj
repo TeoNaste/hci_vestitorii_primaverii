@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="chooseImages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chooseImages.Designer.cs">
+      <DependentUpon>chooseImages.cs</DependentUpon>
+    </Compile>
     <Compile Include="differencesFirstLevel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="chooseImages.resx">
+      <DependentUpon>chooseImages.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="differencesFirstLevel.resx">
       <DependentUpon>differencesFirstLevel.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,13 +136,61 @@
     <None Include="Resources\redBorder.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\240_F_32348946_6LyWrw8sTY2hwuIRC85khoCh4nva4ir1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\6.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\next_button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MickeyHappy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MickeyThinking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trees.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treeautumn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treespring.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treesummer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treewinter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bufnita.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\randunica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vultur.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crizanteme.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floareasoarelui.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghiocei.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trandafiri.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glowing_snowdrop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go_back_button.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\71.png" />

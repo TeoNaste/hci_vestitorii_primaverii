@@ -100,9 +100,10 @@
             this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.close_button.ForeColor = System.Drawing.Color.Transparent;
             this.close_button.Image = global::hci_vestitorii_primaverii.Properties.Resources.close_button;
-            this.close_button.Location = new System.Drawing.Point(748, 12);
+            this.close_button.Location = new System.Drawing.Point(997, 15);
+            this.close_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.close_button.Name = "close_button";
-            this.close_button.Size = new System.Drawing.Size(40, 42);
+            this.close_button.Size = new System.Drawing.Size(53, 52);
             this.close_button.TabIndex = 4;
             this.close_button.UseVisualStyleBackColor = false;
             this.close_button.Click += new System.EventHandler(this.close_button_Click);
@@ -111,9 +112,10 @@
             // 
             this.labelTextDiff.BackColor = System.Drawing.Color.Transparent;
             this.labelTextDiff.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelTextDiff.Location = new System.Drawing.Point(9, 9);
+            this.labelTextDiff.Location = new System.Drawing.Point(12, 11);
+            this.labelTextDiff.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTextDiff.Name = "labelTextDiff";
-            this.labelTextDiff.Size = new System.Drawing.Size(172, 34);
+            this.labelTextDiff.Size = new System.Drawing.Size(229, 42);
             this.labelTextDiff.TabIndex = 9;
             this.labelTextDiff.Text = "Diferente ramase:";
             // 
@@ -416,6 +418,8 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::hci_vestitorii_primaverii.Properties.Resources.start_pluto;
+            this.pictureBox3.Location = new System.Drawing.Point(704, 298);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Location = new System.Drawing.Point(533, 242);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(445, 252);
@@ -424,7 +428,7 @@
             this.pictureBox3.TabStop = false;
             // 
             // minieKiss
-            // 
+            //
             this.minieKiss.BackColor = System.Drawing.Color.Transparent;
             this.minieKiss.Image = global::hci_vestitorii_primaverii.Properties.Resources.AS002401_02;
             this.minieKiss.Location = new System.Drawing.Point(519, 215);
@@ -433,7 +437,7 @@
             this.minieKiss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.minieKiss.TabIndex = 60;
             this.minieKiss.TabStop = false;
-            // 
+            //
             // differencesFirstLevel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -475,6 +479,7 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "differencesFirstLevel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "differencesFirstLevel";

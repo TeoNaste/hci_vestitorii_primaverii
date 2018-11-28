@@ -25,13 +25,13 @@ namespace hci_vestitorii_primaverii
 
         private void start_snowdrop_MouseEnter(object sender, EventArgs e)
         {
-            //start_snowdrop.Size = new Size(94, 92);
+            start_snowdrop.Size = new Size(95, 93);
         }
 
         private void start_snowdrop_MouseLeave(object sender, EventArgs e)
         {
 
-            while (start_snowdrop.Width > 91 && start_snowdrop.Height > 91)
+            while (start_snowdrop.Width > 91 && start_snowdrop.Height > 89)
             {
                 start_snowdrop.Width--;
                 start_snowdrop.Height--;
@@ -42,7 +42,7 @@ namespace hci_vestitorii_primaverii
 
         private void play_button_Click(object sender, EventArgs e)
         {
-            //open the game forum i guess
+            //open the game form i guess
             differencesFirstLevel f1 = new differencesFirstLevel();
             this.Hide();
             f1.Show();
@@ -87,5 +87,11 @@ namespace hci_vestitorii_primaverii
               }
           }**/
 
+        private void start_snowdrop_MouseClick(object sender, MouseEventArgs e)
+        {
+            chooseImages cImg = new chooseImages();
+            this.Hide();
+            cImg.Show();
+        }
     }
 }
