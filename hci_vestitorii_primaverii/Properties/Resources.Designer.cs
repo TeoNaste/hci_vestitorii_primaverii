@@ -253,6 +253,16 @@ namespace hci_vestitorii_primaverii.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap randunica_glow {
+            get {
+                object obj = ResourceManager.GetObject("randunica_glow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap redBorder {
             get {
                 object obj = ResourceManager.GetObject("redBorder", resourceCulture);
@@ -326,16 +336,6 @@ namespace hci_vestitorii_primaverii.Properties {
         internal static System.Drawing.Bitmap start_pluto {
             get {
                 object obj = ResourceManager.GetObject("start_pluto", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap start_randunica {
-            get {
-                object obj = ResourceManager.GetObject("start_randunica", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

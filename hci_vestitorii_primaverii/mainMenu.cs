@@ -95,5 +95,10 @@ namespace hci_vestitorii_primaverii
             this.Hide();
             f1.Show();
         }
+
+        private void swallow_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

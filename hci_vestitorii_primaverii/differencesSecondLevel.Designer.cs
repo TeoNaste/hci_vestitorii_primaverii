@@ -34,7 +34,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.close_button = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.diff1a = new System.Windows.Forms.PictureBox();
             this.diff3a = new System.Windows.Forms.PictureBox();
@@ -51,10 +50,8 @@
             this.diff7a = new System.Windows.Forms.PictureBox();
             this.diff7b = new System.Windows.Forms.PictureBox();
             this.minieKiss = new System.Windows.Forms.PictureBox();
-            this.back_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff1a)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff3a)).BeginInit();
@@ -141,17 +138,6 @@
             this.close_button.UseVisualStyleBackColor = false;
             this.close_button.Click += new System.EventHandler(this.close_button_Click);
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::hci_vestitorii_primaverii.Properties.Resources.start_birds;
-            this.pictureBox4.Location = new System.Drawing.Point(539, 12);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(249, 159);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 63;
-            this.pictureBox4.TabStop = false;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
@@ -162,6 +148,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 64;
             this.pictureBox3.TabStop = false;
+        
             // 
             // diff1a
             // 
@@ -314,20 +301,6 @@
             this.minieKiss.TabIndex = 82;
             this.minieKiss.TabStop = false;
             // 
-            // back_button
-            // 
-            this.back_button.BackColor = System.Drawing.Color.Transparent;
-            this.back_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.back_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.back_button.ForeColor = System.Drawing.Color.Transparent;
-            this.back_button.Image = global::hci_vestitorii_primaverii.Properties.Resources.go_back_button1;
-            this.back_button.Location = new System.Drawing.Point(689, 12);
-            this.back_button.Name = "back_button";
-            this.back_button.Size = new System.Drawing.Size(44, 42);
-            this.back_button.TabIndex = 83;
-            this.back_button.UseVisualStyleBackColor = false;
-            this.back_button.Click += new System.EventHandler(this.back_button_Click);
-            // 
             // differencesSecondLevel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -335,7 +308,6 @@
             this.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.spring_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.back_button);
             this.Controls.Add(this.finish_button);
             this.Controls.Add(this.minieKiss);
             this.Controls.Add(this.diff7b);
@@ -357,7 +329,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.close_button);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "differencesSecondLevel";
@@ -368,7 +339,6 @@
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.differencesSecondLevel_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff1a)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff3a)).EndInit();
@@ -397,7 +367,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button close_button;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox diff1a;
         private System.Windows.Forms.PictureBox diff3a;
@@ -414,6 +383,5 @@
         private System.Windows.Forms.PictureBox diff7a;
         private System.Windows.Forms.PictureBox diff7b;
         private System.Windows.Forms.PictureBox minieKiss;
-        private System.Windows.Forms.Button back_button;
     }
 }

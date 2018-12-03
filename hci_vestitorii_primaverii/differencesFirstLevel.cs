@@ -14,6 +14,7 @@ namespace hci_vestitorii_primaverii
     public partial class differencesFirstLevel : Form
     {
         private int differences = 12;
+        private Timer MyTimer;
         ResourceManager rm = Resources.ResourceManager;
         
 
@@ -21,7 +22,6 @@ namespace hci_vestitorii_primaverii
         {
             InitializeComponent();
             InitializePictureBoxBackColor();
-            next_button.Visible = false;
             minieKiss.Visible = false;
 
         }
@@ -33,11 +33,13 @@ namespace hci_vestitorii_primaverii
 
         private void checkWin()
         {
-            if(differences == 0)
+            MyTimer = new Timer();
+            MyTimer.Interval = (4 * 1000);
+            MyTimer.Tick += new EventHandler(play_button_Click);
+            if (differences == 0)
             {
                 minieKiss.Visible = true;
-                next_button.Visible = true;
-                next_button.BringToFront();
+                MyTimer.Start();
             }
         }
 
@@ -454,6 +456,7 @@ namespace hci_vestitorii_primaverii
         private void play_button_Click(object sender, EventArgs e)
         {
             //next level
+            MyTimer.Stop();
             differencesSecondLevel secondLevel = new differencesSecondLevel();
             secondLevel.Show();
             this.Close();
@@ -484,13 +487,6 @@ namespace hci_vestitorii_primaverii
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void back_button_Click(object sender, EventArgs e)
-        {
-            mainMenu mainPage = new mainMenu();
-            mainPage.Show();
-            this.Close();
         }
     }
 }

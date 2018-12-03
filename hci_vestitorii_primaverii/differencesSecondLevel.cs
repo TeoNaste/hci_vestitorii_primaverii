@@ -14,6 +14,7 @@ namespace hci_vestitorii_primaverii
     public partial class differencesSecondLevel : Form
     {
         private int differences = 7;
+        private Timer MyTimer;
         ResourceManager rm = Resources.ResourceManager;
 
         public differencesSecondLevel()
@@ -79,11 +80,13 @@ namespace hci_vestitorii_primaverii
 
         private void checkWin()
         {
+            MyTimer = new Timer();
+            MyTimer.Interval = (4 * 1000);
+            MyTimer.Tick += new EventHandler(finish_button_Click);
             if (differences == 0)
             {
                 minieKiss.Visible = true;
-                finish_button.Visible = true;
-                finish_button.BringToFront();
+                MyTimer.Start();
             }
         }
 
@@ -233,6 +236,7 @@ namespace hci_vestitorii_primaverii
 
         private void finish_button_Click(object sender, EventArgs e)
         {
+            MyTimer.Stop();
             mainMenu mainPage = new mainMenu();
             mainPage.Show();
             this.Close();
@@ -290,5 +294,7 @@ namespace hci_vestitorii_primaverii
             mainPage.Show();
             this.Close();
         }
+
+       
     }
 }

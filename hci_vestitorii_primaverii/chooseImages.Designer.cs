@@ -55,10 +55,7 @@
             this.floareasoarelui = new System.Windows.Forms.PictureBox();
             this.panelghiocei = new System.Windows.Forms.Panel();
             this.ghiocei = new System.Windows.Forms.PictureBox();
-            this.close_button = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.back_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -87,7 +84,6 @@
             this.panelghiocei.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ghiocei)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -405,20 +401,6 @@
             this.ghiocei.TabStop = false;
             this.ghiocei.Click += new System.EventHandler(this.ghiocei_Click);
             // 
-            // close_button
-            // 
-            this.close_button.BackColor = System.Drawing.Color.Transparent;
-            this.close_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.close_button.ForeColor = System.Drawing.Color.Transparent;
-            this.close_button.Image = global::hci_vestitorii_primaverii.Properties.Resources.close_button;
-            this.close_button.Location = new System.Drawing.Point(736, 12);
-            this.close_button.Name = "close_button";
-            this.close_button.Size = new System.Drawing.Size(40, 42);
-            this.close_button.TabIndex = 19;
-            this.close_button.UseVisualStyleBackColor = false;
-            this.close_button.Click += new System.EventHandler(this.close_button_Click);
-            // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
@@ -430,31 +412,6 @@
             this.pictureBox4.TabIndex = 20;
             this.pictureBox4.TabStop = false;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = global::hci_vestitorii_primaverii.Properties.Resources.start_birds;
-            this.pictureBox5.Location = new System.Drawing.Point(544, 12);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(254, 169);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 21;
-            this.pictureBox5.TabStop = false;
-            // 
-            // back_button
-            // 
-            this.back_button.BackColor = System.Drawing.Color.Transparent;
-            this.back_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.back_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.back_button.ForeColor = System.Drawing.Color.Transparent;
-            this.back_button.Image = global::hci_vestitorii_primaverii.Properties.Resources.go_back_button1;
-            this.back_button.Location = new System.Drawing.Point(674, 12);
-            this.back_button.Name = "back_button";
-            this.back_button.Size = new System.Drawing.Size(44, 42);
-            this.back_button.TabIndex = 22;
-            this.back_button.UseVisualStyleBackColor = false;
-            this.back_button.Click += new System.EventHandler(this.back_button_Click);
-            // 
             // chooseImages
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -462,9 +419,7 @@
             this.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.spring_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.back_button);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.close_button);
             this.Controls.Add(this.panelghiocei);
             this.Controls.Add(this.panelfloareasoarelui);
             this.Controls.Add(this.paneltrandafiri);
@@ -480,7 +435,6 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox5);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "chooseImages";
             this.Text = "chooseImages";
@@ -512,7 +466,6 @@
             this.panelghiocei.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ghiocei)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -546,9 +499,6 @@
         private System.Windows.Forms.PictureBox floareasoarelui;
         private System.Windows.Forms.Panel panelghiocei;
         private System.Windows.Forms.PictureBox ghiocei;
-        private System.Windows.Forms.Button close_button;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button back_button;
     }
 }
