@@ -202,10 +202,10 @@
     <None Include="Resources\AS002401_02.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\start_randunica.png" />
+    <None Include="Resources\sparkles.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\sparkles.gif" />
+    <None Include="Resources\randunica_glow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -13,6 +13,8 @@ namespace hci_vestitorii_primaverii
 {
     public partial class chooseImages : Form
     {
+        private int imagesFound = 0;
+        private Timer MyTimer;
         ResourceManager rm = Resources.ResourceManager;
         Bitmap imgMickeyHappy = Properties.Resources.MickeyHappy;
         Bitmap imgMickeyThinking = Properties.Resources.MickeyThinking;
@@ -24,6 +26,26 @@ namespace hci_vestitorii_primaverii
             pictureBox2.Image = imgMickeyThinking;
             pictureBox3.Image = imgMickeyThinking;
 
+        }
+
+        private void checkWin()
+        {
+            MyTimer = new Timer();
+            MyTimer.Interval = (4 * 1000);
+            MyTimer.Tick += new EventHandler(back_button_Click);
+            if (imagesFound == 3)
+            {
+                MyTimer.Start();
+            }
+
+        }
+
+        private void back_button_Click(object sender,EventArgs e)
+        {
+            MyTimer.Stop();
+            mainMenu main = new mainMenu();
+            main.Show();
+            this.Close();
         }
 
         private void treewinter_Click(object sender, EventArgs e)
@@ -53,7 +75,8 @@ namespace hci_vestitorii_primaverii
             paneltreeautumn.BackColor = Color.Transparent;
             paneltreesummer.BackColor = Color.Transparent;
             paneltreespring.BackColor = Color.Green;
-
+            imagesFound++;
+            checkWin();
             pictureBox1.Image = imgMickeyHappy;
 
 
@@ -86,8 +109,9 @@ namespace hci_vestitorii_primaverii
             panelrandunica.BackColor = Color.Green;
             panelvultur.BackColor = Color.Transparent;
             panelbufnita.BackColor = Color.Transparent;
-
+            imagesFound++;
             pictureBox2.Image = imgMickeyHappy;
+            checkWin();
         }
 
         private void vultur_Click(object sender, EventArgs e)
@@ -146,7 +170,8 @@ namespace hci_vestitorii_primaverii
             panelfloareasoarelui.BackColor = Color.Transparent;
             paneltrandafiri.BackColor = Color.Transparent;
             panelghiocei.BackColor = Color.Green;
-
+            imagesFound++;
+            checkWin();
             pictureBox3.Image = imgMickeyHappy;
         }
 
@@ -155,11 +180,5 @@ namespace hci_vestitorii_primaverii
             Application.Exit();
         }
 
-        private void back_button_Click(object sender, EventArgs e)
-        {
-            mainMenu mainPage = new mainMenu();
-            mainPage.Show();
-            this.Close();
-        }
     }
 }
