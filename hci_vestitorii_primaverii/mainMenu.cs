@@ -1,21 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using System.Drawing.Drawing2D;
+using WMPLib;
+
 
 namespace hci_vestitorii_primaverii
 {
     public partial class mainMenu : Form
     {
+        WindowsMediaPlayer player = new WindowsMediaPlayer();
 
         public mainMenu()
         {
             InitializeComponent();
+            player.URL = ".//Music//totoro.wav";
+            player.settings.setMode("loop", true);
+            player.settings.volume = 3;
+        }
+
+        private void mainMenu_Load(object sender, EventArgs e)
+        {
+            player.controls.play();
+            
         }
 
         private void close_button_Click(object sender, EventArgs e)
@@ -96,9 +102,6 @@ namespace hci_vestitorii_primaverii
             f1.Show();
         }
 
-        private void swallow_button_Click(object sender, EventArgs e)
-        {
-
-        }
+   
     }
 }

@@ -95,7 +95,7 @@
             this.start_snowdrop.BackColor = System.Drawing.Color.Transparent;
             this.start_snowdrop.Cursor = System.Windows.Forms.Cursors.Hand;
             this.start_snowdrop.Image = global::hci_vestitorii_primaverii.Properties.Resources.glowing_snowdrop;
-            this.start_snowdrop.Location = new System.Drawing.Point(346, 274);
+            this.start_snowdrop.Location = new System.Drawing.Point(305, 278);
             this.start_snowdrop.Name = "start_snowdrop";
             this.start_snowdrop.Size = new System.Drawing.Size(91, 91);
             this.start_snowdrop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -127,7 +127,6 @@
             this.swallow_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.swallow_button.TabIndex = 9;
             this.swallow_button.TabStop = false;
-            this.swallow_button.Click += new System.EventHandler(this.swallow_button_Click);
             this.swallow_button.MouseClick += new System.Windows.Forms.MouseEventHandler(this.swallow_button_MouseClick);
             this.swallow_button.MouseEnter += new System.EventHandler(this.swallow_button_MouseEnter);
             this.swallow_button.MouseLeave += new System.EventHandler(this.swallow_button_MouseLeave);
