@@ -148,7 +148,6 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 64;
             this.pictureBox3.TabStop = false;
-        
             // 
             // diff1a
             // 
@@ -337,6 +336,7 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.differencesSecondLevel_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.differencesSecondLevel_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.differencesSecondLevel_MouseUp);
+            this.Resize += new System.EventHandler(this.differencesSecondLevel_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

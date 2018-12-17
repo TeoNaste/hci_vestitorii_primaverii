@@ -12,11 +12,58 @@ namespace hci_vestitorii_primaverii
 {
     public partial class mainMenu : Form
     {
+        int pictureBox3OffestWidth;
+        int pictureBox3OffestHeight;
+
+        int pictureBox1OffestWidth;
+        int pictureBox1OffestHeight;
+
+        int pictureBox2OffestWidth;
+        int pictureBox2OffestHeight;
+
+        int closeButtonOffsetHeight;
+        int closeButtonOffestWidth;
+
+        int startSnowDropOffsetWidth;
+        int startSnowDropOffestHeight;
+
+        int swallowButtonOffestWidth;
+        int swallowButtonOffestHidth;
+
 
         public mainMenu()
         {
             InitializeComponent();
+
+            pictureBox3OffestWidth = this.Width - pictureBox3.Width;
+            pictureBox3OffestHeight = this.Height - pictureBox3.Height;
+
+            pictureBox1OffestWidth = this.Width - pictureBox1.Width;
+            pictureBox1OffestHeight = this.Height - pictureBox1.Height;
+
+            pictureBox2OffestWidth = this.Width - pictureBox2.Width;
+            pictureBox2OffestHeight = this.Height - pictureBox2.Height;
+
+            closeButtonOffestWidth = this.Width - close_button.Width;
+            closeButtonOffsetHeight = this.Height - close_button.Height;
+
+            startSnowDropOffsetWidth = this.Width - start_snowdrop.Width;
+            startSnowDropOffestHeight = this.Height - start_snowdrop.Height;
+
+            swallowButtonOffestWidth = this.Width - swallow_button.Width;
+            swallowButtonOffestHidth = this.Height - swallow_button.Height;
+
+            this.WindowState = FormWindowState.Normal;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            //this.Bounds = Screen.PrimaryScreen.Bounds;
+            this.WindowState = FormWindowState.Maximized;
+
+            pictureBox4.Bounds = Screen.PrimaryScreen.Bounds;
+
+
+
         }
+
 
         private void close_button_Click(object sender, EventArgs e)
         {
@@ -25,17 +72,19 @@ namespace hci_vestitorii_primaverii
 
         private void start_snowdrop_MouseEnter(object sender, EventArgs e)
         {
-            start_snowdrop.Size = new Size(98, 96);
+            start_snowdrop.Size = new Size(start_snowdrop.Width + 7, start_snowdrop.Height + 5);
         }
 
         private void start_snowdrop_MouseLeave(object sender, EventArgs e)
         {
 
-            while (start_snowdrop.Width > 91 && start_snowdrop.Height > 89)
+            int i = 7;
+            while (i > 0)
             {
                 start_snowdrop.Width--;
                 start_snowdrop.Height--;
                 Application.DoEvents();
+                i--;
             }
 
         }
@@ -94,11 +143,36 @@ namespace hci_vestitorii_primaverii
             differencesFirstLevel f1 = new differencesFirstLevel();
             this.Hide();
             f1.Show();
+
         }
 
-        private void swallow_button_Click(object sender, EventArgs e)
+        private void mainMenu_Resize(object sender, EventArgs e)
         {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                pictureBox3.Width = (int)(this.Width / 1.5) - pictureBox3OffestWidth;
+                pictureBox3.Height = (int)(this.Height / 1.5)- pictureBox3OffestHeight;
+                pictureBox3.Location = new Point(pictureBox3.Location.X + 190, pictureBox3.Location.Y + 90);
 
+                pictureBox1.BringToFront();
+                pictureBox1.Width = (int)(this.Width / 1.7) - pictureBox1OffestWidth;
+                pictureBox1.Height = (int)(this.Height / 1.5) - pictureBox1OffestHeight;
+                pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y + 90);
+
+                pictureBox2.Width = (int)(this.Width / 1.9) - pictureBox2OffestWidth;
+                pictureBox2.Height = (int)(this.Height / 1.75) - pictureBox2OffestHeight;
+                pictureBox2.Location = new Point(pictureBox2.Location.X + 155, pictureBox2.Location.Y + 90);
+
+                close_button.Location = new Point(close_button.Location.X + 280, close_button.Location.Y);
+
+                start_snowdrop.Width = (int)(this.Width / 2) - startSnowDropOffsetWidth;
+                start_snowdrop.Height = (int)(this.Height / 2) - startSnowDropOffestHeight;
+                start_snowdrop.Location = new Point(start_snowdrop.Location.X + 100, start_snowdrop.Location.Y + 100);
+
+                swallow_button.Width = (int)(this.Width / 2.2) - swallowButtonOffestWidth;
+                swallow_button.Height = (int)(this.Height / 2) - swallowButtonOffestHidth;
+                swallow_button.Location = new Point(swallow_button.Location.X + 80, swallow_button.Location.Y + 50);
+            }
         }
     }
 }
