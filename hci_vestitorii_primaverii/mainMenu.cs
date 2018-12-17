@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
+using WMPLib;
 
 namespace hci_vestitorii_primaverii
 {
     public partial class mainMenu : Form
     {
+        WindowsMediaPlayer player = new WindowsMediaPlayer();
+
         int pictureBox3OffestWidth;
         int pictureBox3OffestHeight;
 
@@ -30,10 +33,13 @@ namespace hci_vestitorii_primaverii
         int swallowButtonOffestWidth;
         int swallowButtonOffestHidth;
 
-
         public mainMenu()
         {
             InitializeComponent();
+            player.URL = ".//Music//totoro.wav";
+            player.settings.setMode("loop", true);
+            player.settings.volume = 3;
+
 
             pictureBox3OffestWidth = this.Width - pictureBox3.Width;
             pictureBox3OffestHeight = this.Height - pictureBox3.Height;
@@ -59,11 +65,13 @@ namespace hci_vestitorii_primaverii
             this.WindowState = FormWindowState.Maximized;
 
             pictureBox4.Bounds = Screen.PrimaryScreen.Bounds;
-
-
-
         }
 
+        private void mainMenu_Load(object sender, EventArgs e)
+        {
+            player.controls.play();
+            
+        }
 
         private void close_button_Click(object sender, EventArgs e)
         {
@@ -143,7 +151,6 @@ namespace hci_vestitorii_primaverii
             differencesFirstLevel f1 = new differencesFirstLevel();
             this.Hide();
             f1.Show();
-
         }
 
         private void mainMenu_Resize(object sender, EventArgs e)
