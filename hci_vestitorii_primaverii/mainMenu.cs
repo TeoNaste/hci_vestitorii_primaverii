@@ -9,6 +9,7 @@ namespace hci_vestitorii_primaverii
     public partial class mainMenu : Form
     {
         WindowsMediaPlayer player = new WindowsMediaPlayer();
+        WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
 
         public mainMenu()
         {
@@ -16,12 +17,14 @@ namespace hci_vestitorii_primaverii
             player.URL = ".//Music//totoro.wav";
             player.settings.setMode("loop", true);
             player.settings.volume = 3;
+            audioVA.settings.volume = 25;
+            audioVA.URL = "audio//hai_sa_meniu.wav";
         }
 
         private void mainMenu_Load(object sender, EventArgs e)
         {
             player.controls.play();
-            
+            audioVA.controls.play();
         }
 
         private void close_button_Click(object sender, EventArgs e)
@@ -36,12 +39,13 @@ namespace hci_vestitorii_primaverii
 
         private void start_snowdrop_MouseLeave(object sender, EventArgs e)
         {
-
-            while (start_snowdrop.Width > 91 && start_snowdrop.Height > 89)
+            int i = 7;
+            while (i>0)
             {
                 start_snowdrop.Width--;
                 start_snowdrop.Height--;
                 Application.DoEvents();
+                i--;
             }
 
         }
