@@ -8,16 +8,19 @@ using System.Linq;
 using System.Resources;
 using System.Text;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace hci_vestitorii_primaverii
 {
     public partial class chooseImages : Form
     {
+        WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
         private int imagesFound = 0;
         private Timer MyTimer;
         ResourceManager rm = Resources.ResourceManager;
         Bitmap imgMickeyHappy = Properties.Resources.MickeyHappy;
         Bitmap imgMickeyThinking = Properties.Resources.MickeyThinking;
+
         public chooseImages()
 
         {         
@@ -25,7 +28,8 @@ namespace hci_vestitorii_primaverii
             pictureBox1.Image = imgMickeyThinking;
             pictureBox2.Image = imgMickeyThinking;
             pictureBox3.Image = imgMickeyThinking;
-
+            audioVA.settings.volume = 35;
+            audioVA.URL = "audio//3_imagini_primavara.aac";
         }
 
         private void checkWin()
@@ -43,7 +47,7 @@ namespace hci_vestitorii_primaverii
         private void back_button_Click(object sender,EventArgs e)
         {
             MyTimer.Stop();
-            mainMenu main = new mainMenu();
+            mainMenu main = new mainMenu(true);
             main.Show();
             this.Close();
         }
@@ -93,7 +97,7 @@ namespace hci_vestitorii_primaverii
        
         }
 
-        private void barza_Click(object sender, EventArgs e)
+        private void cioara_Click(object sender, EventArgs e)
         {
             panelbarza.BackColor = Color.Red;
             panelrandunica.BackColor = Color.Transparent;
@@ -105,6 +109,10 @@ namespace hci_vestitorii_primaverii
 
         private void randunica_Click(object sender, EventArgs e)
         {
+           
+            audioVA.URL = "audio//info_randunica.aac";
+            audioVA.controls.play();
+
             panelbarza.BackColor = Color.Transparent;
             panelrandunica.BackColor = Color.Green;
             panelvultur.BackColor = Color.Transparent;
@@ -166,6 +174,9 @@ namespace hci_vestitorii_primaverii
 
         private void ghiocei_Click(object sender, EventArgs e)
         {
+            audioVA.URL = "audio//info_ghiocelul.aac";
+            audioVA.controls.play();
+
             panelcrizanteme.BackColor = Color.Transparent;
             panelfloareasoarelui.BackColor = Color.Transparent;
             paneltrandafiri.BackColor = Color.Transparent;
@@ -180,5 +191,9 @@ namespace hci_vestitorii_primaverii
             Application.Exit();
         }
 
+        private void chooseImages_Load(object sender, EventArgs e)
+        {
+            audioVA.controls.play();
+        }
     }
 }

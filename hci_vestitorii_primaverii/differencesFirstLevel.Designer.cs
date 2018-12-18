@@ -61,6 +61,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.minieKiss = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.diff12a)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff12b)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff11a)).BeginInit();
@@ -425,6 +426,19 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.home_button;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Location = new System.Drawing.Point(679, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(49, 43);
+            this.button2.TabIndex = 62;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // differencesFirstLevel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -432,6 +446,7 @@
             this.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.spring_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.minieKiss);
             this.Controls.Add(this.diff12a);
@@ -539,5 +554,6 @@
         private System.Windows.Forms.PictureBox diff12a;
         private System.Windows.Forms.PictureBox minieKiss;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

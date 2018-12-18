@@ -11,14 +11,22 @@ namespace hci_vestitorii_primaverii
         WindowsMediaPlayer player = new WindowsMediaPlayer();
         WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
 
-        public mainMenu()
+        public mainMenu(bool isBack)
         {
             InitializeComponent();
-            player.URL = ".//Music//totoro.wav";
-            player.settings.setMode("loop", true);
-            player.settings.volume = 3;
-            audioVA.settings.volume = 25;
-            audioVA.URL = "audio//hai_sa_meniu.wav";
+            if (!isBack)
+            {
+                player.URL = ".//Music//totoro.wav";
+                player.settings.setMode("loop", true);
+                player.settings.volume = 3;
+                audioVA.settings.volume = 35;
+                audioVA.URL = "audio//hai_sa_meniu.wav";
+            }
+            else
+            {
+                audioVA.settings.volume = 35;
+                audioVA.URL = "audio//alege_meniu.wav";
+            }
         }
 
         private void mainMenu_Load(object sender, EventArgs e)
@@ -80,6 +88,7 @@ namespace hci_vestitorii_primaverii
             chooseImages cImg = new chooseImages();
             this.Hide();
             cImg.Show();
+            audioVA.controls.stop();
         }
 
         private void swallow_button_MouseEnter(object sender, EventArgs e)
@@ -104,8 +113,7 @@ namespace hci_vestitorii_primaverii
             differencesFirstLevel f1 = new differencesFirstLevel();
             this.Hide();
             f1.Show();
+            audioVA.controls.stop();
         }
-
-   
     }
 }

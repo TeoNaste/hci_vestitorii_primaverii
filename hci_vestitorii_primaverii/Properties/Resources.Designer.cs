@@ -113,6 +113,16 @@ namespace hci_vestitorii_primaverii.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cioara {
+            get {
+                object obj = ResourceManager.GetObject("cioara", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap close_button {
             get {
                 object obj = ResourceManager.GetObject("close_button", resourceCulture);
@@ -186,6 +196,16 @@ namespace hci_vestitorii_primaverii.Properties {
         internal static System.Drawing.Bitmap go_back_button1 {
             get {
                 object obj = ResourceManager.GetObject("go_back_button1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap home_button {
+            get {
+                object obj = ResourceManager.GetObject("home_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
