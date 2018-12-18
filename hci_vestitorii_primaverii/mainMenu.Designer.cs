@@ -46,10 +46,10 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::hci_vestitorii_primaverii.Properties.Resources.start_mickey_png;
-            this.pictureBox1.Location = new System.Drawing.Point(-84, 157);
+            this.pictureBox1.Image = global::hci_vestitorii_primaverii.Properties.Resources.mickey1;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 179);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(344, 338);
+            this.pictureBox1.Size = new System.Drawing.Size(226, 274);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -58,7 +58,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::hci_vestitorii_primaverii.Properties.Resources.start_minnie;
-            this.pictureBox2.Location = new System.Drawing.Point(513, 214);
+            this.pictureBox2.Location = new System.Drawing.Point(487, 228);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(111, 141);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -68,10 +68,10 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::hci_vestitorii_primaverii.Properties.Resources.start_pluto;
-            this.pictureBox3.Location = new System.Drawing.Point(537, 243);
+            this.pictureBox3.Image = global::hci_vestitorii_primaverii.Properties.Resources.pluto;
+            this.pictureBox3.Location = new System.Drawing.Point(604, 251);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(445, 252);
+            this.pictureBox3.Size = new System.Drawing.Size(201, 202);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
@@ -95,7 +95,7 @@
             this.start_snowdrop.BackColor = System.Drawing.Color.Transparent;
             this.start_snowdrop.Cursor = System.Windows.Forms.Cursors.Hand;
             this.start_snowdrop.Image = global::hci_vestitorii_primaverii.Properties.Resources.glowing_snowdrop;
-            this.start_snowdrop.Location = new System.Drawing.Point(305, 278);
+            this.start_snowdrop.Location = new System.Drawing.Point(307, 278);
             this.start_snowdrop.Name = "start_snowdrop";
             this.start_snowdrop.Size = new System.Drawing.Size(91, 91);
             this.start_snowdrop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -138,11 +138,11 @@
             this.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.spring_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.swallow_button);
             this.Controls.Add(this.start_snowdrop);
             this.Controls.Add(this.close_button);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox4);
             this.ForeColor = System.Drawing.Color.Transparent;

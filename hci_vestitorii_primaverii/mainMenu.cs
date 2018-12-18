@@ -157,28 +157,37 @@ namespace hci_vestitorii_primaverii
         {
             if (this.WindowState == FormWindowState.Maximized)
             {
-                pictureBox3.Width = (int)(this.Width / 1.5) - pictureBox3OffestWidth;
-                pictureBox3.Height = (int)(this.Height / 1.5)- pictureBox3OffestHeight;
-                pictureBox3.Location = new Point(pictureBox3.Location.X + 190, pictureBox3.Location.Y + 90);
+                pictureBox3.Width = (int)(Screen.PrimaryScreen.Bounds.Width /1.7) - pictureBox3OffestWidth;
+                pictureBox3.Height = (int)(Screen.PrimaryScreen.Bounds.Height / 1.5) - pictureBox3OffestHeight;
+                //pictureBox3.Location = new Point(pictureBox3.Location.X + 190, pictureBox3.Location.Y + 90);
+                pictureBox3.Location = new Point( Screen.PrimaryScreen.Bounds.Width - pictureBox3.Width, Screen.PrimaryScreen.Bounds.Height - pictureBox3.Height);
+
 
                 pictureBox1.BringToFront();
-                pictureBox1.Width = (int)(this.Width / 1.7) - pictureBox1OffestWidth;
-                pictureBox1.Height = (int)(this.Height / 1.5) - pictureBox1OffestHeight;
-                pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y + 90);
+                pictureBox1.Width = (int)(Screen.PrimaryScreen.Bounds.Width / 1.7) - pictureBox1OffestWidth;
+                pictureBox1.Height = (int)(Screen.PrimaryScreen.Bounds.Height / 1.5) - pictureBox1OffestHeight;
+                //pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y + 90);
+                pictureBox1.Location = new Point(0, Screen.PrimaryScreen.Bounds.Height - pictureBox1.Height);
+                
 
-                pictureBox2.Width = (int)(this.Width / 1.9) - pictureBox2OffestWidth;
-                pictureBox2.Height = (int)(this.Height / 1.75) - pictureBox2OffestHeight;
-                pictureBox2.Location = new Point(pictureBox2.Location.X + 155, pictureBox2.Location.Y + 90);
 
-                close_button.Location = new Point(close_button.Location.X + 280, close_button.Location.Y);
+                pictureBox2.Width = (int)(Screen.PrimaryScreen.Bounds.Width / 1.9) - pictureBox2OffestWidth;
+                pictureBox2.Height = (int)(Screen.PrimaryScreen.Bounds.Height / 1.75) - pictureBox2OffestHeight;
+                //pictureBox2.Location = new Point(pictureBox2.Location.X + 155, pictureBox2.Location.Y + 90);
+                pictureBox2.Location = new Point(Screen.PrimaryScreen.Bounds.Width - pictureBox3.Width - pictureBox2.Width, Screen.PrimaryScreen.Bounds.Height-pictureBox3.Height);
 
-                start_snowdrop.Width = (int)(this.Width / 2) - startSnowDropOffsetWidth;
-                start_snowdrop.Height = (int)(this.Height / 2) - startSnowDropOffestHeight;
-                start_snowdrop.Location = new Point(start_snowdrop.Location.X + 100, start_snowdrop.Location.Y + 100);
+                close_button.Location = new Point(Screen.PrimaryScreen.Bounds.Width - close_button.Width,0);
 
-                swallow_button.Width = (int)(this.Width / 2.2) - swallowButtonOffestWidth;
-                swallow_button.Height = (int)(this.Height / 2) - swallowButtonOffestHidth;
-                swallow_button.Location = new Point(swallow_button.Location.X + 80, swallow_button.Location.Y + 50);
+                start_snowdrop.Width = (int)(Screen.PrimaryScreen.Bounds.Width / 2) - startSnowDropOffsetWidth;
+                start_snowdrop.Height = (int)(Screen.PrimaryScreen.Bounds.Height /  2) - startSnowDropOffestHeight;
+                //start_snowdrop.Location = new Point(start_snowdrop.Location.X + 100, start_snowdrop.Location.Y + 100);
+                start_snowdrop.Location = new Point(Screen.PrimaryScreen.Bounds.Width - pictureBox3.Width - pictureBox2.Width - start_snowdrop.Width, pictureBox3.Location.Y + pictureBox3.Height/6);
+
+                swallow_button.Width = (int)(Screen.PrimaryScreen.Bounds.Width / 2.2) - swallowButtonOffestWidth;
+                swallow_button.Height = (int)(Screen.PrimaryScreen.Bounds.Height / 2) - swallowButtonOffestHidth;
+                //swallow_button.Location = new Point(swallow_button.Location.X + 80, swallow_button.Location.Y + 50);
+                swallow_button.Location = new Point(pictureBox1.Width + swallow_button.Width/8 , swallow_button.Height+swallow_button.Height/3);
+
             }
         }
     }
