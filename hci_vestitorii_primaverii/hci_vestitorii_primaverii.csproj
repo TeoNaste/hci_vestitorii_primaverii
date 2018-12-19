@@ -50,6 +50,24 @@
     <Compile Include="chooseImages.Designer.cs">
       <DependentUpon>chooseImages.cs</DependentUpon>
     </Compile>
+    <Compile Include="chooseImages1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chooseImages1.Designer.cs">
+      <DependentUpon>chooseImages1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chooseImages2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chooseImages2.Designer.cs">
+      <DependentUpon>chooseImages2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chooseImages3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chooseImages3.Designer.cs">
+      <DependentUpon>chooseImages3.cs</DependentUpon>
+    </Compile>
     <Compile Include="differencesFirstLevel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +108,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="chooseImages.resx">
       <DependentUpon>chooseImages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chooseImages1.resx">
+      <DependentUpon>chooseImages1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chooseImages2.resx">
+      <DependentUpon>chooseImages2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chooseImages3.resx">
+      <DependentUpon>chooseImages3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="differencesFirstLevel.resx">
       <DependentUpon>differencesFirstLevel.cs</DependentUpon>
@@ -219,9 +246,7 @@
   <ItemGroup>
     <None Include="Resources\randunica_glow.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Debug\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <COMReference Include="AxWMPLib">
       <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
@@ -276,6 +301,46 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cioara.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\audio\3_imagini_primavara.aac" />
+    <Content Include="bin\Debug\audio\alege_copacul_inflorit.aac" />
+    <Content Include="bin\Debug\audio\alege_ghioceii.aac" />
+    <Content Include="bin\Debug\audio\alege_meniu.wav" />
+    <Content Include="bin\Debug\audio\alege_randunica.wav" />
+    <Content Include="bin\Debug\audio\asa_ca_palpitant.aac" />
+    <Content Include="bin\Debug\audio\cauta_3_albine%282%29.aac" />
+    <Content Include="bin\Debug\audio\cauta_3_albine.aac" />
+    <Content Include="bin\Debug\audio\cauta_3_berze.aac" />
+    <Content Include="bin\Debug\audio\cauta_3_ursi.aac" />
+    <Content Include="bin\Debug\audio\cauta_3_ursi.mp3" />
+    <Content Include="bin\Debug\audio\hai_sa_meniu.wav" />
+    <Content Include="bin\Debug\audio\inca_2_albine.aac" />
+    <Content Include="bin\Debug\audio\inca_2_berze.aac" />
+    <Content Include="bin\Debug\audio\inca_2_dif.aac" />
+    <Content Include="bin\Debug\audio\inca_2_ursi.aac" />
+    <Content Include="bin\Debug\audio\inca_3_dif.aac" />
+    <Content Include="bin\Debug\audio\inca_4_dif.aac" />
+    <Content Include="bin\Debug\audio\inca_5_dif.aac" />
+    <Content Include="bin\Debug\audio\inca_6_dif.aac" />
+    <Content Include="bin\Debug\audio\inca_7_NU_6_DOAR_6.aac" />
+    <Content Include="bin\Debug\audio\inca_una_si_ai_reusit.aac" />
+    <Content Include="bin\Debug\audio\inca_unul_de_gasit.aac" />
+    <Content Include="bin\Debug\audio\info_albine.aac" />
+    <Content Include="bin\Debug\audio\info_barza.aac" />
+    <Content Include="bin\Debug\audio\info_ghiocelul.aac" />
+    <Content Include="bin\Debug\audio\info_randunica.aac" />
+    <Content Include="bin\Debug\audio\info_ursul.aac" />
+    <Content Include="bin\Debug\audio\info_ursul_polar.aac" />
+    <Content Include="bin\Debug\audio\ultima_dif.aac" />
+    <Content Include="bin\Debug\audio\wow_toate_dif.aac" />
+    <Content Include="bin\Debug\Music\totoro.wav" />
+    <None Include="Resources\trandafiri2.jpg" />
+    <None Include="Resources\randunica2.jpg" />
+    <None Include="Resources\nextarrow.png" />
+    <None Include="Resources\treewinter2.jpg" />
+    <None Include="Resources\treespring2.jpg" />
+    <None Include="Resources\treeautumn2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

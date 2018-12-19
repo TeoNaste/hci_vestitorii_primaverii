@@ -83,7 +83,7 @@ namespace hci_vestitorii_primaverii
 
         private void start_snowdrop_MouseClick(object sender, MouseEventArgs e)
         {
-            chooseImages cImg = new chooseImages();
+            chooseImages1 cImg = new chooseImages1();
             this.Hide();
             cImg.Show();
             audioVA.controls.stop();
