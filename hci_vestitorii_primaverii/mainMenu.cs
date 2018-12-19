@@ -102,6 +102,28 @@ namespace hci_vestitorii_primaverii
             f1.Show();
         }
 
-   
+        private void tree_MouseClick(object sender, MouseEventArgs e)
+        {
+            FindTheBear find = new FindTheBear();
+            this.Hide();
+            find.Show();
+        }
+
+        private void tree_MouseEnter(object sender, EventArgs e)
+        {
+            tree.Size = new Size(161, 212);
+        }
+
+        private void tree_MouseLeave(object sender, EventArgs e)
+        {
+            int i = 7;
+            while (i > 0)
+            {
+                tree.Width--;
+                tree.Height--;
+                Application.DoEvents();
+                i--;
+            }
+        }
     }
 }

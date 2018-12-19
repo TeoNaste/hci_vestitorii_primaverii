@@ -62,6 +62,24 @@
     <Compile Include="differencesSecondLevel.Designer.cs">
       <DependentUpon>differencesSecondLevel.cs</DependentUpon>
     </Compile>
+    <Compile Include="FindTheBarza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindTheBarza.Designer.cs">
+      <DependentUpon>FindTheBarza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindTheBear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindTheBear.Designer.cs">
+      <DependentUpon>FindTheBear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindTheBee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindTheBee.Designer.cs">
+      <DependentUpon>FindTheBee.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +96,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="differencesSecondLevel.resx">
       <DependentUpon>differencesSecondLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindTheBarza.resx">
+      <DependentUpon>FindTheBarza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindTheBear.resx">
+      <DependentUpon>FindTheBear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindTheBee.resx">
+      <DependentUpon>FindTheBee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainMenu.resx">
       <DependentUpon>mainMenu.cs</DependentUpon>
@@ -116,15 +143,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\close_button.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\start_birds.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\start_snowdrop.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\start_button.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\play_button.png" />
@@ -190,9 +208,6 @@
     <None Include="Resources\glowing_snowdrop.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\go_back_button.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\71.png" />
   </ItemGroup>
   <ItemGroup>
@@ -200,9 +215,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AS002401_02.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sparkles.gif" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\randunica_glow.png" />
@@ -228,6 +240,36 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spring_background_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sparkles.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spring_background_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\urs_barlog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forest_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\berze.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\village_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bees.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flori_bg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
