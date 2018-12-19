@@ -24,12 +24,12 @@ namespace hci_vestitorii_primaverii
             InitializeComponent();
             InitializePictureBoxBackColor();
             minieKiss.Visible = false;
-            //audioVA.URL = "audio//inca_5_dif.aac";
+            audioVA.URL = "audio//cele_5_dif.mp3";
         }
 
         private void differencesFirstLevel_Load(object sender, EventArgs e)
-        {
-           // audioVA.controls.play();
+        { 
+           audioVA.controls.play();
         }
 
         private void checkWin()

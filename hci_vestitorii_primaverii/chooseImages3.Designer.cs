@@ -50,9 +50,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::hci_vestitorii_primaverii.Properties.Resources.MickeyThinking;
-            this.pictureBox1.Location = new System.Drawing.Point(784, 17);
+            this.pictureBox1.Location = new System.Drawing.Point(588, 14);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(218, 276);
+            this.pictureBox1.Size = new System.Drawing.Size(164, 224);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
@@ -60,17 +61,19 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.pictureBox4);
-            this.panel3.Location = new System.Drawing.Point(514, 13);
+            this.panel3.Location = new System.Drawing.Point(386, 11);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(218, 276);
+            this.panel3.Size = new System.Drawing.Size(164, 224);
             this.panel3.TabIndex = 12;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::hci_vestitorii_primaverii.Properties.Resources.floareasoarelui;
-            this.pictureBox4.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox4.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(211, 269);
+            this.pictureBox4.Size = new System.Drawing.Size(158, 219);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
@@ -79,17 +82,19 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Location = new System.Drawing.Point(263, 13);
+            this.panel2.Location = new System.Drawing.Point(197, 11);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(218, 276);
+            this.panel2.Size = new System.Drawing.Size(164, 224);
             this.panel2.TabIndex = 11;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::hci_vestitorii_primaverii.Properties.Resources.ghiocei;
-            this.pictureBox3.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(211, 269);
+            this.pictureBox3.Size = new System.Drawing.Size(158, 219);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
@@ -98,17 +103,19 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Location = new System.Drawing.Point(17, 13);
+            this.panel1.Location = new System.Drawing.Point(13, 11);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(218, 276);
+            this.panel1.Size = new System.Drawing.Size(164, 224);
             this.panel1.TabIndex = 10;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::hci_vestitorii_primaverii.Properties.Resources.trandafiri2;
-            this.pictureBox2.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(211, 269);
+            this.pictureBox2.Size = new System.Drawing.Size(158, 219);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -117,10 +124,12 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = global::hci_vestitorii_primaverii.Properties.Resources.nextarrow;
-            this.pictureBox5.Location = new System.Drawing.Point(290, 306);
+            this.pictureBox5.Location = new System.Drawing.Point(218, 249);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(318, 176);
+            this.pictureBox5.Size = new System.Drawing.Size(238, 143);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 14;
             this.pictureBox5.TabStop = false;
@@ -128,20 +137,22 @@
             // 
             // chooseImages3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.spring_background_3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1018, 494);
+            this.ClientSize = new System.Drawing.Size(764, 401);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "chooseImages3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "chooseImages3";
+            this.Load += new System.EventHandler(this.chooseImages3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
