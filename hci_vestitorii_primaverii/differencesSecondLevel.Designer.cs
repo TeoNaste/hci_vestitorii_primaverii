@@ -34,7 +34,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.close_button = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.diff1a = new System.Windows.Forms.PictureBox();
             this.diff3a = new System.Windows.Forms.PictureBox();
             this.diff3b = new System.Windows.Forms.PictureBox();
@@ -52,7 +51,6 @@
             this.minieKiss = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff1a)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff3a)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff3b)).BeginInit();
@@ -76,7 +74,7 @@
             this.finish_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.finish_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.finish_button.Image = global::hci_vestitorii_primaverii.Properties.Resources.finish_button;
-            this.finish_button.Location = new System.Drawing.Point(539, 394);
+            this.finish_button.Location = new System.Drawing.Point(528, 396);
             this.finish_button.Name = "finish_button";
             this.finish_button.Size = new System.Drawing.Size(120, 42);
             this.finish_button.TabIndex = 67;
@@ -137,18 +135,6 @@
             this.close_button.TabIndex = 60;
             this.close_button.UseVisualStyleBackColor = false;
             this.close_button.Click += new System.EventHandler(this.close_button_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::hci_vestitorii_primaverii.Properties.Resources.start_pluto;
-            this.pictureBox3.Location = new System.Drawing.Point(535, 242);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(445, 252);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 64;
-            this.pictureBox3.TabStop = false;
-        
             // 
             // diff1a
             // 
@@ -305,7 +291,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.spring_background;
+            this.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.spring_background_3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.finish_button);
@@ -329,7 +315,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.close_button);
-            this.Controls.Add(this.pictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "differencesSecondLevel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -339,7 +324,6 @@
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.differencesSecondLevel_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff1a)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff3a)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff3b)).EndInit();
@@ -367,7 +351,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button close_button;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox diff1a;
         private System.Windows.Forms.PictureBox diff3a;
         private System.Windows.Forms.PictureBox diff3b;
