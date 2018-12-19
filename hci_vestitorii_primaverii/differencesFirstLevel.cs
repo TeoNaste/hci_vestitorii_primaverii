@@ -8,6 +8,7 @@ using System.Linq;
 using System.Resources;
 using System.Text;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace hci_vestitorii_primaverii
 {
@@ -16,19 +17,19 @@ namespace hci_vestitorii_primaverii
         private int differences = 5;
         private Timer MyTimer;
         ResourceManager rm = Resources.ResourceManager;
-        
+        WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
 
         public differencesFirstLevel()
         {
             InitializeComponent();
             InitializePictureBoxBackColor();
             minieKiss.Visible = false;
-
+            //audioVA.URL = "audio//inca_5_dif.aac";
         }
 
         private void differencesFirstLevel_Load(object sender, EventArgs e)
         {
-
+           // audioVA.controls.play();
         }
 
         private void checkWin()
@@ -36,8 +37,35 @@ namespace hci_vestitorii_primaverii
             MyTimer = new Timer();
             MyTimer.Interval = (4 * 1000);
             MyTimer.Tick += new EventHandler(play_button_Click);
+            if(differences == 4)
+            {
+                audioVA.URL = "audio//inca_4_dif.aac";
+                audioVA.controls.play();
+            }
+            if (differences == 4)
+            {
+                audioVA.URL = "audio//inca_4_dif.aac";
+                audioVA.controls.play();
+            }
+            if (differences == 3)
+            {
+                audioVA.URL = "audio//inca_3_dif.aac";
+                audioVA.controls.play();
+            }
+            if (differences == 2)
+            {
+                audioVA.URL = "audio//inca_2_dif.aac";
+                audioVA.controls.play();
+            }
+            if (differences == 1)
+            {
+                audioVA.URL = "audio//inca_una_si_ai_reusit.aac";
+                audioVA.controls.play();
+            }
             if (differences == 0)
             {
+                audioVA.URL = "audio//wow_toate_dif.aac";
+                audioVA.controls.play();
                 minieKiss.Visible = true;
                 MyTimer.Start();
             }
