@@ -20,6 +20,7 @@ namespace hci_vestitorii_primaverii
         ResourceManager rm = Resources.ResourceManager;
         Bitmap imgMickeyHappy = Properties.Resources.MickeyHappy;
         Bitmap imgMickeyThinking = Properties.Resources.MickeyThinking;
+        
 
         public chooseImages()
 
@@ -29,6 +30,7 @@ namespace hci_vestitorii_primaverii
             pictureBox2.Image = imgMickeyThinking;
             pictureBox3.Image = imgMickeyThinking;
             audioVA.URL = "audio//3_imagini_primavara.aac";
+            
         }
 
         private void checkWin()

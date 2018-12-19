@@ -130,11 +130,22 @@
   <data name="treewinter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\treewinter.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="randunica2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\randunica2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nextarrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nextarrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="play_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\play_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="spring_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\spring_background.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="treewinter2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treewinter2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\71.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bees" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bees.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,8 +156,14 @@
   <data name="vultur" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vultur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="vultur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vultur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="next_button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\next_button.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treespring2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treespring2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="treespring" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\treespring.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,11 +171,26 @@
   <data name="randunica_glow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\randunica_glow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="glowing_snowdrop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\glowing_snowdrop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treeautumn2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treeautumn2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="urs_barlog" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\urs_barlog.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="flori_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flori_bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flori_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flori_bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barza1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barza.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="play_button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\play_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -171,6 +203,11 @@
   </data>
   <data name="close_button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cioara" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cioara.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="berze" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\berze.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="barza" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\barza.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,17 +242,11 @@
   <data name="randunica" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\randunica.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="spring_background_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\spring_background_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="start_minnie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\start_minnie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="village_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\village_bg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="berze" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\berze.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="spring_background_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\spring_background_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -237,6 +268,8 @@
   </data>
   <data name="glowing_snowdrop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\glowing_snowdrop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="spring_background_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spring_background_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="barza1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\barza.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -249,5 +282,10 @@
   </data>
   <data name="72" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\71.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trandafiri2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trandafiri2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

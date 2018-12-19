@@ -293,6 +293,16 @@ namespace hci_vestitorii_primaverii.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap nextarrow {
+            get {
+                object obj = ResourceManager.GetObject("nextarrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap play_button {
             get {
                 object obj = ResourceManager.GetObject("play_button", resourceCulture);
@@ -326,6 +336,16 @@ namespace hci_vestitorii_primaverii.Properties {
         internal static System.Drawing.Bitmap randunica_glow {
             get {
                 object obj = ResourceManager.GetObject("randunica_glow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap randunica2 {
+            get {
+                object obj = ResourceManager.GetObject("randunica2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,6 +433,16 @@ namespace hci_vestitorii_primaverii.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap trandafiri2 {
+            get {
+                object obj = ResourceManager.GetObject("trandafiri2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tree {
             get {
                 object obj = ResourceManager.GetObject("tree", resourceCulture);
@@ -426,6 +456,16 @@ namespace hci_vestitorii_primaverii.Properties {
         internal static System.Drawing.Bitmap treeautumn {
             get {
                 object obj = ResourceManager.GetObject("treeautumn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap treeautumn2 {
+            get {
+                object obj = ResourceManager.GetObject("treeautumn2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -453,6 +493,16 @@ namespace hci_vestitorii_primaverii.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap treespring2 {
+            get {
+                object obj = ResourceManager.GetObject("treespring2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap treesummer {
             get {
                 object obj = ResourceManager.GetObject("treesummer", resourceCulture);
@@ -466,6 +516,16 @@ namespace hci_vestitorii_primaverii.Properties {
         internal static System.Drawing.Bitmap treewinter {
             get {
                 object obj = ResourceManager.GetObject("treewinter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap treewinter2 {
+            get {
+                object obj = ResourceManager.GetObject("treewinter2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
