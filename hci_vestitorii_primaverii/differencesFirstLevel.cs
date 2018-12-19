@@ -87,7 +87,7 @@ namespace hci_vestitorii_primaverii
             this.WindowState = FormWindowState.Normal;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             //this.Bounds = Screen.PrimaryScreen.Bounds;
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
             minieKiss.Visible = false;
 
         }
