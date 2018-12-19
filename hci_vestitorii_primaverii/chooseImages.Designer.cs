@@ -40,7 +40,7 @@
             this.paneltreespring = new System.Windows.Forms.Panel();
             this.paneltreesummer = new System.Windows.Forms.Panel();
             this.panelbarza = new System.Windows.Forms.Panel();
-            this.barza = new System.Windows.Forms.PictureBox();
+            this.cioara = new System.Windows.Forms.PictureBox();
             this.panelrandunica = new System.Windows.Forms.Panel();
             this.randunica = new System.Windows.Forms.PictureBox();
             this.panelvultur = new System.Windows.Forms.Panel();
@@ -55,7 +55,6 @@
             this.floareasoarelui = new System.Windows.Forms.PictureBox();
             this.panelghiocei = new System.Windows.Forms.Panel();
             this.ghiocei = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -69,7 +68,7 @@
             this.paneltreespring.SuspendLayout();
             this.paneltreesummer.SuspendLayout();
             this.panelbarza.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.barza)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cioara)).BeginInit();
             this.panelrandunica.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.randunica)).BeginInit();
             this.panelvultur.SuspendLayout();
@@ -84,7 +83,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.floareasoarelui)).BeginInit();
             this.panelghiocei.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ghiocei)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -221,25 +219,25 @@
             // panelbarza
             // 
             this.panelbarza.BackColor = System.Drawing.Color.Transparent;
-            this.panelbarza.Controls.Add(this.barza);
+            this.panelbarza.Controls.Add(this.cioara);
             this.panelbarza.Location = new System.Drawing.Point(9, 148);
             this.panelbarza.Margin = new System.Windows.Forms.Padding(2);
             this.panelbarza.Name = "panelbarza";
             this.panelbarza.Size = new System.Drawing.Size(102, 119);
             this.panelbarza.TabIndex = 11;
             // 
-            // barza
+            // cioara
             // 
-            this.barza.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.barza.Image = global::hci_vestitorii_primaverii.Properties.Resources.barza;
-            this.barza.Location = new System.Drawing.Point(2, 2);
-            this.barza.Margin = new System.Windows.Forms.Padding(2);
-            this.barza.Name = "barza";
-            this.barza.Size = new System.Drawing.Size(94, 115);
-            this.barza.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.barza.TabIndex = 17;
-            this.barza.TabStop = false;
-            this.barza.Click += new System.EventHandler(this.barza_Click);
+            this.cioara.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cioara.Image = global::hci_vestitorii_primaverii.Properties.Resources.cioara;
+            this.cioara.Location = new System.Drawing.Point(2, 2);
+            this.cioara.Margin = new System.Windows.Forms.Padding(2);
+            this.cioara.Name = "cioara";
+            this.cioara.Size = new System.Drawing.Size(94, 115);
+            this.cioara.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cioara.TabIndex = 17;
+            this.cioara.TabStop = false;
+            this.cioara.Click += new System.EventHandler(this.cioara_Click);
             // 
             // panelrandunica
             // 
@@ -402,17 +400,6 @@
             this.ghiocei.TabStop = false;
             this.ghiocei.Click += new System.EventHandler(this.ghiocei_Click);
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::hci_vestitorii_primaverii.Properties.Resources.start_pluto;
-            this.pictureBox4.Location = new System.Drawing.Point(544, 238);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(435, 252);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 20;
-            this.pictureBox4.TabStop = false;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
@@ -431,11 +418,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.spring_background;
+            this.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.spring_background_3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.panelghiocei);
             this.Controls.Add(this.panelfloareasoarelui);
             this.Controls.Add(this.paneltrandafiri);
@@ -455,7 +441,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "chooseImages";
             this.Text = "chooseImages";
-            this.Resize += new System.EventHandler(this.chooseImages_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -468,7 +453,7 @@
             this.paneltreespring.ResumeLayout(false);
             this.paneltreesummer.ResumeLayout(false);
             this.panelbarza.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.barza)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cioara)).EndInit();
             this.panelrandunica.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.randunica)).EndInit();
             this.panelvultur.ResumeLayout(false);
@@ -483,7 +468,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.floareasoarelui)).EndInit();
             this.panelghiocei.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ghiocei)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -502,7 +486,7 @@
         private System.Windows.Forms.Panel paneltreespring;
         private System.Windows.Forms.Panel paneltreesummer;
         private System.Windows.Forms.Panel panelbarza;
-        private System.Windows.Forms.PictureBox barza;
+        private System.Windows.Forms.PictureBox cioara;
         private System.Windows.Forms.Panel panelrandunica;
         private System.Windows.Forms.Panel panelvultur;
         private System.Windows.Forms.Panel panelbufnita;
@@ -517,7 +501,6 @@
         private System.Windows.Forms.PictureBox floareasoarelui;
         private System.Windows.Forms.Panel panelghiocei;
         private System.Windows.Forms.PictureBox ghiocei;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button1;
     }
 }

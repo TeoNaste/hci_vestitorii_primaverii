@@ -272,6 +272,181 @@ namespace hci_vestitorii_primaverii
 
         }
 
+        private void diff6a_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff6b.Image = myImage;
+            diff6a.Image = myImage;
+            diff6a.Enabled = false;
+            diff6b.Enabled = false;
+            checkWin();
+
+        }
+
+        private void diff7a_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff7b.Image = myImage;
+            diff7a.Image = myImage;
+            diff7a.Enabled = false;
+            diff7b.Enabled = false;
+            checkWin();
+        }
+
+        private void diff8a_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff8b.Image = myImage;
+            diff8a.Image = myImage;
+            diff8a.Enabled = false;
+            diff8b.Enabled = false;
+            checkWin();
+        }
+
+        private void diff9a_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff9b.Image = myImage;
+            diff9a.Image = myImage;
+            diff9a.Enabled = false;
+            diff9b.Enabled = false;
+            checkWin();
+        }
+
+        private void diff10a_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff10b.Image = myImage;
+            diff10a.Image = myImage;
+            diff10a.Enabled = false;
+            diff10b.Enabled = false;
+            checkWin();
+        }
+
+        private void diff11a_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff11b.Image = myImage;
+            diff11a.Image = myImage;
+            diff11a.Enabled = false;
+            diff11b.Enabled = false;
+            checkWin();
+        }
+
+        private void diff12a_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff12b.Image = myImage;
+            diff12a.Image = myImage;
+            diff12a.Enabled = false;
+            diff12b.Enabled = false;
+            checkWin();
+        }
+
+        private void diff6b_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff6b.Image = myImage;
+            diff6a.Image = myImage;
+            diff6a.Enabled = false;
+            diff6b.Enabled = false;
+            checkWin();
+        }
+
+        private void diff7b_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff7b.Image = myImage;
+            diff7a.Image = myImage;
+            diff7a.Enabled = false;
+            diff7b.Enabled = false;
+            checkWin();
+        }
+
+        private void diff8b_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff8b.Image = myImage;
+            diff8a.Image = myImage;
+            diff8a.Enabled = false;
+            diff8b.Enabled = false;
+            checkWin();
+        }
+
+        private void diff9b_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff9b.Image = myImage;
+            diff9a.Image = myImage;
+            diff9a.Enabled = false;
+            diff9b.Enabled = false;
+            checkWin();
+        }
+
+        private void diff10b_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff10b.Image = myImage;
+            diff10a.Image = myImage;
+            diff10a.Enabled = false;
+            diff10b.Enabled = false;
+            checkWin();
+        }
+
+        private void diff11b_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff11b.Image = myImage;
+            diff11a.Image = myImage;
+            diff11a.Enabled = false;
+            diff11b.Enabled = false;
+            checkWin();
+        }
+
+        private void diff12b_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff12b.Image = myImage;
+            diff12a.Image = myImage;
+            diff12a.Enabled = false;
+            diff12b.Enabled = false;
+            checkWin();
+        }
+
+        private void close_button_Click(object sender, EventArgs e)
+        {
+            mainMenu mainPage = new mainMenu();
+            mainPage.Show();
+            this.Close();
+        }
 
         private void play_button_Click(object sender, EventArgs e)
         {
@@ -307,65 +482,6 @@ namespace hci_vestitorii_primaverii
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void differencesFirstLevel_Resize(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Maximized)
-            {
-                pictureBox1.Width = (int)(this.Width / 1.5) - pictureBox1OffestWidth;
-                pictureBox1.Height = (int)(this.Height / 1.2 ) - pictureBox1OffestHeight;
-
-                pictureBox3.Width = (int)(this.Width / 1.5) - pictureBox3OffestWidth;
-                pictureBox3.Height = (int)(this.Height / 1.5) - pictureBox3OffestHeight;
-                pictureBox3.Location = new Point(pictureBox3.Location.X + 190, pictureBox3.Location.Y + 90);
-
-                button1.Location = new Point(button1.Location.X + 280, button1.Location.Y);
-
-                minieKiss.Width = (int)(this.Width / 1.7) - minieKissOffestWidth;
-                minieKiss.Height = (int)(this.Height / 1.7) - minieKissOffestHeight;
-                minieKiss.Location = new Point(minieKiss.Location.X + 120, minieKiss.Location.Y + 100);
-
-                diff1a.Width = (int)(this.Width / 2.3) - diff1aOffssetWidth;
-                diff1a.Height = (int)(this.Height / 2.3) - diff1aOffssetHeight;
-                diff1a.Location = new Point(diff1a.Location.X + 25, diff1a.Location.Y + 7);
-
-                diff2a.Width = (int)(this.Width / 2.3) - diff2aOffssetWidth;
-                diff2a.Height = (int)(this.Height / 1.9) - diff2aOffssetHeight;
-                diff2a.Location = new Point(diff2a.Location.X, diff2a.Location.Y + 40);
-
-                diff3a.Width = (int)(this.Width / 2.4) - diff3aOffssetWidth;
-                diff3a.Height = (int)(this.Height / 2.2) - diff3aOffssetHeight;
-                diff3a.Location = new Point(diff3a.Location.X + 3, diff3a.Location.Y + 67);
-
-                diff4a.Width = (int)(this.Width / 2.4) - diff4aOffssetWidth;
-                diff4a.Height = (int)(this.Height / 2.4) - diff4aOffssetHeight;
-                diff4a.Location = new Point(diff4a.Location.X + 40, diff4a.Location.Y + 80);
-
-                diff5a.Width = (int)(this.Width / 2.2) - diff5aOffssetWidth;
-                diff5a.Height = (int)(this.Height / 2.1) - diff5aOffssetHeight;
-                diff5a.Location = new Point(diff5a.Location.X + 35 , diff5a.Location.Y + 60);
-
-                diff1b.Width = (int)(this.Width / 2.3) - diff1bOffssetWidth;
-                diff1b.Height = (int)(this.Height / 2.3) - diff1bOffssetHeight;
-                diff1b.Location = new Point(diff1b.Location.X + 85, diff1b.Location.Y + 7);
-
-                diff2b.Width = (int)(this.Width / 2.3) - diff2bOffssetWidth;
-                diff2b.Height = (int)(this.Height / 1.9) - diff2bOffssetHeight;
-                diff2b.Location = new Point(diff2b.Location.X + 60, diff2b.Location.Y + 40);
-
-                diff3b.Width = (int)(this.Width / 2.4) - diff3bOffssetWidth;
-                diff3b.Height = (int)(this.Height / 2.2) - diff3bOffssetHeight;
-                diff3b.Location = new Point(diff3b.Location.X + 61, diff3b.Location.Y + 67);
-
-                diff4b.Width = (int)(this.Width / 2.4) - diff4bOffssetWidth;
-                diff4b.Height = (int)(this.Height / 2.4) - diff4bOffssetHeight;
-                diff4b.Location = new Point(diff4b.Location.X + 100, diff4b.Location.Y + 80);
-
-                diff5b.Width = (int)(this.Width / 2.2) - diff5bOffssetWidth;
-                diff5b.Height = (int)(this.Height / 2.1) - diff5bOffssetHeight;
-                diff5b.Location = new Point(diff5b.Location.X + 95, diff5b.Location.Y + 60);
-            }
         }
     }
 }

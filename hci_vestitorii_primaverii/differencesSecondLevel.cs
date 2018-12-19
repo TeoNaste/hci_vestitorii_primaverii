@@ -316,7 +316,7 @@ namespace hci_vestitorii_primaverii
         private void finish_button_Click(object sender, EventArgs e)
         {
             MyTimer.Stop();
-            mainMenu mainPage = new mainMenu();
+            mainMenu mainPage = new mainMenu(true);
             mainPage.Show();
             this.Close();
         }
@@ -369,7 +369,7 @@ namespace hci_vestitorii_primaverii
 
         private void back_button_Click(object sender, EventArgs e)
         {
-            mainMenu mainPage = new mainMenu();
+            mainMenu mainPage = new mainMenu(true);
             mainPage.Show();
             this.Close();
         }

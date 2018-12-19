@@ -14,6 +14,7 @@ namespace hci_vestitorii_primaverii
     public partial class mainMenu : Form
     {
         WindowsMediaPlayer player = new WindowsMediaPlayer();
+        WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
 
         int pictureBox3OffestWidth;
         int pictureBox3OffestHeight;
@@ -33,12 +34,20 @@ namespace hci_vestitorii_primaverii
         int swallowButtonOffestWidth;
         int swallowButtonOffestHidth;
 
-        public mainMenu()
+        public mainMenu(bool isBack)
         {
             InitializeComponent();
-            player.URL = ".//Music//totoro.wav";
-            player.settings.setMode("loop", true);
-            player.settings.volume = 3;
+            if (!isBack)
+            {
+                player.URL = ".//Music//totoro.wav";
+                player.settings.setMode("loop", true);
+                player.settings.volume = 3;
+                audioVA.URL = "audio//hai_sa_meniu.wav";
+            }
+            else
+            {
+                audioVA.URL = "audio//alege_meniu.wav";
+            }
 
 
             pictureBox3OffestWidth = this.Width - pictureBox3.Width;
@@ -70,7 +79,7 @@ namespace hci_vestitorii_primaverii
         private void mainMenu_Load(object sender, EventArgs e)
         {
             player.controls.play();
-            
+            audioVA.controls.play();
         }
 
         private void close_button_Click(object sender, EventArgs e)
@@ -86,8 +95,7 @@ namespace hci_vestitorii_primaverii
         private void start_snowdrop_MouseLeave(object sender, EventArgs e)
         {
 
-            int i = 7;
-            while (i > 0)
+            while (start_snowdrop.Width > 91 && start_snowdrop.Height > 89)
             {
                 start_snowdrop.Width--;
                 start_snowdrop.Height--;
@@ -124,9 +132,10 @@ namespace hci_vestitorii_primaverii
 
         private void start_snowdrop_MouseClick(object sender, MouseEventArgs e)
         {
-            chooseImages cImg = new chooseImages();
+            chooseImages1 cImg = new chooseImages1();
             this.Hide();
             cImg.Show();
+            audioVA.controls.stop();
         }
 
         private void swallow_button_MouseEnter(object sender, EventArgs e)
@@ -151,44 +160,9 @@ namespace hci_vestitorii_primaverii
             differencesFirstLevel f1 = new differencesFirstLevel();
             this.Hide();
             f1.Show();
+            audioVA.controls.stop();
         }
 
-        private void mainMenu_Resize(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Maximized)
-            {
-                pictureBox3.Width = (int)(Screen.PrimaryScreen.Bounds.Width / 1.7) - pictureBox3OffestWidth;
-                pictureBox3.Height = (int)(Screen.PrimaryScreen.Bounds.Height / 1.5) - pictureBox3OffestHeight;
-                //pictureBox3.Location = new Point(pictureBox3.Location.X + 190, pictureBox3.Location.Y + 90);
-                pictureBox3.Location = new Point( Screen.PrimaryScreen.Bounds.Width - pictureBox3.Width, Screen.PrimaryScreen.Bounds.Height - pictureBox3.Height);
-
-
-                pictureBox1.BringToFront();
-                pictureBox1.Width = (int)(Screen.PrimaryScreen.Bounds.Width / 1.7) - pictureBox1OffestWidth;
-                pictureBox1.Height = (int)(Screen.PrimaryScreen.Bounds.Height / 1.5) - pictureBox1OffestHeight;
-                //pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y + 90);
-                pictureBox1.Location = new Point(0, Screen.PrimaryScreen.Bounds.Height - pictureBox1.Height);
-                
-
-
-                pictureBox2.Width = (int)(Screen.PrimaryScreen.Bounds.Width / 1.9) - pictureBox2OffestWidth;
-                pictureBox2.Height = (int)(Screen.PrimaryScreen.Bounds.Height / 1.75) - pictureBox2OffestHeight;
-                //pictureBox2.Location = new Point(pictureBox2.Location.X + 155, pictureBox2.Location.Y + 90);
-                pictureBox2.Location = new Point(Screen.PrimaryScreen.Bounds.Width - pictureBox3.Width - pictureBox2.Width, Screen.PrimaryScreen.Bounds.Height-pictureBox3.Height);
-
-                close_button.Location = new Point(Screen.PrimaryScreen.Bounds.Width - close_button.Width,0);
-
-                start_snowdrop.Width = (int)(Screen.PrimaryScreen.Bounds.Width / 2) - startSnowDropOffsetWidth;
-                start_snowdrop.Height = (int)(Screen.PrimaryScreen.Bounds.Height /  2) - startSnowDropOffestHeight;
-                //start_snowdrop.Location = new Point(start_snowdrop.Location.X + 100, start_snowdrop.Location.Y + 100);
-                start_snowdrop.Location = new Point(Screen.PrimaryScreen.Bounds.Width - pictureBox3.Width - pictureBox2.Width - start_snowdrop.Width, pictureBox3.Location.Y + pictureBox3.Height/6);
-
-                swallow_button.Width = (int)(Screen.PrimaryScreen.Bounds.Width / 2.2) - swallowButtonOffestWidth;
-                swallow_button.Height = (int)(Screen.PrimaryScreen.Bounds.Height / 2) - swallowButtonOffestHidth;
-                //swallow_button.Location = new Point(swallow_button.Location.X + 80, swallow_button.Location.Y + 50);
-                swallow_button.Location = new Point(pictureBox1.Width + swallow_button.Width/8 , swallow_button.Height+swallow_button.Height/3);
-
-            }
-        }
+   
     }
 }
