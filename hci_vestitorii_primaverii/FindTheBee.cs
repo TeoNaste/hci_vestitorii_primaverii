@@ -64,6 +64,7 @@ namespace hci_vestitorii_primaverii
             Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");
             bee1.Image = myImage;
             toFind--;
+            bee1.Enabled = false;
             audio_feedback();
         }
 
@@ -72,6 +73,7 @@ namespace hci_vestitorii_primaverii
             Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");
             bee2.Image = myImage;
             toFind--;
+            bee2.Enabled = false;
             audio_feedback();
         }
 
@@ -80,6 +82,7 @@ namespace hci_vestitorii_primaverii
             Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");
             bee3.Image = myImage;
             toFind--;
+            bee3.Enabled = false;
             audio_feedback();
         }
 
