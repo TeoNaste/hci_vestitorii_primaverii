@@ -34,38 +34,38 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.close_button = new System.Windows.Forms.Button();
-            this.diff1a = new System.Windows.Forms.PictureBox();
-            this.diff3a = new System.Windows.Forms.PictureBox();
-            this.diff3b = new System.Windows.Forms.PictureBox();
-            this.diff1b = new System.Windows.Forms.PictureBox();
-            this.diff5a = new System.Windows.Forms.PictureBox();
+            this.minieKiss = new System.Windows.Forms.PictureBox();
             this.diff5b = new System.Windows.Forms.PictureBox();
-            this.diff2a = new System.Windows.Forms.PictureBox();
+            this.diff7b = new System.Windows.Forms.PictureBox();
+            this.diff6b = new System.Windows.Forms.PictureBox();
+            this.diff1b = new System.Windows.Forms.PictureBox();
+            this.diff3b = new System.Windows.Forms.PictureBox();
             this.diff2b = new System.Windows.Forms.PictureBox();
             this.diff4b = new System.Windows.Forms.PictureBox();
-            this.diff4a = new System.Windows.Forms.PictureBox();
             this.diff6a = new System.Windows.Forms.PictureBox();
-            this.diff6b = new System.Windows.Forms.PictureBox();
+            this.diff4a = new System.Windows.Forms.PictureBox();
             this.diff7a = new System.Windows.Forms.PictureBox();
-            this.diff7b = new System.Windows.Forms.PictureBox();
-            this.minieKiss = new System.Windows.Forms.PictureBox();
+            this.diff5a = new System.Windows.Forms.PictureBox();
+            this.diff3a = new System.Windows.Forms.PictureBox();
+            this.diff2a = new System.Windows.Forms.PictureBox();
+            this.diff1a = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diff1a)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diff3a)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diff3b)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diff1b)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diff5a)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minieKiss)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff5b)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diff2a)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diff7b)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diff6b)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diff1b)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diff3b)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff2b)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff4b)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diff4a)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff6a)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diff6b)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diff4a)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff7a)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diff7b)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.minieKiss)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diff5a)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diff3a)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diff2a)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diff1a)).BeginInit();
             this.SuspendLayout();
             // 
             // finish_button
@@ -136,55 +136,16 @@
             this.close_button.UseVisualStyleBackColor = false;
             this.close_button.Click += new System.EventHandler(this.close_button_Click);
             // 
-            // diff1a
+            // minieKiss
             // 
-            this.diff1a.Location = new System.Drawing.Point(155, 95);
-            this.diff1a.Name = "diff1a";
-            this.diff1a.Size = new System.Drawing.Size(32, 25);
-            this.diff1a.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.diff1a.TabIndex = 68;
-            this.diff1a.TabStop = false;
-            this.diff1a.Click += new System.EventHandler(this.diff1a_Click);
-            // 
-            // diff3a
-            // 
-            this.diff3a.Location = new System.Drawing.Point(79, 134);
-            this.diff3a.Name = "diff3a";
-            this.diff3a.Size = new System.Drawing.Size(32, 25);
-            this.diff3a.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.diff3a.TabIndex = 69;
-            this.diff3a.TabStop = false;
-            this.diff3a.Click += new System.EventHandler(this.diff3a_Click);
-            // 
-            // diff3b
-            // 
-            this.diff3b.Location = new System.Drawing.Point(335, 134);
-            this.diff3b.Name = "diff3b";
-            this.diff3b.Size = new System.Drawing.Size(32, 25);
-            this.diff3b.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.diff3b.TabIndex = 70;
-            this.diff3b.TabStop = false;
-            this.diff3b.Click += new System.EventHandler(this.diff3b_Click);
-            // 
-            // diff1b
-            // 
-            this.diff1b.Location = new System.Drawing.Point(421, 95);
-            this.diff1b.Name = "diff1b";
-            this.diff1b.Size = new System.Drawing.Size(32, 25);
-            this.diff1b.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.diff1b.TabIndex = 71;
-            this.diff1b.TabStop = false;
-            this.diff1b.Click += new System.EventHandler(this.diff1b_Click);
-            // 
-            // diff5a
-            // 
-            this.diff5a.Location = new System.Drawing.Point(91, 243);
-            this.diff5a.Name = "diff5a";
-            this.diff5a.Size = new System.Drawing.Size(32, 25);
-            this.diff5a.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.diff5a.TabIndex = 72;
-            this.diff5a.TabStop = false;
-            this.diff5a.Click += new System.EventHandler(this.diff5a_Click);
+            this.minieKiss.BackColor = System.Drawing.Color.Transparent;
+            this.minieKiss.Image = global::hci_vestitorii_primaverii.Properties.Resources.AS002401_02;
+            this.minieKiss.Location = new System.Drawing.Point(523, 215);
+            this.minieKiss.Name = "minieKiss";
+            this.minieKiss.Size = new System.Drawing.Size(133, 189);
+            this.minieKiss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.minieKiss.TabIndex = 82;
+            this.minieKiss.TabStop = false;
             // 
             // diff5b
             // 
@@ -196,15 +157,45 @@
             this.diff5b.TabStop = false;
             this.diff5b.Click += new System.EventHandler(this.diff5b_Click);
             // 
-            // diff2a
+            // diff7b
             // 
-            this.diff2a.Location = new System.Drawing.Point(45, 141);
-            this.diff2a.Name = "diff2a";
-            this.diff2a.Size = new System.Drawing.Size(32, 25);
-            this.diff2a.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.diff2a.TabIndex = 74;
-            this.diff2a.TabStop = false;
-            this.diff2a.Click += new System.EventHandler(this.diff2a_Click);
+            this.diff7b.Location = new System.Drawing.Point(398, 263);
+            this.diff7b.Name = "diff7b";
+            this.diff7b.Size = new System.Drawing.Size(14, 57);
+            this.diff7b.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.diff7b.TabIndex = 81;
+            this.diff7b.TabStop = false;
+            this.diff7b.Click += new System.EventHandler(this.diff7b_Click);
+            // 
+            // diff6b
+            // 
+            this.diff6b.Location = new System.Drawing.Point(464, 267);
+            this.diff6b.Name = "diff6b";
+            this.diff6b.Size = new System.Drawing.Size(46, 45);
+            this.diff6b.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.diff6b.TabIndex = 79;
+            this.diff6b.TabStop = false;
+            this.diff6b.Click += new System.EventHandler(this.diff6b_Click);
+            // 
+            // diff1b
+            // 
+            this.diff1b.Location = new System.Drawing.Point(421, 95);
+            this.diff1b.Name = "diff1b";
+            this.diff1b.Size = new System.Drawing.Size(32, 25);
+            this.diff1b.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.diff1b.TabIndex = 71;
+            this.diff1b.TabStop = false;
+            this.diff1b.Click += new System.EventHandler(this.diff1b_Click);
+            // 
+            // diff3b
+            // 
+            this.diff3b.Location = new System.Drawing.Point(335, 134);
+            this.diff3b.Name = "diff3b";
+            this.diff3b.Size = new System.Drawing.Size(32, 25);
+            this.diff3b.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.diff3b.TabIndex = 70;
+            this.diff3b.TabStop = false;
+            this.diff3b.Click += new System.EventHandler(this.diff3b_Click);
             // 
             // diff2b
             // 
@@ -226,16 +217,6 @@
             this.diff4b.TabStop = false;
             this.diff4b.Click += new System.EventHandler(this.diff4b_Click);
             // 
-            // diff4a
-            // 
-            this.diff4a.Location = new System.Drawing.Point(6, 233);
-            this.diff4a.Name = "diff4a";
-            this.diff4a.Size = new System.Drawing.Size(46, 29);
-            this.diff4a.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.diff4a.TabIndex = 77;
-            this.diff4a.TabStop = false;
-            this.diff4a.Click += new System.EventHandler(this.diff4a_Click);
-            // 
             // diff6a
             // 
             this.diff6a.Location = new System.Drawing.Point(206, 267);
@@ -246,15 +227,15 @@
             this.diff6a.TabStop = false;
             this.diff6a.Click += new System.EventHandler(this.diff6a_Click);
             // 
-            // diff6b
+            // diff4a
             // 
-            this.diff6b.Location = new System.Drawing.Point(464, 267);
-            this.diff6b.Name = "diff6b";
-            this.diff6b.Size = new System.Drawing.Size(46, 45);
-            this.diff6b.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.diff6b.TabIndex = 79;
-            this.diff6b.TabStop = false;
-            this.diff6b.Click += new System.EventHandler(this.diff6b_Click);
+            this.diff4a.Location = new System.Drawing.Point(6, 233);
+            this.diff4a.Name = "diff4a";
+            this.diff4a.Size = new System.Drawing.Size(46, 29);
+            this.diff4a.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.diff4a.TabIndex = 77;
+            this.diff4a.TabStop = false;
+            this.diff4a.Click += new System.EventHandler(this.diff4a_Click);
             // 
             // diff7a
             // 
@@ -266,26 +247,45 @@
             this.diff7a.TabStop = false;
             this.diff7a.Click += new System.EventHandler(this.diff7a_Click);
             // 
-            // diff7b
+            // diff5a
             // 
-            this.diff7b.Location = new System.Drawing.Point(398, 263);
-            this.diff7b.Name = "diff7b";
-            this.diff7b.Size = new System.Drawing.Size(14, 57);
-            this.diff7b.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.diff7b.TabIndex = 81;
-            this.diff7b.TabStop = false;
-            this.diff7b.Click += new System.EventHandler(this.diff7b_Click);
+            this.diff5a.Location = new System.Drawing.Point(91, 243);
+            this.diff5a.Name = "diff5a";
+            this.diff5a.Size = new System.Drawing.Size(32, 25);
+            this.diff5a.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.diff5a.TabIndex = 72;
+            this.diff5a.TabStop = false;
+            this.diff5a.Click += new System.EventHandler(this.diff5a_Click);
             // 
-            // minieKiss
+            // diff3a
             // 
-            this.minieKiss.BackColor = System.Drawing.Color.Transparent;
-            this.minieKiss.Image = global::hci_vestitorii_primaverii.Properties.Resources.AS002401_02;
-            this.minieKiss.Location = new System.Drawing.Point(523, 215);
-            this.minieKiss.Name = "minieKiss";
-            this.minieKiss.Size = new System.Drawing.Size(133, 189);
-            this.minieKiss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.minieKiss.TabIndex = 82;
-            this.minieKiss.TabStop = false;
+            this.diff3a.Location = new System.Drawing.Point(79, 134);
+            this.diff3a.Name = "diff3a";
+            this.diff3a.Size = new System.Drawing.Size(32, 25);
+            this.diff3a.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.diff3a.TabIndex = 69;
+            this.diff3a.TabStop = false;
+            this.diff3a.Click += new System.EventHandler(this.diff3a_Click);
+            // 
+            // diff2a
+            // 
+            this.diff2a.Location = new System.Drawing.Point(45, 141);
+            this.diff2a.Name = "diff2a";
+            this.diff2a.Size = new System.Drawing.Size(32, 25);
+            this.diff2a.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.diff2a.TabIndex = 74;
+            this.diff2a.TabStop = false;
+            this.diff2a.Click += new System.EventHandler(this.diff2a_Click);
+            // 
+            // diff1a
+            // 
+            this.diff1a.Location = new System.Drawing.Point(155, 95);
+            this.diff1a.Name = "diff1a";
+            this.diff1a.Size = new System.Drawing.Size(32, 25);
+            this.diff1a.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.diff1a.TabIndex = 68;
+            this.diff1a.TabStop = false;
+            this.diff1a.Click += new System.EventHandler(this.diff1a_Click);
             // 
             // differencesSecondLevel
             // 
@@ -324,21 +324,21 @@
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.differencesSecondLevel_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diff1a)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diff3a)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diff3b)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diff1b)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diff5a)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minieKiss)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff5b)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diff2a)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diff7b)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diff6b)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diff1b)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diff3b)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff2b)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff4b)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diff4a)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff6a)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diff6b)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diff4a)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff7a)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diff7b)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.minieKiss)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diff5a)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diff3a)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diff2a)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diff1a)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -351,20 +351,20 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button close_button;
-        private System.Windows.Forms.PictureBox diff1a;
-        private System.Windows.Forms.PictureBox diff3a;
-        private System.Windows.Forms.PictureBox diff3b;
-        private System.Windows.Forms.PictureBox diff1b;
-        private System.Windows.Forms.PictureBox diff5a;
+        private System.Windows.Forms.PictureBox minieKiss;
         private System.Windows.Forms.PictureBox diff5b;
-        private System.Windows.Forms.PictureBox diff2a;
+        private System.Windows.Forms.PictureBox diff7b;
+        private System.Windows.Forms.PictureBox diff6b;
+        private System.Windows.Forms.PictureBox diff1b;
+        private System.Windows.Forms.PictureBox diff3b;
         private System.Windows.Forms.PictureBox diff2b;
         private System.Windows.Forms.PictureBox diff4b;
-        private System.Windows.Forms.PictureBox diff4a;
         private System.Windows.Forms.PictureBox diff6a;
-        private System.Windows.Forms.PictureBox diff6b;
+        private System.Windows.Forms.PictureBox diff4a;
         private System.Windows.Forms.PictureBox diff7a;
-        private System.Windows.Forms.PictureBox diff7b;
-        private System.Windows.Forms.PictureBox minieKiss;
+        private System.Windows.Forms.PictureBox diff5a;
+        private System.Windows.Forms.PictureBox diff3a;
+        private System.Windows.Forms.PictureBox diff2a;
+        private System.Windows.Forms.PictureBox diff1a;
     }
 }
