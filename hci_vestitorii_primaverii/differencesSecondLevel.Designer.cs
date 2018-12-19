@@ -319,6 +319,7 @@
             this.Name = "differencesSecondLevel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "differencesSecondLevel";
+            this.Load += new System.EventHandler(this.differencesSecondLevel_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.differencesSecondLevel_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.differencesSecondLevel_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.differencesSecondLevel_MouseUp);
