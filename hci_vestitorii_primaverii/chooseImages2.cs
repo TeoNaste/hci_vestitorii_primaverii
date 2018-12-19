@@ -15,6 +15,7 @@ namespace hci_vestitorii_primaverii
     public partial class chooseImages2 : Form
     {
         WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
+        WindowsMediaPlayer bravoPlayer = new WindowsMediaPlayer();
         private int imageFound = 0;
         private Timer MyTimer;
         ResourceManager rm = Resources.ResourceManager;
@@ -25,7 +26,8 @@ namespace hci_vestitorii_primaverii
         {
             InitializeComponent();
             pictureBox1.Image = imgMickeyThinking;
-            pictureBox5.Visible = false;   
+            pictureBox5.Visible = false;
+            audioVA.URL = "audio//alege_randunica.wav";
         }
         private void checkWin()
         {
@@ -49,6 +51,11 @@ namespace hci_vestitorii_primaverii
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            bravoPlayer.URL = "audio//bravo.mp3";
+            bravoPlayer.controls.play();
+            audioVA.URL = "audio//info_randunica.aac";
+            audioVA.controls.play();
+
             panel1.BackColor = Color.Green;
             panel2.BackColor = Color.Transparent;
             panel3.BackColor = Color.Transparent;
@@ -59,6 +66,9 @@ namespace hci_vestitorii_primaverii
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            audioVA.URL = "audio//acest_vultur.mp3";
+            audioVA.controls.play();
+
             panel1.BackColor = Color.Transparent;
             panel2.BackColor = Color.Red;
             panel3.BackColor = Color.Transparent;
@@ -69,6 +79,9 @@ namespace hci_vestitorii_primaverii
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+            audioVA.URL = "audio//aceasta_bufnita.mp3";
+            audioVA.controls.play();
+
             panel1.BackColor = Color.Transparent;
             panel2.BackColor = Color.Transparent;
             panel3.BackColor = Color.Red;
@@ -79,9 +92,15 @@ namespace hci_vestitorii_primaverii
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
+            audioVA.controls.stop();
             chooseImages3 thirdLevel = new chooseImages3();
             thirdLevel.Show();
             this.Close();
+        }
+
+        private void chooseImages2_Load(object sender, EventArgs e)
+        {
+            audioVA.controls.play();
         }
     }
 }

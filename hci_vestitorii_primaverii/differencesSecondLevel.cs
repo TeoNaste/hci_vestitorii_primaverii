@@ -8,6 +8,7 @@ using System.Linq;
 using System.Resources;
 using System.Text;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace hci_vestitorii_primaverii
 {
@@ -16,6 +17,7 @@ namespace hci_vestitorii_primaverii
         private int differences = 7;
         private Timer MyTimer;
         ResourceManager rm = Resources.ResourceManager;
+        WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
 
         public differencesSecondLevel()
         {
@@ -23,6 +25,7 @@ namespace hci_vestitorii_primaverii
             finish_button.Visible = false;
             minieKiss.Visible = false;
             InitializePictureBoxBackColor();
+            audioVA.URL = "audio//cele_7_dif.mp3";
         }
 
         private void InitializePictureBoxBackColor()
@@ -81,8 +84,40 @@ namespace hci_vestitorii_primaverii
             MyTimer = new Timer();
             MyTimer.Interval = (4 * 1000);
             MyTimer.Tick += new EventHandler(finish_button_Click);
+            if (differences == 6)
+            {
+                audioVA.URL = "audio//inca_6_dif.aac";
+                audioVA.controls.play();
+            }
+            if (differences == 5)
+            {
+                audioVA.URL = "audio//inca_5_dif.aac";
+                audioVA.controls.play();
+            }
+            if (differences == 4)
+            {
+                audioVA.URL = "audio//inca_4_dif.aac";
+                audioVA.controls.play();
+            }
+            if (differences == 3)
+            {
+                audioVA.URL = "audio//inca_3_dif.aac";
+                audioVA.controls.play();
+            }
+            if (differences == 2)
+            {
+                audioVA.URL = "audio//inca_2_dif.aac";
+                audioVA.controls.play();
+            }
+            if (differences == 1)
+            {
+                audioVA.URL = "audio//inca_una_si_ai_reusit.aac";
+                audioVA.controls.play();
+            }
             if (differences == 0)
             {
+                audioVA.URL = "audio//wow_toate_dif.aac";
+                audioVA.controls.play();
                 minieKiss.Visible = true;
                 MyTimer.Start();
             }
@@ -293,6 +328,9 @@ namespace hci_vestitorii_primaverii
             this.Close();
         }
 
-       
+        private void differencesSecondLevel_Load(object sender, EventArgs e)
+        {
+            audioVA.controls.play();
+        }
     }
 }
