@@ -55,7 +55,6 @@
             this.floareasoarelui = new System.Windows.Forms.PictureBox();
             this.panelghiocei = new System.Windows.Forms.Panel();
             this.ghiocei = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -83,7 +82,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.floareasoarelui)).BeginInit();
             this.panelghiocei.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ghiocei)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -401,25 +399,13 @@
             this.ghiocei.TabStop = false;
             this.ghiocei.Click += new System.EventHandler(this.ghiocei_Click);
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::hci_vestitorii_primaverii.Properties.Resources.start_pluto;
-            this.pictureBox4.Location = new System.Drawing.Point(544, 238);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(435, 252);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 20;
-            this.pictureBox4.TabStop = false;
-            // 
             // chooseImages
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.spring_background;
+            this.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.spring_background_3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.panelghiocei);
             this.Controls.Add(this.panelfloareasoarelui);
             this.Controls.Add(this.paneltrandafiri);
@@ -435,6 +421,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "chooseImages";
             this.Text = "chooseImages";
@@ -465,7 +452,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.floareasoarelui)).EndInit();
             this.panelghiocei.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ghiocei)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -499,6 +485,5 @@
         private System.Windows.Forms.PictureBox floareasoarelui;
         private System.Windows.Forms.Panel panelghiocei;
         private System.Windows.Forms.PictureBox ghiocei;
-        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
