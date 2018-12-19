@@ -157,7 +157,7 @@ namespace hci_vestitorii_primaverii
         {
             if (this.WindowState == FormWindowState.Maximized)
             {
-                pictureBox3.Width = (int)(Screen.PrimaryScreen.Bounds.Width /1.7) - pictureBox3OffestWidth;
+                pictureBox3.Width = (int)(Screen.PrimaryScreen.Bounds.Width / 1.7) - pictureBox3OffestWidth;
                 pictureBox3.Height = (int)(Screen.PrimaryScreen.Bounds.Height / 1.5) - pictureBox3OffestHeight;
                 //pictureBox3.Location = new Point(pictureBox3.Location.X + 190, pictureBox3.Location.Y + 90);
                 pictureBox3.Location = new Point( Screen.PrimaryScreen.Bounds.Width - pictureBox3.Width, Screen.PrimaryScreen.Bounds.Height - pictureBox3.Height);

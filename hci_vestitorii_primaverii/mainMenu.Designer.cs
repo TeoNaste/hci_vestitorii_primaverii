@@ -150,6 +150,7 @@
             this.Name = "mainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "mainMenu";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainMenu_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mainMenu_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mainMenu_MouseUp);

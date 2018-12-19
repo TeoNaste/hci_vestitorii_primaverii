@@ -405,7 +405,7 @@ namespace hci_vestitorii_primaverii
             paneltreesummer.Width = (int)(this.Width / 2.2) - paneltreeSummerOffsetWidth;
             paneltreesummer.Height = (int)(this.Height / 1.7) - paneltreeSummerOffsetHeight;
             paneltreesummer.Location = new Point(paneltreesummer.Location.X + treesummer.Width + trandafiri.Width + floareasoarelui.Width - 55, paneltreesummer.Location.Y + 0);
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
