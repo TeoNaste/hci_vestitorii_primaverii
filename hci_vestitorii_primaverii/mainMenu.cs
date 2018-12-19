@@ -19,12 +19,10 @@ namespace hci_vestitorii_primaverii
                 player.URL = ".//Music//totoro.wav";
                 player.settings.setMode("loop", true);
                 player.settings.volume = 3;
-                audioVA.settings.volume = 35;
                 audioVA.URL = "audio//hai_sa_meniu.wav";
             }
             else
             {
-                audioVA.settings.volume = 35;
                 audioVA.URL = "audio//alege_meniu.wav";
             }
         }

@@ -28,7 +28,6 @@ namespace hci_vestitorii_primaverii
             pictureBox1.Image = imgMickeyThinking;
             pictureBox2.Image = imgMickeyThinking;
             pictureBox3.Image = imgMickeyThinking;
-            audioVA.settings.volume = 35;
             audioVA.URL = "audio//3_imagini_primavara.aac";
         }
 
