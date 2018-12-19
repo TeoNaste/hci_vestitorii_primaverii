@@ -9,19 +9,28 @@ namespace hci_vestitorii_primaverii
     public partial class mainMenu : Form
     {
         WindowsMediaPlayer player = new WindowsMediaPlayer();
+        WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
 
-        public mainMenu()
+        public mainMenu(bool isBack)
         {
             InitializeComponent();
-            player.URL = ".//Music//totoro.wav";
-            player.settings.setMode("loop", true);
-            player.settings.volume = 3;
+            if (!isBack)
+            {
+                player.URL = ".//Music//totoro.wav";
+                player.settings.setMode("loop", true);
+                player.settings.volume = 3;
+                audioVA.URL = "audio//hai_sa_meniu.wav";
+            }
+            else
+            {
+                audioVA.URL = "audio//alege_meniu.wav";
+            }
         }
 
         private void mainMenu_Load(object sender, EventArgs e)
         {
             player.controls.play();
-            
+            audioVA.controls.play();
         }
 
         private void close_button_Click(object sender, EventArgs e)
@@ -36,12 +45,13 @@ namespace hci_vestitorii_primaverii
 
         private void start_snowdrop_MouseLeave(object sender, EventArgs e)
         {
-
-            while (start_snowdrop.Width > 91 && start_snowdrop.Height > 89)
+            int i = 7;
+            while (i>0)
             {
                 start_snowdrop.Width--;
                 start_snowdrop.Height--;
                 Application.DoEvents();
+                i--;
             }
 
         }
@@ -76,6 +86,7 @@ namespace hci_vestitorii_primaverii
             chooseImages cImg = new chooseImages();
             this.Hide();
             cImg.Show();
+            audioVA.controls.stop();
         }
 
         private void swallow_button_MouseEnter(object sender, EventArgs e)
@@ -100,6 +111,7 @@ namespace hci_vestitorii_primaverii
             differencesFirstLevel f1 = new differencesFirstLevel();
             this.Hide();
             f1.Show();
+            audioVA.controls.stop();
         }
 
         private void tree_MouseClick(object sender, MouseEventArgs e)

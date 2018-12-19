@@ -448,9 +448,7 @@ namespace hci_vestitorii_primaverii
 
         private void close_button_Click(object sender, EventArgs e)
         {
-            mainMenu mainPage = new mainMenu();
-            mainPage.Show();
-            this.Close();
+            Application.Exit();
         }
 
         private void play_button_Click(object sender, EventArgs e)
@@ -487,6 +485,13 @@ namespace hci_vestitorii_primaverii
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            mainMenu main = new mainMenu(true);
+            main.Show();
         }
     }
 }
