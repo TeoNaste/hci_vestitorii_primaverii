@@ -346,16 +346,7 @@
     <None Include="Resources\7.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\start_pluto.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pluto.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\mickey.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\mickey1.png" />
+    <None Include="Resources\71.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

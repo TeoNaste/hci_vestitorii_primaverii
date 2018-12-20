@@ -64,6 +64,7 @@ namespace hci_vestitorii_primaverii
             Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");
             barza1.Image = myImage;
             toFind--;
+            barza1.Enabled = false;
             audio_feedback();
         }
 
@@ -72,6 +73,7 @@ namespace hci_vestitorii_primaverii
             Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");
             barza2.Image = myImage;
             toFind--;
+            barza2.Enabled = false;
             audio_feedback();
         }
 
@@ -80,6 +82,7 @@ namespace hci_vestitorii_primaverii
             Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");
             barza3.Image = myImage;
             toFind--;
+            barza3.Enabled = false;
             audio_feedback();
         }
 

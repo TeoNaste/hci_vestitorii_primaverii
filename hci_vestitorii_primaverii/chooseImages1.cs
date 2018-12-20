@@ -15,6 +15,7 @@ namespace hci_vestitorii_primaverii
     public partial class chooseImages1 : Form
     {
         WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
+        WindowsMediaPlayer bravoPlayer = new WindowsMediaPlayer();
         private int imageFound = 0;
         private Timer MyTimer;
         ResourceManager rm = Resources.ResourceManager;
@@ -26,7 +27,7 @@ namespace hci_vestitorii_primaverii
             InitializeComponent();
             pictureBox1.Image = imgMickeyThinking;
             pictureBox5.Visible = false;
-            audioVA.URL = "audio//3_imagini_primavara.aac";
+            audioVA.URL = "audio//alege_copacul_inflorit.aac";
         }
         private void checkWin()
         {
@@ -50,6 +51,9 @@ namespace hci_vestitorii_primaverii
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            audioVA.URL = "audio//aceasta_iarna.mp3";
+            audioVA.controls.play();
+
             panel1.BackColor = Color.Red;
             panel2.BackColor = Color.Transparent;
             panel3.BackColor = Color.Transparent;
@@ -60,6 +64,9 @@ namespace hci_vestitorii_primaverii
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            audioVA.URL = "audio//aceasta_toamna.mp3";
+            audioVA.controls.play();
+
             panel1.BackColor = Color.Transparent;
             panel2.BackColor = Color.Red;
             panel3.BackColor = Color.Transparent;
@@ -70,6 +77,11 @@ namespace hci_vestitorii_primaverii
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+            bravoPlayer.URL = "audio//bravo.mp3";
+            bravoPlayer.controls.play();
+            audioVA.URL = "audio//spring_tree.aac";
+            audioVA.controls.play();
+
             panel1.BackColor = Color.Transparent;
             panel2.BackColor = Color.Transparent;
             panel3.BackColor = Color.Green;
@@ -80,6 +92,7 @@ namespace hci_vestitorii_primaverii
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
+            audioVA.controls.stop();
             chooseImages2 secondLevel = new chooseImages2();
             secondLevel.Show();
             this.Close();
@@ -100,6 +113,11 @@ namespace hci_vestitorii_primaverii
                 Application.DoEvents();
                 i--;
             }
+        }
+
+        private void close_button_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

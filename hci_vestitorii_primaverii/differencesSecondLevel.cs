@@ -8,6 +8,7 @@ using System.Linq;
 using System.Resources;
 using System.Text;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace hci_vestitorii_primaverii
 {
@@ -16,6 +17,7 @@ namespace hci_vestitorii_primaverii
         private int differences = 7;
         private Timer MyTimer;
         ResourceManager rm = Resources.ResourceManager;
+	WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
 
         int pictureBox1OffestWidth;
         int pictureBox1OffestHeight;
@@ -45,8 +47,9 @@ namespace hci_vestitorii_primaverii
             minieKiss.Visible = false;
 
             InitializePictureBoxBackColor();
+            audioVA.URL = "audio//cele_7_dif.mp3";
 
-            pictureBox1OffestWidth = this.Width - pictureBox1.Width;
+	    pictureBox1OffestWidth = this.Width - pictureBox1.Width;
             pictureBox1OffestHeight = this.Height - pictureBox1.Height;
 
             pictureBox3OffestWidth = this.Width - pictureBox3.Width;
@@ -108,7 +111,7 @@ namespace hci_vestitorii_primaverii
 
         private void InitializePictureBoxBackColor()
         {
-           diff1a.Parent = pictureBox1;
+            diff1a.Parent = pictureBox1;
             diff1a.BackColor = Color.Transparent;
             
             diff1b.Parent = pictureBox1;
@@ -162,8 +165,40 @@ namespace hci_vestitorii_primaverii
             MyTimer = new Timer();
             MyTimer.Interval = (4 * 1000);
             MyTimer.Tick += new EventHandler(finish_button_Click);
+            if (differences == 6)
+            {
+                audioVA.URL = "audio//inca_6_dif.aac";
+                audioVA.controls.play();
+            }
+            if (differences == 5)
+            {
+                audioVA.URL = "audio//inca_5_dif.aac";
+                audioVA.controls.play();
+            }
+            if (differences == 4)
+            {
+                audioVA.URL = "audio//inca_4_dif.aac";
+                audioVA.controls.play();
+            }
+            if (differences == 3)
+            {
+                audioVA.URL = "audio//inca_3_dif.aac";
+                audioVA.controls.play();
+            }
+            if (differences == 2)
+            {
+                audioVA.URL = "audio//inca_2_dif.aac";
+                audioVA.controls.play();
+            }
+            if (differences == 1)
+            {
+                audioVA.URL = "audio//inca_una_si_ai_reusit.aac";
+                audioVA.controls.play();
+            }
             if (differences == 0)
             {
+                audioVA.URL = "audio//wow_toate_dif.aac";
+                audioVA.controls.play();
                 minieKiss.Visible = true;
                 MyTimer.Start();
             }
@@ -374,7 +409,12 @@ namespace hci_vestitorii_primaverii
             this.Close();
         }
 
-        private void differencesSecondLevel_Resize(object sender, EventArgs e)
+        private void differencesSecondLevel_Load(object sender, EventArgs e)
+        {
+            audioVA.controls.play();
+        }
+
+	private void differencesSecondLevel_Resize(object sender, EventArgs e)
         {
             if (this.WindowState == FormWindowState.Maximized)
             {
@@ -448,6 +488,5 @@ namespace hci_vestitorii_primaverii
                 diff7b.Location = new Point(diff7b.Location.X + 90, diff7b.Location.Y + 75);
 
             }
-        }
     }
 }

@@ -28,8 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.close_button = new System.Windows.Forms.Button();
             this.labelTextDiff = new System.Windows.Forms.Label();
             this.rimainingDifferences = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.minieKiss = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.diff5b = new System.Windows.Forms.PictureBox();
             this.diff5a = new System.Windows.Forms.PictureBox();
             this.diff4a = new System.Windows.Forms.PictureBox();
@@ -40,11 +45,9 @@
             this.diff2a = new System.Windows.Forms.PictureBox();
             this.diff1b = new System.Windows.Forms.PictureBox();
             this.diff1a = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.minieKiss = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minieKiss)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff5b)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff5a)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff4a)).BeginInit();
@@ -59,6 +62,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minieKiss)).BeginInit();
             this.SuspendLayout();
+            // 
+            // close_button
+            // 
+            this.close_button.BackColor = System.Drawing.Color.Transparent;
+            this.close_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.close_button.ForeColor = System.Drawing.Color.Transparent;
+            this.close_button.Image = global::hci_vestitorii_primaverii.Properties.Resources.close_button;
+            this.close_button.Location = new System.Drawing.Point(997, 15);
+            this.close_button.Margin = new System.Windows.Forms.Padding(4);
+            this.close_button.Name = "close_button";
+            this.close_button.Size = new System.Drawing.Size(53, 52);
+            this.close_button.TabIndex = 4;
+            this.close_button.UseVisualStyleBackColor = false;
+            this.close_button.Click += new System.EventHandler(this.close_button_Click);
             // 
             // labelTextDiff
             // 
@@ -80,6 +98,52 @@
             this.rimainingDifferences.Size = new System.Drawing.Size(41, 31);
             this.rimainingDifferences.TabIndex = 10;
             this.rimainingDifferences.Text = "5";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::hci_vestitorii_primaverii.Properties.Resources._72;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 46);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(510, 392);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::hci_vestitorii_primaverii.Properties.Resources.start_minnie;
+            this.pictureBox2.Location = new System.Drawing.Point(516, 215);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(111, 141);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            // 
+            // minieKiss
+            // 
+            this.minieKiss.BackColor = System.Drawing.Color.Transparent;
+            this.minieKiss.Image = global::hci_vestitorii_primaverii.Properties.Resources.AS002401_02;
+            this.minieKiss.Location = new System.Drawing.Point(519, 215);
+            this.minieKiss.Name = "minieKiss";
+            this.minieKiss.Size = new System.Drawing.Size(133, 189);
+            this.minieKiss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.minieKiss.TabIndex = 60;
+            this.minieKiss.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Image = global::hci_vestitorii_primaverii.Properties.Resources.close_button;
+            this.button1.Location = new System.Drawing.Point(748, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(40, 42);
+            this.button1.TabIndex = 61;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // diff5b
             // 
@@ -179,66 +243,7 @@
             this.diff1a.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.diff1a.TabIndex = 35;
             this.diff1a.TabStop = false;
-            this.diff1a.Click += new System.EventHandler(this.diff1a_Click_1);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::hci_vestitorii_primaverii.Properties.Resources._71;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 46);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(510, 392);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::hci_vestitorii_primaverii.Properties.Resources.start_minnie;
-            this.pictureBox2.Location = new System.Drawing.Point(516, 215);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(111, 141);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            // 
-            // minieKiss
-            // 
-            this.minieKiss.BackColor = System.Drawing.Color.Transparent;
-            this.minieKiss.Image = global::hci_vestitorii_primaverii.Properties.Resources.AS002401_02;
-            this.minieKiss.Location = new System.Drawing.Point(519, 215);
-            this.minieKiss.Name = "minieKiss";
-            this.minieKiss.Size = new System.Drawing.Size(133, 189);
-            this.minieKiss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.minieKiss.TabIndex = 60;
-            this.minieKiss.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Image = global::hci_vestitorii_primaverii.Properties.Resources.close_button;
-            this.button1.Location = new System.Drawing.Point(748, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 42);
-            this.button1.TabIndex = 61;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.home_button;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(679, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(49, 43);
-            this.button2.TabIndex = 62;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.diff1a.Click += new System.EventHandler(this.diff1a_Click_2);
             // 
             // differencesFirstLevel
             // 
@@ -260,9 +265,12 @@
             this.Controls.Add(this.diff2a);
             this.Controls.Add(this.diff1b);
             this.Controls.Add(this.diff1a);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.minieKiss);
             this.Controls.Add(this.rimainingDifferences);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.close_button);
             this.Controls.Add(this.labelTextDiff);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -292,6 +300,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button close_button;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label labelTextDiff;
