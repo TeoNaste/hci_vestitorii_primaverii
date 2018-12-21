@@ -17,6 +17,19 @@ namespace hci_vestitorii_primaverii
         private Timer MyTimer;
         int toFind = 3;
 
+        int pictureBox4OffsetWidth;
+        int pictureBox4OffsetHeight;
+
+        int pictureBox1OffsetWidth;
+        int pictureBox1OffsetHeight;
+
+        int pictureBox2OffsetWidth;
+        int pictureBox2OffsetHeight;
+
+        int pictureBox3OffsetWidth;
+        int pictureBox3OffsetHeight;
+
+
         public FindTheBee()
         {
             InitializeComponent();
@@ -24,6 +37,23 @@ namespace hci_vestitorii_primaverii
             bee1.Visible = false;
             bee2.Visible = false;
             bee3.Visible = false;
+
+            pictureBox4OffsetWidth = this.Width - infoBox.Width;
+            pictureBox4OffsetHeight = this.Height - infoBox.Height;
+
+            pictureBox1OffsetWidth = this.Width - bee1.Width;
+            pictureBox1OffsetHeight = this.Height - bee1.Height;
+
+            pictureBox2OffsetWidth = this.Width - bee2.Width;
+            pictureBox2OffsetHeight = this.Height - bee2.Height;
+
+            pictureBox3OffsetWidth = this.Width - bee3.Width;
+            pictureBox3OffsetHeight = this.Height - bee3.Height;
+
+            this.WindowState = FormWindowState.Normal;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            //this.Bounds = Screen.PrimaryScreen.Bounds;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void close_button_Click(object sender, EventArgs e)
@@ -117,5 +147,28 @@ namespace hci_vestitorii_primaverii
             this.Close();
         }
 
+        private void FindTheBee_Resize(object sender, EventArgs e)
+        {
+            close_button.Location = new Point(Screen.PrimaryScreen.Bounds.Width - close_button.Width, 0);
+
+            infoBox.Width = (int)(Screen.PrimaryScreen.Bounds.Width / 1.3) - pictureBox4OffsetWidth;
+            infoBox.Height = (int)(Screen.PrimaryScreen.Bounds.Height / 1.3) - pictureBox4OffsetHeight;
+            infoBox.Location = new Point((int)(Screen.PrimaryScreen.Bounds.Width / 5.1), (int)(Screen.PrimaryScreen.Bounds.Height / 4));
+
+            bee1.Width = (int)(Screen.PrimaryScreen.Bounds.Width / 2.03) - pictureBox1OffsetWidth;
+            bee1.Height = (int)(Screen.PrimaryScreen.Bounds.Height / 2) - pictureBox1OffsetHeight;
+            bee1.Location = new Point(bee1.Width, (int)(Screen.PrimaryScreen.Bounds.Height / 2.3));
+
+
+            bee2.Width = (int)(Screen.PrimaryScreen.Bounds.Width / 2) - pictureBox2OffsetWidth;
+            bee2.Height = (int)(Screen.PrimaryScreen.Bounds.Height / 1.9) - pictureBox2OffsetHeight;
+            bee2.Location = new Point(Screen.PrimaryScreen.Bounds.Width - 2*bee2.Width - bee2.Width/4, Screen.PrimaryScreen.Bounds.Height - bee2.Height - bee2.Height/3);
+
+
+            bee3.Width = (int)(Screen.PrimaryScreen.Bounds.Width / 2.03) - pictureBox3OffsetWidth;
+            bee3.Height = (int)(Screen.PrimaryScreen.Bounds.Height / 2) - pictureBox3OffsetHeight;
+            bee3.Location = new Point(Screen.PrimaryScreen.Bounds.Width - bee3.Width - bee3.Width,bee3.Height/2);
+
+        }
     }
 }

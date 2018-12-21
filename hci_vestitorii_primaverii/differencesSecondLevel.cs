@@ -19,6 +19,96 @@ namespace hci_vestitorii_primaverii
         ResourceManager rm = Resources.ResourceManager;
         WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
 
+        int pictureBox1OffestWidth;
+        int pictureBox1OffestHeight;
+
+        int closeButtonOffsetHeight;
+        int closeButtonOffestWidth;
+
+        int minieKissOffestWidth;
+        int minieKissOffestHeight;
+
+        int diff1aOffssetWidth, diff1aOffssetHeight, diff2aOffssetWidth, diff2aOffssetHeight, diff3aOffssetWidth, diff3aOffssetHeight,
+            diff4aOffssetWidth, diff4aOffssetHeight, diff5aOffssetWidth, diff5aOffssetHeight, diff6aOffssetWidth, diff6aOffssetHeight,
+            diff7aOffssetWidth, diff7aOffssetHeight;
+
+        int diff1bOffssetWidth, diff1bOffssetHeight, diff2bOffssetWidth, diff2bOffssetHeight, diff3bOffssetWidth, diff3bOffssetHeight,
+            diff4bOffssetWidth, diff4bOffssetHeight, diff5bOffssetWidth, diff5bOffssetHeight, diff6bOffssetWidth, diff6bOffssetHeight,
+            diff7bOffssetWidth, diff7bOffssetHeight;
+
+        private void differencesSecondLevel_Resize(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                pictureBox1.Width = (int)(this.Width / 1.5) - pictureBox1OffestWidth;
+                pictureBox1.Height = (int)(this.Height / 1.2) - pictureBox1OffestHeight;
+
+                
+                close_button.Location = new Point(close_button.Location.X + 280, close_button.Location.Y);
+
+                minieKiss.Width = (int)(this.Width / 1.7) - minieKissOffestWidth;
+                minieKiss.Height = (int)(this.Height / 1.7) - minieKissOffestHeight;
+                minieKiss.Location = new Point(minieKiss.Location.X + 120, minieKiss.Location.Y + 100);
+
+                diff1a.Width = (int)(this.Width / 2.3) - diff1aOffssetWidth;
+                diff1a.Height = (int)(this.Height / 2.3) - diff1aOffssetHeight;
+                diff1a.Location = new Point(diff1a.Location.X + 40, diff1a.Location.Y + 27);
+
+                diff2a.Width = (int)(this.Width / 2.3) - diff2aOffssetWidth;
+                diff2a.Height = (int)(this.Height / 2.3) - diff2aOffssetHeight;
+                diff2a.Location = new Point(diff2a.Location.X + 8, diff2a.Location.Y + 42);
+
+                diff3a.Width = (int)(this.Width / 2.3) - diff3aOffssetWidth;
+                diff3a.Height = (int)(this.Height / 2.25) - diff3aOffssetHeight;
+                diff3a.Location = new Point(diff3a.Location.X + 17, diff3a.Location.Y + 40);
+
+                diff4a.Width = (int)(this.Width / 2.3) - diff4aOffssetWidth;
+                diff4a.Height = (int)(this.Height / 2.25) - diff4aOffssetHeight;
+                diff4a.Location = new Point(diff4a.Location.X, diff4a.Location.Y + 70);
+
+                diff5a.Width = (int)(this.Width / 2.3) - diff5aOffssetWidth;
+                diff5a.Height = (int)(this.Height / 2.25) - diff5aOffssetHeight;
+                diff5a.Location = new Point(diff5a.Location.X + 21, diff5a.Location.Y + 70);
+
+                diff6a.Width = (int)(this.Width / 2.3) - diff6aOffssetWidth;
+                diff6a.Height = (int)(this.Height / 2.1) - diff6aOffssetHeight;
+                diff6a.Location = new Point(diff6a.Location.X + 50, diff6a.Location.Y + 75);
+
+                diff7a.Width = (int)(this.Width / 2.3) - diff7aOffssetWidth;
+                diff7a.Height = (int)(this.Height / 2.1) - diff7aOffssetHeight;
+                diff7a.Location = new Point(diff7a.Location.X + 30, diff7a.Location.Y + 75);
+
+                diff1b.Width = (int)(this.Width / 2.3) - diff1bOffssetWidth;
+                diff1b.Height = (int)(this.Height / 2.3) - diff1bOffssetHeight;
+                diff1b.Location = new Point(diff1b.Location.X + 100, diff1b.Location.Y + 27);
+
+                diff2b.Width = (int)(this.Width / 2.3) - diff2bOffssetWidth;
+                diff2b.Height = (int)(this.Height / 2.3) - diff2bOffssetHeight;
+                diff2b.Location = new Point(diff2b.Location.X + 68, diff2b.Location.Y + 42);
+
+                diff3b.Width = (int)(this.Width / 2.3) - diff3bOffssetWidth;
+                diff3b.Height = (int)(this.Height / 2.25) - diff3bOffssetHeight;
+                diff3b.Location = new Point(diff3b.Location.X + 77, diff3b.Location.Y + 40);
+
+                diff4b.Width = (int)(this.Width / 2.3) - diff4bOffssetWidth;
+                diff4b.Height = (int)(this.Height / 2.25) - diff4bOffssetHeight;
+                diff4b.Location = new Point(diff4b.Location.X + 60, diff4b.Location.Y + 70);
+
+                diff5b.Width = (int)(this.Width / 2.3) - diff5bOffssetWidth;
+                diff5b.Height = (int)(this.Height / 2.25) - diff5bOffssetHeight;
+                diff5b.Location = new Point(diff5b.Location.X + 81, diff5b.Location.Y + 70);
+
+                diff6b.Width = (int)(this.Width / 2.3) - diff6bOffssetWidth;
+                diff6b.Height = (int)(this.Height / 2.1) - diff6bOffssetHeight;
+                diff6b.Location = new Point(diff6b.Location.X + 110, diff6b.Location.Y + 75);
+
+                diff7b.Width = (int)(this.Width / 2.3) - diff7bOffssetWidth;
+                diff7b.Height = (int)(this.Height / 2.1) - diff7bOffssetHeight;
+                diff7b.Location = new Point(diff7b.Location.X + 90, diff7b.Location.Y + 75);
+
+            }
+        }
+
         public differencesSecondLevel()
         {
             InitializeComponent();
@@ -26,6 +116,62 @@ namespace hci_vestitorii_primaverii
             minieKiss.Visible = false;
             InitializePictureBoxBackColor();
             audioVA.URL = "audio//cele_7_dif.mp3";
+
+            pictureBox1OffestWidth = this.Width - pictureBox1.Width;
+            pictureBox1OffestHeight = this.Height - pictureBox1.Height;
+
+            closeButtonOffestWidth = this.Width - close_button.Width;
+            closeButtonOffsetHeight = this.Height - close_button.Height;
+
+            minieKissOffestWidth = this.Width - minieKiss.Width;
+            minieKissOffestHeight = this.Height - minieKiss.Height;
+
+            diff1aOffssetWidth = this.Width - diff1a.Width;
+            diff1aOffssetHeight = this.Height - diff1a.Height;
+
+            diff2aOffssetWidth = this.Width - diff2a.Width;
+            diff2aOffssetHeight = this.Height - diff2a.Height;
+
+            diff3aOffssetWidth = this.Width - diff3a.Width;
+            diff3aOffssetHeight = this.Height - diff3a.Height;
+
+            diff4aOffssetWidth = this.Width - diff4a.Width;
+            diff4aOffssetHeight = this.Height - diff4a.Height;
+
+            diff5aOffssetWidth = this.Width - diff5a.Width;
+            diff5aOffssetHeight = this.Height - diff5a.Height;
+
+            diff6aOffssetWidth = this.Width - diff6a.Width;
+            diff6aOffssetHeight = this.Height - diff6a.Height;
+
+            diff7aOffssetWidth = this.Width - diff7a.Width;
+            diff7aOffssetHeight = this.Height - diff7a.Height;
+
+            diff1bOffssetWidth = this.Width - diff1b.Width;
+            diff1bOffssetHeight = this.Height - diff1b.Height;
+
+            diff2bOffssetWidth = this.Width - diff2b.Width;
+            diff2bOffssetHeight = this.Height - diff2b.Height;
+
+            diff3bOffssetWidth = this.Width - diff3b.Width;
+            diff3bOffssetHeight = this.Height - diff3b.Height;
+
+            diff4bOffssetWidth = this.Width - diff4b.Width;
+            diff4bOffssetHeight = this.Height - diff4b.Height;
+
+            diff5bOffssetWidth = this.Width - diff5b.Width;
+            diff5bOffssetHeight = this.Height - diff5b.Height;
+
+            diff6bOffssetWidth = this.Width - diff6b.Width;
+            diff6bOffssetHeight = this.Height - diff6b.Height;
+
+            diff7bOffssetWidth = this.Width - diff7b.Width;
+            diff7bOffssetHeight = this.Height - diff7b.Height;
+
+            this.WindowState = FormWindowState.Normal;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            //this.Bounds = Screen.PrimaryScreen.Bounds;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void InitializePictureBoxBackColor()

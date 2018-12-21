@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.close_button = new System.Windows.Forms.Button();
             this.labelTextDiff = new System.Windows.Forms.Label();
             this.rimainingDifferences = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -59,21 +58,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.diff1b)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diff1a)).BeginInit();
             this.SuspendLayout();
-            // 
-            // close_button
-            // 
-            this.close_button.BackColor = System.Drawing.Color.Transparent;
-            this.close_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.close_button.ForeColor = System.Drawing.Color.Transparent;
-            this.close_button.Image = global::hci_vestitorii_primaverii.Properties.Resources.close_button;
-            this.close_button.Location = new System.Drawing.Point(997, 15);
-            this.close_button.Margin = new System.Windows.Forms.Padding(4);
-            this.close_button.Name = "close_button";
-            this.close_button.Size = new System.Drawing.Size(53, 52);
-            this.close_button.TabIndex = 4;
-            this.close_button.UseVisualStyleBackColor = false;
-            this.close_button.Click += new System.EventHandler(this.close_button_Click);
             // 
             // labelTextDiff
             // 
@@ -226,7 +210,7 @@
             // 
             this.diff1b.Location = new System.Drawing.Point(382, 56);
             this.diff1b.Name = "diff1b";
-            this.diff1b.Size = new System.Drawing.Size(36, 30);
+            this.diff1b.Size = new System.Drawing.Size(36, 49);
             this.diff1b.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.diff1b.TabIndex = 63;
             this.diff1b.TabStop = false;
@@ -236,7 +220,7 @@
             // 
             this.diff1a.Location = new System.Drawing.Point(122, 54);
             this.diff1a.Name = "diff1a";
-            this.diff1a.Size = new System.Drawing.Size(35, 32);
+            this.diff1a.Size = new System.Drawing.Size(35, 51);
             this.diff1a.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.diff1a.TabIndex = 62;
             this.diff1a.TabStop = false;
@@ -264,7 +248,6 @@
             this.Controls.Add(this.rimainingDifferences);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.close_button);
             this.Controls.Add(this.labelTextDiff);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -275,6 +258,7 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.differencesFirstLevel_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.differencesFirstLevel_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.differencesFirstLevel_MouseUp);
+            this.Resize += new System.EventHandler(this.differencesFirstLevel_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minieKiss)).EndInit();
@@ -293,8 +277,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button close_button;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label labelTextDiff;

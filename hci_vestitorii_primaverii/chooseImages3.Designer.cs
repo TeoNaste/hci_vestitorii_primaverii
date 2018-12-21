@@ -153,6 +153,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "chooseImages3";
             this.Load += new System.EventHandler(this.chooseImages3_Load);
+            this.Resize += new System.EventHandler(this.chooseImages3_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

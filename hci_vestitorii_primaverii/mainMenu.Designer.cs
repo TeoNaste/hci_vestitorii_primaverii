@@ -51,6 +51,7 @@
             this.tree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tree.TabIndex = 10;
             this.tree.TabStop = false;
+            this.tree.Click += new System.EventHandler(this.tree_Click);
             this.tree.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tree_MouseClick);
             this.tree.MouseEnter += new System.EventHandler(this.tree_MouseEnter);
             this.tree.MouseLeave += new System.EventHandler(this.tree_MouseLeave);
@@ -111,6 +112,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 8;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Resize += new System.EventHandler(this.pictureBox6_Resize);
             // 
             // mainMenu
             // 
@@ -133,6 +135,7 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainMenu_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mainMenu_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mainMenu_MouseUp);
+            this.Resize += new System.EventHandler(this.mainMenu_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.tree)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.swallow_button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.start_snowdrop)).EndInit();
