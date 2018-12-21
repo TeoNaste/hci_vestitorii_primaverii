@@ -17,13 +17,10 @@ namespace hci_vestitorii_primaverii
         private int differences = 7;
         private Timer MyTimer;
         ResourceManager rm = Resources.ResourceManager;
-	WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
+        WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
 
         int pictureBox1OffestWidth;
         int pictureBox1OffestHeight;
-
-        int pictureBox3OffestWidth;
-        int pictureBox3OffestHeight;
 
         int closeButtonOffsetHeight;
         int closeButtonOffestWidth;
@@ -39,21 +36,89 @@ namespace hci_vestitorii_primaverii
             diff4bOffssetWidth, diff4bOffssetHeight, diff5bOffssetWidth, diff5bOffssetHeight, diff6bOffssetWidth, diff6bOffssetHeight,
             diff7bOffssetWidth, diff7bOffssetHeight;
 
+        private void differencesSecondLevel_Resize(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                pictureBox1.Width = (int)(this.Width / 1.5) - pictureBox1OffestWidth;
+                pictureBox1.Height = (int)(this.Height / 1.2) - pictureBox1OffestHeight;
+
+                
+                close_button.Location = new Point(close_button.Location.X + 280, close_button.Location.Y);
+
+                minieKiss.Width = (int)(this.Width / 1.7) - minieKissOffestWidth;
+                minieKiss.Height = (int)(this.Height / 1.7) - minieKissOffestHeight;
+                minieKiss.Location = new Point(minieKiss.Location.X + 120, minieKiss.Location.Y + 100);
+
+                diff1a.Width = (int)(this.Width / 2.3) - diff1aOffssetWidth;
+                diff1a.Height = (int)(this.Height / 2.3) - diff1aOffssetHeight;
+                diff1a.Location = new Point(diff1a.Location.X + 40, diff1a.Location.Y + 27);
+
+                diff2a.Width = (int)(this.Width / 2.3) - diff2aOffssetWidth;
+                diff2a.Height = (int)(this.Height / 2.3) - diff2aOffssetHeight;
+                diff2a.Location = new Point(diff2a.Location.X + 8, diff2a.Location.Y + 42);
+
+                diff3a.Width = (int)(this.Width / 2.3) - diff3aOffssetWidth;
+                diff3a.Height = (int)(this.Height / 2.25) - diff3aOffssetHeight;
+                diff3a.Location = new Point(diff3a.Location.X + 17, diff3a.Location.Y + 40);
+
+                diff4a.Width = (int)(this.Width / 2.3) - diff4aOffssetWidth;
+                diff4a.Height = (int)(this.Height / 2.25) - diff4aOffssetHeight;
+                diff4a.Location = new Point(diff4a.Location.X, diff4a.Location.Y + 70);
+
+                diff5a.Width = (int)(this.Width / 2.3) - diff5aOffssetWidth;
+                diff5a.Height = (int)(this.Height / 2.25) - diff5aOffssetHeight;
+                diff5a.Location = new Point(diff5a.Location.X + 21, diff5a.Location.Y + 70);
+
+                diff6a.Width = (int)(this.Width / 2.3) - diff6aOffssetWidth;
+                diff6a.Height = (int)(this.Height / 2.1) - diff6aOffssetHeight;
+                diff6a.Location = new Point(diff6a.Location.X + 50, diff6a.Location.Y + 75);
+
+                diff7a.Width = (int)(this.Width / 2.3) - diff7aOffssetWidth;
+                diff7a.Height = (int)(this.Height / 2.1) - diff7aOffssetHeight;
+                diff7a.Location = new Point(diff7a.Location.X + 30, diff7a.Location.Y + 75);
+
+                diff1b.Width = (int)(this.Width / 2.3) - diff1bOffssetWidth;
+                diff1b.Height = (int)(this.Height / 2.3) - diff1bOffssetHeight;
+                diff1b.Location = new Point(diff1b.Location.X + 100, diff1b.Location.Y + 27);
+
+                diff2b.Width = (int)(this.Width / 2.3) - diff2bOffssetWidth;
+                diff2b.Height = (int)(this.Height / 2.3) - diff2bOffssetHeight;
+                diff2b.Location = new Point(diff2b.Location.X + 68, diff2b.Location.Y + 42);
+
+                diff3b.Width = (int)(this.Width / 2.3) - diff3bOffssetWidth;
+                diff3b.Height = (int)(this.Height / 2.25) - diff3bOffssetHeight;
+                diff3b.Location = new Point(diff3b.Location.X + 77, diff3b.Location.Y + 40);
+
+                diff4b.Width = (int)(this.Width / 2.3) - diff4bOffssetWidth;
+                diff4b.Height = (int)(this.Height / 2.25) - diff4bOffssetHeight;
+                diff4b.Location = new Point(diff4b.Location.X + 60, diff4b.Location.Y + 70);
+
+                diff5b.Width = (int)(this.Width / 2.3) - diff5bOffssetWidth;
+                diff5b.Height = (int)(this.Height / 2.25) - diff5bOffssetHeight;
+                diff5b.Location = new Point(diff5b.Location.X + 81, diff5b.Location.Y + 70);
+
+                diff6b.Width = (int)(this.Width / 2.3) - diff6bOffssetWidth;
+                diff6b.Height = (int)(this.Height / 2.1) - diff6bOffssetHeight;
+                diff6b.Location = new Point(diff6b.Location.X + 110, diff6b.Location.Y + 75);
+
+                diff7b.Width = (int)(this.Width / 2.3) - diff7bOffssetWidth;
+                diff7b.Height = (int)(this.Height / 2.1) - diff7bOffssetHeight;
+                diff7b.Location = new Point(diff7b.Location.X + 90, diff7b.Location.Y + 75);
+
+            }
+        }
 
         public differencesSecondLevel()
         {
             InitializeComponent();
             finish_button.Visible = false;
             minieKiss.Visible = false;
-
             InitializePictureBoxBackColor();
             audioVA.URL = "audio//cele_7_dif.mp3";
 
-	    pictureBox1OffestWidth = this.Width - pictureBox1.Width;
+            pictureBox1OffestWidth = this.Width - pictureBox1.Width;
             pictureBox1OffestHeight = this.Height - pictureBox1.Height;
-
-            pictureBox3OffestWidth = this.Width - pictureBox3.Width;
-            pictureBox3OffestHeight = this.Height - pictureBox3.Height;
 
             closeButtonOffestWidth = this.Width - close_button.Width;
             closeButtonOffsetHeight = this.Height - close_button.Height;
@@ -413,80 +478,5 @@ namespace hci_vestitorii_primaverii
         {
             audioVA.controls.play();
         }
-
-	private void differencesSecondLevel_Resize(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Maximized)
-            {
-                pictureBox1.Width = (int)(this.Width / 1.5) - pictureBox1OffestWidth;
-                pictureBox1.Height = (int)(this.Height / 1.2) - pictureBox1OffestHeight;
-
-                pictureBox3.Width = (int)(this.Width / 1.5) - pictureBox3OffestWidth;
-                pictureBox3.Height = (int)(this.Height / 1.5) - pictureBox3OffestHeight;
-                pictureBox3.Location = new Point(pictureBox3.Location.X + 190, pictureBox3.Location.Y + 90);
-
-                close_button.Location = new Point(close_button.Location.X + 280, close_button.Location.Y);
-
-                minieKiss.Width = (int)(this.Width / 1.7) - minieKissOffestWidth;
-                minieKiss.Height = (int)(this.Height / 1.7) - minieKissOffestHeight;
-                minieKiss.Location = new Point(minieKiss.Location.X + 120, minieKiss.Location.Y + 100);
-
-                diff1a.Width = (int)(this.Width / 2.3) - diff1aOffssetWidth;
-                diff1a.Height = (int)(this.Height / 2.3) - diff1aOffssetHeight;
-                diff1a.Location = new Point(diff1a.Location.X + 40, diff1a.Location.Y + 27);
-
-                diff2a.Width = (int)(this.Width / 2.3) - diff2aOffssetWidth;
-                diff2a.Height = (int)(this.Height / 2.3) - diff2aOffssetHeight;
-                diff2a.Location = new Point(diff2a.Location.X + 8, diff2a.Location.Y + 42);
-
-                diff3a.Width = (int)(this.Width / 2.3) - diff3aOffssetWidth;
-                diff3a.Height = (int)(this.Height / 2.25) - diff3aOffssetHeight;
-                diff3a.Location = new Point(diff3a.Location.X + 17, diff3a.Location.Y + 40);
-
-                diff4a.Width = (int)(this.Width / 2.3) - diff4aOffssetWidth;
-                diff4a.Height = (int)(this.Height / 2.25) - diff4aOffssetHeight;
-                diff4a.Location = new Point(diff4a.Location.X, diff4a.Location.Y + 70);
-
-                diff5a.Width = (int)(this.Width / 2.3) - diff5aOffssetWidth;
-                diff5a.Height = (int)(this.Height / 2.25) - diff5aOffssetHeight;
-                diff5a.Location = new Point(diff5a.Location.X + 21, diff5a.Location.Y + 70);
-
-                diff6a.Width = (int)(this.Width / 2.3) - diff6aOffssetWidth;
-                diff6a.Height = (int)(this.Height / 2.1) - diff6aOffssetHeight;
-                diff6a.Location = new Point(diff6a.Location.X + 50, diff6a.Location.Y + 75);
-
-                diff7a.Width = (int)(this.Width / 2.3) - diff7aOffssetWidth;
-                diff7a.Height = (int)(this.Height / 2.1) - diff7aOffssetHeight;
-                diff7a.Location = new Point(diff7a.Location.X + 30, diff7a.Location.Y + 75);
-
-                diff1b.Width = (int)(this.Width / 2.3) - diff1bOffssetWidth;
-                diff1b.Height = (int)(this.Height / 2.3) - diff1bOffssetHeight;
-                diff1b.Location = new Point(diff1b.Location.X + 100, diff1b.Location.Y + 27);
-
-                diff2b.Width = (int)(this.Width / 2.3) - diff2bOffssetWidth;
-                diff2b.Height = (int)(this.Height / 2.3) - diff2bOffssetHeight;
-                diff2b.Location = new Point(diff2b.Location.X + 68, diff2b.Location.Y + 42);
-
-                diff3b.Width = (int)(this.Width / 2.3) - diff3bOffssetWidth;
-                diff3b.Height = (int)(this.Height / 2.25) - diff3bOffssetHeight;
-                diff3b.Location = new Point(diff3b.Location.X + 77, diff3b.Location.Y + 40);
-
-                diff4b.Width = (int)(this.Width / 2.3) - diff4bOffssetWidth;
-                diff4b.Height = (int)(this.Height / 2.25) - diff4bOffssetHeight;
-                diff4b.Location = new Point(diff4b.Location.X + 60, diff4b.Location.Y + 70);
-
-                diff5b.Width = (int)(this.Width / 2.3) - diff5bOffssetWidth;
-                diff5b.Height = (int)(this.Height / 2.25) - diff5bOffssetHeight;
-                diff5b.Location = new Point(diff5b.Location.X + 81, diff5b.Location.Y + 70);
-
-                diff6b.Width = (int)(this.Width / 2.3) - diff6bOffssetWidth;
-                diff6b.Height = (int)(this.Height / 2.1) - diff6bOffssetHeight;
-                diff6b.Location = new Point(diff6b.Location.X + 110, diff6b.Location.Y + 75);
-
-                diff7b.Width = (int)(this.Width / 2.3) - diff7bOffssetWidth;
-                diff7b.Height = (int)(this.Height / 2.1) - diff7bOffssetHeight;
-                diff7b.Location = new Point(diff7b.Location.X + 90, diff7b.Location.Y + 75);
-
-            }
     }
 }

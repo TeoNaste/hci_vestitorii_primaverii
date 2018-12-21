@@ -8,6 +8,7 @@ using System.Linq;
 using System.Resources;
 using System.Text;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace hci_vestitorii_primaverii
 {
@@ -19,7 +20,10 @@ namespace hci_vestitorii_primaverii
         ResourceManager rm = Resources.ResourceManager;
         Bitmap imgMickeyHappy = Properties.Resources.MickeyHappy;
         Bitmap imgMickeyThinking = Properties.Resources.MickeyThinking;
+        
+
         public chooseImages()
+
         {         
             InitializeComponent();
             pictureBox1.Image = imgMickeyThinking;
@@ -27,77 +31,6 @@ namespace hci_vestitorii_primaverii
             pictureBox3.Image = imgMickeyThinking;
             audioVA.URL = "audio//3_imagini_primavara.aac";
             
-            pictureBox4OffsetWidth = this.Width - pictureBox4.Width;
-            pictureBox4OffsetHeight = this.Height - pictureBox4.Height;
-
-            pictureBox1OffsetWidth = this.Width - pictureBox1.Width;
-            pictureBox1OffsetHeight = this.Height - pictureBox1.Height;
-
-            pictureBox2OffsetWidth = this.Width - pictureBox2.Width;
-            pictureBox2OffsetHeight = this.Height - pictureBox2.Height;
-
-            pictureBox3OffsetWidth = this.Width - pictureBox3.Width;
-            pictureBox3OffsetHeight = this.Height - pictureBox3.Height;
-
-            treeAutumnOffsetWidth = this.Width - treeautumn.Width;
-            treeAutumnOffsetHeight = this.Height - treeautumn.Height;
-            treeWinterOffsetWidth = this.Width - treewinter.Width;
-            treeWinterOffsetHeight = this.Height - treewinter.Height;
-            treeSpringOffsetWidth = this.Width - treespring.Width;
-            treeSpringOffsetHeight = this.Height - treespring.Height;
-            treeSummerOffsetWidth = this.Width - treesummer.Width;
-            treeSummerOffsetHeight = this.Height - treesummer.Height;
-
-            paneltreeAutumnOffsetWidth = this.Width - paneltreeautumn.Width;
-            paneltreeAutumnOffsetHeight = this.Height - paneltreeautumn.Height;
-            paneltreeWinterOffsetWidth = this.Width - paneltreewinter.Width;
-            paneltreeWinterOffsetHeight = this.Height - paneltreewinter.Height;
-            paneltreeSpringOffsetWidth = this.Width - paneltreespring.Width;
-            paneltreeSpringOffsetHeight = this.Height - paneltreespring.Height;
-            paneltreeSummerOffsetWidth = this.Width - paneltreesummer.Width;
-            paneltreeSummerOffsetHeight = this.Height - paneltreesummer.Height;
-
-            barzaOffsetWidth = this.Width - barza.Width;
-            barzaOffsetHeight = this.Height - barza.Height;
-            vulturOffsetWidth = this.Width - vultur.Width;
-            vulturOffsetHeight = this.Height - vultur.Height;
-            bufnitaOffsetWidth = this.Width - bufnita.Width;
-            bufnitaOffsetHeight = this.Height - bufnita.Height;
-            randunicaOffsetWidth = this.Width - randunica.Width;
-            randunicaOffsetHeight = this.Height - randunica.Height;
-
-            panelbarzaOffsetWidth = this.Width - panelbarza.Width;
-            panelbarzaOffsetHeight = this.Height - panelbarza.Height;
-            panelvulturOffsetWidth = this.Width - panelvultur.Width;
-            panelvulturOffsetHeight = this.Height - panelvultur.Height;
-            panelbufnitaOffsetWidth = this.Width - panelbufnita.Width;
-            panelbufnitaOffsetHeight = this.Height - panelbufnita.Height;
-            panelrandunicaOffsetWidth = this.Width - panelrandunica.Width;
-            panelrandunicaOffsetHeight = this.Height - panelrandunica.Height;
-
-            crizantemeOffsetWidth = this.Width -   crizanteme.Width;
-            crizantemeOffsetHeight = this.Height - crizanteme.Height;
-            flSoareluiOffsetWidth = this.Width - floareasoarelui.Width;
-            flSoareluiOffsetHeight = this.Height - floareasoarelui.Height;
-            trandafiriOffsetWidth = this.Width - trandafiri.Width;
-            trandafiriOffsetHeight = this.Height - trandafiri.Height;
-            ghioceiOffsetWidth = this.Width - ghiocei.Width;
-            ghioceiOffsetHeight = this.Height - ghiocei.Height;
-
-            panelcrizantemeOffsetWidth = this.Width - panelcrizanteme.Width;
-            panelcrizantemeOffsetHeight = this.Height - panelcrizanteme.Height;
-            panelflSoareluiOffsetWidth = this.Width - panelfloareasoarelui.Width;
-            panelflSoareluiOffsetHeight = this.Height - panelfloareasoarelui.Height;
-            paneltrandafiriOffsetWidth = this.Width - paneltrandafiri.Width;
-            paneltrandafiriOffsetHeight = this.Height - paneltrandafiri.Height;
-            panelghioceiOffsetWidth = this.Width - panelghiocei.Width;
-            panelghioceiOffsetHeight = this.Height - panelghiocei.Height;
-
-            this.WindowState = FormWindowState.Normal;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            //this.Bounds = Screen.PrimaryScreen.Bounds;
-            this.WindowState = FormWindowState.Maximized;
-
         }
 
         private void checkWin()
@@ -148,10 +81,6 @@ namespace hci_vestitorii_primaverii
             paneltreesummer.BackColor = Color.Transparent;
             paneltreespring.BackColor = Color.Green;
             imagesFound++;
-            treespring.Enabled = false;
-            treesummer.Enabled = false;
-            treeautumn.Enabled = false;
-            treewinter.Enabled = false;
             checkWin();
             pictureBox1.Image = imgMickeyHappy;
 
@@ -190,10 +119,6 @@ namespace hci_vestitorii_primaverii
             panelvultur.BackColor = Color.Transparent;
             panelbufnita.BackColor = Color.Transparent;
             imagesFound++;
-            randunica.Enabled = false;
-            vultur.Enabled = false;
-            bufnita.Enabled = false;
-            barza.Enabled = false;
             pictureBox2.Image = imgMickeyHappy;
             checkWin();
         }
@@ -258,10 +183,6 @@ namespace hci_vestitorii_primaverii
             paneltrandafiri.BackColor = Color.Transparent;
             panelghiocei.BackColor = Color.Green;
             imagesFound++;
-            ghiocei.Enabled = false;
-            floareasoarelui.Enabled = false;
-            trandafiri.Enabled = false;
-            crizanteme.Enabled = false;
             checkWin();
             pictureBox3.Image = imgMickeyHappy;
         }
@@ -271,5 +192,9 @@ namespace hci_vestitorii_primaverii
             Application.Exit();
         }
 
+        private void chooseImages_Load(object sender, EventArgs e)
+        {
+            audioVA.controls.play();
+        }
     }
 }

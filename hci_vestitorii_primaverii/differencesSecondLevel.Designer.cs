@@ -136,23 +136,7 @@
             this.close_button.UseVisualStyleBackColor = false;
             this.close_button.Click += new System.EventHandler(this.close_button_Click);
             // 
-<<<<<<< HEAD
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::hci_vestitorii_primaverii.Properties.Resources.start_pluto;
-            this.pictureBox3.Location = new System.Drawing.Point(535, 242);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(445, 252);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 64;
-            this.pictureBox3.TabStop = false;
-        
-            // 
-            // diff1a
-=======
             // minieKiss
->>>>>>> master
             // 
             this.minieKiss.BackColor = System.Drawing.Color.Transparent;
             this.minieKiss.Image = global::hci_vestitorii_primaverii.Properties.Resources.AS002401_02;

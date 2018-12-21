@@ -115,6 +115,7 @@
             this.Name = "FindTheBarza";
             this.Text = "FindTheBarza";
             this.Load += new System.EventHandler(this.FindTheBarza_Load);
+            this.Resize += new System.EventHandler(this.FindTheBarza_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.infoBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barza1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barza2)).EndInit();

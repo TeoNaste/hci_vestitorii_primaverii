@@ -114,6 +114,7 @@
             this.Name = "FindTheBee";
             this.Text = "FindTheBee";
             this.Load += new System.EventHandler(this.FindTheBee_Load);
+            this.Resize += new System.EventHandler(this.FindTheBee_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.infoBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bee1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bee2)).EndInit();

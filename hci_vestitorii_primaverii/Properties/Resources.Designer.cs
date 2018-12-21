@@ -83,9 +83,9 @@ namespace hci_vestitorii_primaverii.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _71 {
+        internal static System.Drawing.Bitmap _72 {
             get {
-                object obj = ResourceManager.GetObject("71", resourceCulture);
+                object obj = ResourceManager.GetObject("72", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

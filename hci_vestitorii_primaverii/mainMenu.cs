@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using System.Drawing.Drawing2D;
 using WMPLib;
+
 
 namespace hci_vestitorii_primaverii
 {
@@ -18,12 +13,6 @@ namespace hci_vestitorii_primaverii
 
         int pictureBox3OffestWidth;
         int pictureBox3OffestHeight;
-
-        int pictureBox1OffestWidth;
-        int pictureBox1OffestHeight;
-
-        int pictureBox2OffestWidth;
-        int pictureBox2OffestHeight;
 
         int closeButtonOffsetHeight;
         int closeButtonOffestWidth;
@@ -49,15 +38,8 @@ namespace hci_vestitorii_primaverii
                 audioVA.URL = "audio//alege_meniu.wav";
             }
 
-
-            pictureBox3OffestWidth = this.Width - pictureBox3.Width;
-            pictureBox3OffestHeight = this.Height - pictureBox3.Height;
-
-            pictureBox1OffestWidth = this.Width - pictureBox1.Width;
-            pictureBox1OffestHeight = this.Height - pictureBox1.Height;
-
-            pictureBox2OffestWidth = this.Width - pictureBox2.Width;
-            pictureBox2OffestHeight = this.Height - pictureBox2.Height;
+            pictureBox3OffestWidth = this.Width - tree.Width;
+            pictureBox3OffestHeight = this.Height - tree.Height;
 
             closeButtonOffestWidth = this.Width - close_button.Width;
             closeButtonOffsetHeight = this.Height - close_button.Height;
@@ -73,7 +55,7 @@ namespace hci_vestitorii_primaverii
             //this.Bounds = Screen.PrimaryScreen.Bounds;
             this.WindowState = FormWindowState.Maximized;
 
-            pictureBox4.Bounds = Screen.PrimaryScreen.Bounds;
+            pictureBox6.Bounds = Screen.PrimaryScreen.Bounds;
         }
 
         private void mainMenu_Load(object sender, EventArgs e)
@@ -94,8 +76,8 @@ namespace hci_vestitorii_primaverii
 
         private void start_snowdrop_MouseLeave(object sender, EventArgs e)
         {
-
-            while (start_snowdrop.Width > 91 && start_snowdrop.Height > 89)
+            int i = 7;
+            while (i>0)
             {
                 start_snowdrop.Width--;
                 start_snowdrop.Height--;
@@ -163,6 +145,62 @@ namespace hci_vestitorii_primaverii
             audioVA.controls.stop();
         }
 
-   
+        private void tree_MouseClick(object sender, MouseEventArgs e)
+        {
+            FindTheBear find = new FindTheBear();
+            this.Hide();
+            find.Show();
+            audioVA.controls.stop();
+        }
+
+        private void tree_MouseEnter(object sender, EventArgs e)
+        {
+            tree.Size = new Size(tree.Width + 7, tree.Height  + 7);
+        }
+
+        private void tree_MouseLeave(object sender, EventArgs e)
+        {
+            int i = 7;
+            while (i > 0)
+            {
+                tree.Width--;
+                tree.Height--;
+                Application.DoEvents();
+                i--;
+            }
+        }
+
+        private void pictureBox6_Resize(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void mainMenu_Resize(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                tree.Width = (int)(Screen.PrimaryScreen.Bounds.Width / 1.7) - pictureBox3OffestWidth;
+                tree.Height = (int)(Screen.PrimaryScreen.Bounds.Height / 1.5) - pictureBox3OffestHeight;
+                //pictureBox3.Location = new Point(pictureBox3.Location.X + 190, pictureBox3.Location.Y + 90);
+                tree.Location = new Point(Screen.PrimaryScreen.Bounds.Width - tree.Width*2 - tree.Width/4, Screen.PrimaryScreen.Bounds.Height - tree.Height - tree.Height/2 - tree.Height/8);
+
+                close_button.Location = new Point(Screen.PrimaryScreen.Bounds.Width - close_button.Width, 0);
+
+                start_snowdrop.Width = (int)(Screen.PrimaryScreen.Bounds.Width / 2) - startSnowDropOffsetWidth;
+                start_snowdrop.Height = (int)(Screen.PrimaryScreen.Bounds.Height / 2) - startSnowDropOffestHeight;
+                //start_snowdrop.Location = new Point(start_snowdrop.Location.X + 100, start_snowdrop.Location.Y + 100);
+                start_snowdrop.Location = new Point(Screen.PrimaryScreen.Bounds.Width - tree.Width - tree.Width - start_snowdrop.Width, tree.Location.Y + tree.Height - start_snowdrop.Height/2);
+
+                swallow_button.Width = (int)(Screen.PrimaryScreen.Bounds.Width / 2.2) - swallowButtonOffestWidth;
+                swallow_button.Height = (int)(Screen.PrimaryScreen.Bounds.Height / 2) - swallowButtonOffestHidth;
+                //swallow_button.Location = new Point(swallow_button.Location.X + 80, swallow_button.Location.Y + 50);
+                swallow_button.Location = new Point((int)(Screen.PrimaryScreen.Bounds.Width / 3.5) + swallow_button.Width / 4, swallow_button.Height + swallow_button.Height / 3);
+            }
+        }
+
+        private void tree_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

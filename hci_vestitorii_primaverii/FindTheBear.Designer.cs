@@ -115,6 +115,7 @@
             this.Name = "FindTheBear";
             this.Text = "FindTheObject";
             this.Load += new System.EventHandler(this.FindTheBear_Load);
+            this.Resize += new System.EventHandler(this.FindTheBear_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.infoBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.urs1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.urs2)).EndInit();
