@@ -45,12 +45,13 @@
             this.tree.BackColor = System.Drawing.Color.Transparent;
             this.tree.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tree.Image = global::hci_vestitorii_primaverii.Properties.Resources.tree;
-            this.tree.Location = new System.Drawing.Point(361, 132);
+            this.tree.Location = new System.Drawing.Point(343, 142);
             this.tree.Name = "tree";
             this.tree.Size = new System.Drawing.Size(154, 205);
             this.tree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tree.TabIndex = 10;
             this.tree.TabStop = false;
+            this.tree.Click += new System.EventHandler(this.tree_Click);
             this.tree.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tree_MouseClick);
             this.tree.MouseEnter += new System.EventHandler(this.tree_MouseEnter);
             this.tree.MouseLeave += new System.EventHandler(this.tree_MouseLeave);

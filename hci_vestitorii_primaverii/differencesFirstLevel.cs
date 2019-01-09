@@ -14,7 +14,7 @@ namespace hci_vestitorii_primaverii
 {
     public partial class differencesFirstLevel : Form
     {
-        private int differences = 5;
+        private int differences = 7;
         private Timer MyTimer;
         ResourceManager rm = Resources.ResourceManager;
         WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
@@ -24,7 +24,7 @@ namespace hci_vestitorii_primaverii
             InitializeComponent();
             InitializePictureBoxBackColor();
             minieKiss.Visible = false;
-            audioVA.URL = "audio//cele_5_dif.mp3";
+            audioVA.URL = "audio//cele_7_dif.mp3";
 
             this.Width = Screen.PrimaryScreen.Bounds.Width;
             this.Height = Screen.PrimaryScreen.Bounds.Height;
@@ -53,9 +53,14 @@ namespace hci_vestitorii_primaverii
             MyTimer = new Timer();
             MyTimer.Interval = (4 * 1000);
             MyTimer.Tick += new EventHandler(play_button_Click);
-            if(differences == 4)
+            if (differences == 6)
             {
-                audioVA.URL = "audio//inca_4_dif.aac";
+                audioVA.URL = "audio//inca_6_dif.aac";
+                audioVA.controls.play();
+            }
+            if (differences == 5)
+            {
+                audioVA.URL = "audio//inca_5_dif.aac";
                 audioVA.controls.play();
             }
             if (differences == 4)
@@ -130,7 +135,17 @@ namespace hci_vestitorii_primaverii
             diff5b.BackColor = Color.Transparent;
             //diff5b.Image = myImage;
 
-            
+            diff6b.Parent = pictureBox1;
+            diff6b.BackColor = Color.Transparent;
+
+            diff6a.Parent = pictureBox1;
+            diff6a.BackColor = Color.Transparent;
+
+            diff7b.Parent = pictureBox1;
+            diff7b.BackColor = Color.Transparent;
+
+            diff7a.Parent = pictureBox1;
+            diff7a.BackColor = Color.Transparent;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -296,6 +311,54 @@ namespace hci_vestitorii_primaverii
             diff4b.Enabled = false;
             checkWin();
 
+        }
+
+        private void diff7a_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            diff7a.Image = myImage;
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff7b.Image = myImage;
+            diff7a.Enabled = false;
+            diff7b.Enabled = false;
+            checkWin();
+        }
+
+        private void diff7b_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            diff7a.Image = myImage;
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff7b.Image = myImage;
+            diff7a.Enabled = false;
+            diff7b.Enabled = false;
+            checkWin();
+        }
+
+        private void diff6a_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            diff6a.Image = myImage;
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff6b.Image = myImage;
+            diff6a.Enabled = false;
+            diff6b.Enabled = false;
+            checkWin();
+        }
+
+        private void diff6b_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            diff6a.Image = myImage;
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff6b.Image = myImage;
+            diff6a.Enabled = false;
+            diff6b.Enabled = false;
+            checkWin();
         }
     }
 }
