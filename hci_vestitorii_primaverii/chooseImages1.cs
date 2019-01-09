@@ -28,6 +28,22 @@ namespace hci_vestitorii_primaverii
             pictureBox1.Image = imgMickeyThinking;
             pictureBox5.Visible = false;
             audioVA.URL = "audio//alege_copacul_inflorit.aac";
+
+            this.Width = Screen.PrimaryScreen.Bounds.Width;
+            this.Height = Screen.PrimaryScreen.Bounds.Height;
+
+            float widthRatio = Screen.PrimaryScreen.Bounds.Width / 764f;
+            float heightRatio = Screen.PrimaryScreen.Bounds.Height / 401f;
+
+            SizeF scale = new SizeF(widthRatio, heightRatio);
+
+            this.Scale(scale);
+
+            close_button.Width = (int)(close_button.Width / widthRatio);
+            close_button.Height = (int)(close_button.Height / heightRatio);
+
+            close_button.Location = new Point((int)(close_button.Location.X + close_button.Width), (int)(close_button.Location.Y));
+
         }
         private void checkWin()
         {

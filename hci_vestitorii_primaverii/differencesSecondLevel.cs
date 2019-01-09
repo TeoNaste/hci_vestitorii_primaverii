@@ -26,6 +26,22 @@ namespace hci_vestitorii_primaverii
             minieKiss.Visible = false;
             InitializePictureBoxBackColor();
             audioVA.URL = "audio//cele_7_dif.mp3";
+
+            this.Width = Screen.PrimaryScreen.Bounds.Width;
+            this.Height = Screen.PrimaryScreen.Bounds.Height;
+
+            float widthRatio = Screen.PrimaryScreen.Bounds.Width / 800f;
+            float heightRatio = Screen.PrimaryScreen.Bounds.Height / 450f;
+
+            SizeF scale = new SizeF(widthRatio, heightRatio);
+
+            this.Scale(scale);
+
+            close_button.Width = (int)(close_button.Width / widthRatio);
+            close_button.Height = (int)(close_button.Height / heightRatio);
+
+            close_button.Location = new Point((int)(close_button.Location.X + close_button.Width), (int)(close_button.Location.Y));
+
         }
 
         private void InitializePictureBoxBackColor()

@@ -24,6 +24,22 @@ namespace hci_vestitorii_primaverii
             bee1.Visible = false;
             bee2.Visible = false;
             bee3.Visible = false;
+
+            this.Width = Screen.PrimaryScreen.Bounds.Width;
+            this.Height = Screen.PrimaryScreen.Bounds.Height;
+
+            float widthRatio = Screen.PrimaryScreen.Bounds.Width / 800f;
+            float heightRatio = Screen.PrimaryScreen.Bounds.Height / 450f;
+
+            SizeF scale = new SizeF(widthRatio, heightRatio);
+
+            this.Scale(scale);
+
+            close_button.Width = (int)(close_button.Width / widthRatio);
+            close_button.Height = (int)(close_button.Height / heightRatio);
+
+            close_button.Location = new Point((int)(close_button.Location.X + close_button.Width), (int)(close_button.Location.Y));
+
         }
 
         private void close_button_Click(object sender, EventArgs e)
@@ -117,5 +133,9 @@ namespace hci_vestitorii_primaverii
             this.Close();
         }
 
+        private void infoBox_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

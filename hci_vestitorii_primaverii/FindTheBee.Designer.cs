@@ -63,6 +63,7 @@
             this.infoBox.Size = new System.Drawing.Size(420, 287);
             this.infoBox.TabIndex = 12;
             this.infoBox.TabStop = false;
+            this.infoBox.Click += new System.EventHandler(this.infoBox_Click_1);
             // 
             // bee1
             // 

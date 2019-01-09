@@ -25,6 +25,22 @@ namespace hci_vestitorii_primaverii
             InitializePictureBoxBackColor();
             minieKiss.Visible = false;
             audioVA.URL = "audio//cele_5_dif.mp3";
+
+            this.Width = Screen.PrimaryScreen.Bounds.Width;
+            this.Height = Screen.PrimaryScreen.Bounds.Height;
+
+            float widthRatio = Screen.PrimaryScreen.Bounds.Width / 800f;
+            float heightRatio = Screen.PrimaryScreen.Bounds.Height / 450f;
+
+            SizeF scale = new SizeF(widthRatio, heightRatio);
+
+            this.Scale(scale);
+
+            button1.Width = (int)(button1.Width / widthRatio);
+            button1.Height = (int)(button1.Height / heightRatio);
+
+            button1.Location = new Point((int)(button1.Location.X + button1.Width), (int)(button1.Location.Y));
+
         }
 
         private void differencesFirstLevel_Load(object sender, EventArgs e)
@@ -117,7 +133,7 @@ namespace hci_vestitorii_primaverii
             
         }
 
-        private void close_button_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -151,11 +167,6 @@ namespace hci_vestitorii_primaverii
             if (this.dragging)
 
                 this.Location = new Point(this.Left - (this.offset.X - e.X), this.Top - (this.offset.Y - e.Y));
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         private void button2_Click(object sender, EventArgs e)

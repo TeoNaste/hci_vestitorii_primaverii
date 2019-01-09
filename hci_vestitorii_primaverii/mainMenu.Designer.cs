@@ -66,6 +66,7 @@
             this.swallow_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.swallow_button.TabIndex = 9;
             this.swallow_button.TabStop = false;
+            this.swallow_button.Click += new System.EventHandler(this.swallow_button_Click);
             this.swallow_button.MouseClick += new System.Windows.Forms.MouseEventHandler(this.swallow_button_MouseClick);
             this.swallow_button.MouseEnter += new System.EventHandler(this.swallow_button_MouseEnter);
             this.swallow_button.MouseLeave += new System.EventHandler(this.swallow_button_MouseLeave);
