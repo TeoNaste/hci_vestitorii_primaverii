@@ -54,9 +54,9 @@ namespace hci_vestitorii_primaverii
 
         private void infoBox_Click(object sender, EventArgs e)
         {
-            MyTimer.Stop();
-            audioVA.controls.play();
-            MyTimer.Start();
+           // MyTimer.Stop();
+           // audioVA.controls.play();
+            //MyTimer.Start();
         }
 
         private void barza1_Click(object sender, EventArgs e)

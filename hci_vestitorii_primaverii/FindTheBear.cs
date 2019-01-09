@@ -55,7 +55,7 @@ namespace hci_vestitorii_primaverii
 
         private void infoBox_Click(object sender, EventArgs e)
         {
-            audioVA.controls.play();
+            //audioVA.controls.play();
         }
 
         private void urs1_Click(object sender, EventArgs e)
