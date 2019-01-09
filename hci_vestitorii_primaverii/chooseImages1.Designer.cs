@@ -48,6 +48,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Location = new System.Drawing.Point(12, 13);
             this.panel1.Name = "panel1";
@@ -56,7 +57,6 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::hci_vestitorii_primaverii.Properties.Resources.treewinter2;
             this.pictureBox2.Location = new System.Drawing.Point(4, 4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(211, 269);
@@ -67,6 +67,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Location = new System.Drawing.Point(258, 13);
             this.panel2.Name = "panel2";
@@ -75,7 +76,6 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::hci_vestitorii_primaverii.Properties.Resources.treeautumn2;
             this.pictureBox3.Location = new System.Drawing.Point(4, 4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(211, 269);
@@ -86,6 +86,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.pictureBox4);
             this.panel3.Location = new System.Drawing.Point(509, 13);
             this.panel3.Name = "panel3";
@@ -94,7 +95,6 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::hci_vestitorii_primaverii.Properties.Resources.treespring2;
             this.pictureBox4.Location = new System.Drawing.Point(4, 4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(211, 269);

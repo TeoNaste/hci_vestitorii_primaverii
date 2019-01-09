@@ -17,9 +17,15 @@ namespace hci_vestitorii_primaverii
         WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
         private int imageFound = 0;
         private Timer MyTimer;
+
+        public Random a = new Random();        
+
         ResourceManager rm = Resources.ResourceManager;
         Bitmap imgMickeyHappy = Properties.Resources.MickeyHappy;
         Bitmap imgMickeyThinking = Properties.Resources.MickeyThinking;
+        Bitmap treespring = Properties.Resources.treespring2;
+        Bitmap treeautumn = Properties.Resources.treeautumn2;
+        Bitmap treewinter = Properties.Resources.treewinter2;
 
         public chooseImages1()
         {
@@ -27,6 +33,45 @@ namespace hci_vestitorii_primaverii
             pictureBox1.Image = imgMickeyThinking;
             pictureBox5.Visible = false;
             audioVA.URL = "audio//3_imagini_primavara.aac";
+            int MyNumber = a.Next(1, 7);
+            if (MyNumber == 1)
+            {
+                pictureBox2.Image = treewinter;
+                pictureBox3.Image = treeautumn;
+                pictureBox4.Image = treespring;
+            }
+            if (MyNumber == 2)
+            {
+                pictureBox2.Image = treewinter;
+                pictureBox4.Image = treeautumn;
+                pictureBox3.Image = treespring;
+            }
+            if (MyNumber == 3)
+            {
+                pictureBox3.Image = treewinter;
+                pictureBox2.Image = treeautumn;
+                pictureBox4.Image = treespring;
+            }
+            if (MyNumber == 4)
+            {
+                pictureBox3.Image = treewinter;
+                pictureBox4.Image = treeautumn;
+                pictureBox2.Image = treespring;
+            }
+            if (MyNumber == 5)
+            {
+                pictureBox4.Image = treewinter;
+                pictureBox2.Image = treeautumn;
+                pictureBox3.Image = treespring;
+            }
+            if (MyNumber == 6)
+            {
+                pictureBox4.Image = treewinter;
+                pictureBox3.Image = treeautumn;
+                pictureBox2.Image = treespring;
+            }
+
+
         }
         private void checkWin()
         {
@@ -50,32 +95,68 @@ namespace hci_vestitorii_primaverii
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            panel1.BackColor = Color.Red;
-            panel2.BackColor = Color.Transparent;
-            panel3.BackColor = Color.Transparent;
+            if (pictureBox2.Image == treespring)
+            {
+                panel1.BackColor = Color.Green;
+                panel2.BackColor = Color.Transparent;
+                panel3.BackColor = Color.Transparent;
 
-            pictureBox1.Image = imgMickeyThinking;
-            pictureBox5.Visible = false;
+                pictureBox1.Image = imgMickeyHappy;
+                pictureBox5.Visible = true;
+            }
+            else
+            {
+                panel1.BackColor = Color.Red;
+                panel2.BackColor = Color.Transparent;
+                panel3.BackColor = Color.Transparent;
+
+                pictureBox1.Image = imgMickeyThinking;
+                pictureBox5.Visible = false;
+            }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            panel1.BackColor = Color.Transparent;
-            panel2.BackColor = Color.Red;
-            panel3.BackColor = Color.Transparent;
+            if (pictureBox3.Image == treespring)
+            {
+                panel1.BackColor = Color.Transparent;
+                panel2.BackColor = Color.Green;
+                panel3.BackColor = Color.Transparent;
 
-            pictureBox1.Image = imgMickeyThinking;
-            pictureBox5.Visible = false;
+                pictureBox1.Image = imgMickeyHappy;
+                pictureBox5.Visible = true;
+            }
+            else
+            {
+                panel1.BackColor = Color.Transparent;
+                panel2.BackColor = Color.Red;
+                panel3.BackColor = Color.Transparent;
+
+                pictureBox1.Image = imgMickeyThinking;
+                pictureBox5.Visible = false;
+            }
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            panel1.BackColor = Color.Transparent;
-            panel2.BackColor = Color.Transparent;
-            panel3.BackColor = Color.Green;
+            if (pictureBox4.Image == treespring)
+            {
+                panel1.BackColor = Color.Transparent;
+                panel2.BackColor = Color.Transparent;
+                panel3.BackColor = Color.Green;
 
-            pictureBox1.Image = imgMickeyHappy;
-            pictureBox5.Visible = true;
+                pictureBox1.Image = imgMickeyHappy;
+                pictureBox5.Visible = true;
+            }
+            else
+            {
+                panel1.BackColor = Color.Transparent;
+                panel2.BackColor = Color.Transparent;
+                panel3.BackColor = Color.Red;
+
+                pictureBox1.Image = imgMickeyThinking;
+                pictureBox5.Visible = false;
+            }
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
