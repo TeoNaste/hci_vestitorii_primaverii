@@ -16,14 +16,17 @@ namespace hci_vestitorii_primaverii
         WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
         private Timer MyTimer;
         int toFind = 3;
+        Dictionary<Bitmap,List<PictureBox>> images;
+        Random r = new Random();
 
         public FindTheBarza()
         {
             InitializeComponent();
             audioVA.URL = "audio//info_barza.aac";
-            barza1.Visible = false;
-            barza2.Visible = false;
-            barza3.Visible = false;
+            audioVA.settings.volume = 100;
+            disablePictureBoxes();
+            images = new Dictionary<Bitmap, List<PictureBox>>();
+            initializeDict();
         }
 
         private void close_button_Click(object sender, EventArgs e)
@@ -44,45 +47,60 @@ namespace hci_vestitorii_primaverii
         {
             MyTimer.Stop();
             infoBox.Visible = false;
-            barza1.Visible = true;
-            barza2.Visible = true;
-            barza3.Visible = true;
-            this.BackgroundImage = Resources.village_bg;
+            int rInt = r.Next(0, images.Count);
+            Bitmap image = images.Keys.ElementAt(rInt);
+            this.BackgroundImage = image;
+            foreach (PictureBox pic in images[image])
+            {
+                pic.Visible = true;
+            }
             audioVA.URL = "audio//cauta_3_berze.aac";
             audioVA.controls.play();
         }
 
         private void infoBox_Click(object sender, EventArgs e)
         {
-            MyTimer.Stop();
-            audioVA.controls.play();
-            MyTimer.Start();
-        }
-
-        private void barza1_Click(object sender, EventArgs e)
-        {
-            Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");
-            barza1.Image = myImage;
-            toFind--;
-            barza1.Enabled = false;
-            audio_feedback();
+           // MyTimer.Stop();
+           // audioVA.controls.play();
+            //MyTimer.Start();
         }
 
         private void barza2_Click(object sender, EventArgs e)
         {
             Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");
-            barza2.Image = myImage;
+            barza1_2.Image = myImage;
+            barza2_2.Image = myImage;
+            barza3_2.Image = myImage;
             toFind--;
-            barza2.Enabled = false;
+            barza1_2.Enabled = false;
+            barza2_2.Enabled = false;
+            barza3_2.Enabled = false;
+            audio_feedback();
+        }
+
+        private void barza1_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");
+            barza1_1.Image = myImage;
+            barza2_1.Image = myImage;
+            barza3_1.Image = myImage;
+            toFind--;
+            barza1_1.Enabled = false;
+            barza2_1.Enabled = false;
+            barza3_1.Enabled = false;
             audio_feedback();
         }
 
         private void barza3_Click(object sender, EventArgs e)
         {
             Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");
-            barza3.Image = myImage;
+            barza1_3.Image = myImage;
+            barza2_3.Image = myImage;
+            barza3_3.Image = myImage;
             toFind--;
-            barza3.Enabled = false;
+            barza1_3.Enabled = false;
+            barza2_3.Enabled = false;
+            barza3_3.Enabled = false;
             audio_feedback();
         }
 
@@ -107,6 +125,38 @@ namespace hci_vestitorii_primaverii
                 MyTimer.Tick += new EventHandler(next_game);
                 MyTimer.Start();
             }
+        }
+
+        private void initializeDict()
+        {
+            Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("village_bg");
+            List<PictureBox> list = new List<PictureBox>();
+            list.Add(barza1_1); list.Add(barza1_2); list.Add(barza1_3);
+            images.Add(myImage, list);
+
+            myImage = (Bitmap)Resources.ResourceManager.GetObject("village_bg2");
+            List<PictureBox> list2 = new List<PictureBox>();
+            list2.Add(barza2_1); list2.Add(barza2_2); list2.Add(barza2_3);
+            images.Add(myImage, list2);
+
+            myImage = (Bitmap)Resources.ResourceManager.GetObject("village_bg3");
+            List<PictureBox> list3 = new List<PictureBox>();
+            list3.Add(barza3_1); list3.Add(barza3_2); list3.Add(barza3_3);
+            images.Add(myImage, list3);
+
+        }
+
+        private void disablePictureBoxes()
+        {
+            barza1_1.Visible = false;
+            barza1_2.Visible = false;
+            barza1_3.Visible = false;
+            barza2_1.Visible = false;
+            barza2_2.Visible = false;
+            barza2_3.Visible = false;
+            barza3_1.Visible = false;
+            barza3_2.Visible = false;
+            barza3_3.Visible = false;
         }
 
         private void next_game(object sender, EventArgs e)

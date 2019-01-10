@@ -28,6 +28,7 @@ namespace hci_vestitorii_primaverii
             pictureBox1.Image = imgMickeyThinking;
             pictureBox5.Visible = false;
             audioVA.URL = "audio//alege_copacul_inflorit.aac";
+            audioVA.settings.volume = 100;
         }
         private void checkWin()
         {

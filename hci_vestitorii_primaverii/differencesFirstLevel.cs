@@ -18,13 +18,15 @@ namespace hci_vestitorii_primaverii
         private Timer MyTimer;
         ResourceManager rm = Resources.ResourceManager;
         WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
+       
 
         public differencesFirstLevel()
         {
             InitializeComponent();
             InitializePictureBoxBackColor();
             minieKiss.Visible = false;
-            audioVA.URL = "audio//cele_5_dif.mp3";
+            audioVA.URL = "audio//cele_3_dif.mp3";
+            audioVA.settings.volume = 100;
         }
 
         private void differencesFirstLevel_Load(object sender, EventArgs e)

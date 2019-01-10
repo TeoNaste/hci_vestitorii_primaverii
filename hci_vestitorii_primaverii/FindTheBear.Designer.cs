@@ -30,13 +30,25 @@
         {
             this.close_button = new System.Windows.Forms.Button();
             this.infoBox = new System.Windows.Forms.PictureBox();
-            this.urs1 = new System.Windows.Forms.PictureBox();
-            this.urs2 = new System.Windows.Forms.PictureBox();
-            this.urs3 = new System.Windows.Forms.PictureBox();
+            this.urs1_1 = new System.Windows.Forms.PictureBox();
+            this.urs1_2 = new System.Windows.Forms.PictureBox();
+            this.urs1_3 = new System.Windows.Forms.PictureBox();
+            this.urs2_1 = new System.Windows.Forms.PictureBox();
+            this.urs2_2 = new System.Windows.Forms.PictureBox();
+            this.urs2_3 = new System.Windows.Forms.PictureBox();
+            this.urs3_1 = new System.Windows.Forms.PictureBox();
+            this.urs3_2 = new System.Windows.Forms.PictureBox();
+            this.urs3_3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.infoBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.urs1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.urs2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.urs3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urs1_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urs1_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urs1_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urs2_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urs2_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urs2_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urs3_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urs3_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urs3_3)).BeginInit();
             this.SuspendLayout();
             // 
             // close_button
@@ -58,46 +70,112 @@
             this.infoBox.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.urs_barlog;
             this.infoBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.infoBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.infoBox.Location = new System.Drawing.Point(160, 108);
+            this.infoBox.Location = new System.Drawing.Point(170, 109);
             this.infoBox.Name = "infoBox";
             this.infoBox.Size = new System.Drawing.Size(457, 279);
             this.infoBox.TabIndex = 5;
             this.infoBox.TabStop = false;
             this.infoBox.Click += new System.EventHandler(this.infoBox_Click);
             // 
-            // urs1
+            // urs1_1
             // 
-            this.urs1.BackColor = System.Drawing.Color.Transparent;
-            this.urs1.Location = new System.Drawing.Point(454, 200);
-            this.urs1.Name = "urs1";
-            this.urs1.Size = new System.Drawing.Size(173, 155);
-            this.urs1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.urs1.TabIndex = 6;
-            this.urs1.TabStop = false;
-            this.urs1.Click += new System.EventHandler(this.urs1_Click);
+            this.urs1_1.BackColor = System.Drawing.Color.Transparent;
+            this.urs1_1.Location = new System.Drawing.Point(458, 310);
+            this.urs1_1.Name = "urs1_1";
+            this.urs1_1.Size = new System.Drawing.Size(129, 128);
+            this.urs1_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.urs1_1.TabIndex = 6;
+            this.urs1_1.TabStop = false;
+            this.urs1_1.Click += new System.EventHandler(this.urs1_Click);
             // 
-            // urs2
+            // urs1_2
             // 
-            this.urs2.BackColor = System.Drawing.Color.Transparent;
-            this.urs2.Location = new System.Drawing.Point(688, 150);
-            this.urs2.Name = "urs2";
-            this.urs2.Size = new System.Drawing.Size(100, 100);
-            this.urs2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.urs2.TabIndex = 7;
-            this.urs2.TabStop = false;
-            this.urs2.Click += new System.EventHandler(this.urs2_Click);
+            this.urs1_2.BackColor = System.Drawing.Color.Transparent;
+            this.urs1_2.Location = new System.Drawing.Point(678, 137);
+            this.urs1_2.Name = "urs1_2";
+            this.urs1_2.Size = new System.Drawing.Size(110, 112);
+            this.urs1_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.urs1_2.TabIndex = 7;
+            this.urs1_2.TabStop = false;
+            this.urs1_2.Click += new System.EventHandler(this.urs2_Click);
             // 
-            // urs3
+            // urs1_3
             // 
-            this.urs3.BackColor = System.Drawing.Color.Transparent;
-            this.urs3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.urs3.Location = new System.Drawing.Point(-5, 188);
-            this.urs3.Name = "urs3";
-            this.urs3.Size = new System.Drawing.Size(100, 109);
-            this.urs3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.urs3.TabIndex = 8;
-            this.urs3.TabStop = false;
-            this.urs3.Click += new System.EventHandler(this.urs3_Click);
+            this.urs1_3.BackColor = System.Drawing.Color.Transparent;
+            this.urs1_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.urs1_3.Location = new System.Drawing.Point(54, 189);
+            this.urs1_3.Name = "urs1_3";
+            this.urs1_3.Size = new System.Drawing.Size(128, 109);
+            this.urs1_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.urs1_3.TabIndex = 8;
+            this.urs1_3.TabStop = false;
+            this.urs1_3.Click += new System.EventHandler(this.urs3_Click);
+            // 
+            // urs2_1
+            // 
+            this.urs2_1.BackColor = System.Drawing.Color.Transparent;
+            this.urs2_1.Location = new System.Drawing.Point(54, 156);
+            this.urs2_1.Name = "urs2_1";
+            this.urs2_1.Size = new System.Drawing.Size(110, 112);
+            this.urs2_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.urs2_1.TabIndex = 9;
+            this.urs2_1.TabStop = false;
+            this.urs2_1.Click += new System.EventHandler(this.urs1_Click);
+            // 
+            // urs2_2
+            // 
+            this.urs2_2.BackColor = System.Drawing.Color.Transparent;
+            this.urs2_2.Location = new System.Drawing.Point(417, 169);
+            this.urs2_2.Name = "urs2_2";
+            this.urs2_2.Size = new System.Drawing.Size(125, 112);
+            this.urs2_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.urs2_2.TabIndex = 10;
+            this.urs2_2.TabStop = false;
+            this.urs2_2.Click += new System.EventHandler(this.urs2_Click);
+            // 
+            // urs2_3
+            // 
+            this.urs2_3.BackColor = System.Drawing.Color.Transparent;
+            this.urs2_3.Location = new System.Drawing.Point(569, 156);
+            this.urs2_3.Name = "urs2_3";
+            this.urs2_3.Size = new System.Drawing.Size(103, 82);
+            this.urs2_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.urs2_3.TabIndex = 11;
+            this.urs2_3.TabStop = false;
+            this.urs2_3.Click += new System.EventHandler(this.urs3_Click);
+            // 
+            // urs3_1
+            // 
+            this.urs3_1.BackColor = System.Drawing.Color.Transparent;
+            this.urs3_1.Location = new System.Drawing.Point(12, 304);
+            this.urs3_1.Name = "urs3_1";
+            this.urs3_1.Size = new System.Drawing.Size(122, 144);
+            this.urs3_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.urs3_1.TabIndex = 12;
+            this.urs3_1.TabStop = false;
+            this.urs3_1.Click += new System.EventHandler(this.urs1_Click);
+            // 
+            // urs3_2
+            // 
+            this.urs3_2.BackColor = System.Drawing.Color.Transparent;
+            this.urs3_2.Location = new System.Drawing.Point(303, 273);
+            this.urs3_2.Name = "urs3_2";
+            this.urs3_2.Size = new System.Drawing.Size(122, 99);
+            this.urs3_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.urs3_2.TabIndex = 13;
+            this.urs3_2.TabStop = false;
+            this.urs3_2.Click += new System.EventHandler(this.urs2_Click);
+            // 
+            // urs3_3
+            // 
+            this.urs3_3.BackColor = System.Drawing.Color.Transparent;
+            this.urs3_3.Location = new System.Drawing.Point(666, 182);
+            this.urs3_3.Name = "urs3_3";
+            this.urs3_3.Size = new System.Drawing.Size(122, 99);
+            this.urs3_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.urs3_3.TabIndex = 14;
+            this.urs3_3.TabStop = false;
+            this.urs3_3.Click += new System.EventHandler(this.urs3_Click);
             // 
             // FindTheBear
             // 
@@ -106,19 +184,31 @@
             this.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.spring_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.urs3);
-            this.Controls.Add(this.urs2);
+            this.Controls.Add(this.urs3_3);
+            this.Controls.Add(this.urs3_1);
+            this.Controls.Add(this.urs2_1);
+            this.Controls.Add(this.urs1_2);
             this.Controls.Add(this.close_button);
             this.Controls.Add(this.infoBox);
-            this.Controls.Add(this.urs1);
+            this.Controls.Add(this.urs1_1);
+            this.Controls.Add(this.urs1_3);
+            this.Controls.Add(this.urs2_3);
+            this.Controls.Add(this.urs2_2);
+            this.Controls.Add(this.urs3_2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FindTheBear";
             this.Text = "FindTheObject";
             this.Load += new System.EventHandler(this.FindTheBear_Load);
             ((System.ComponentModel.ISupportInitialize)(this.infoBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.urs1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.urs2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.urs3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urs1_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urs1_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urs1_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urs2_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urs2_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urs2_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urs3_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urs3_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urs3_3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -127,8 +217,14 @@
 
         private System.Windows.Forms.Button close_button;
         private System.Windows.Forms.PictureBox infoBox;
-        private System.Windows.Forms.PictureBox urs1;
-        private System.Windows.Forms.PictureBox urs2;
-        private System.Windows.Forms.PictureBox urs3;
+        private System.Windows.Forms.PictureBox urs1_1;
+        private System.Windows.Forms.PictureBox urs1_2;
+        private System.Windows.Forms.PictureBox urs1_3;
+        private System.Windows.Forms.PictureBox urs2_1;
+        private System.Windows.Forms.PictureBox urs2_2;
+        private System.Windows.Forms.PictureBox urs2_3;
+        private System.Windows.Forms.PictureBox urs3_1;
+        private System.Windows.Forms.PictureBox urs3_2;
+        private System.Windows.Forms.PictureBox urs3_3;
     }
 }

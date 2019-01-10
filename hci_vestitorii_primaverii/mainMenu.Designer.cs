@@ -51,6 +51,7 @@
             this.tree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tree.TabIndex = 10;
             this.tree.TabStop = false;
+            this.tree.Click += new System.EventHandler(this.tree_Click);
             this.tree.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tree_MouseClick);
             this.tree.MouseEnter += new System.EventHandler(this.tree_MouseEnter);
             this.tree.MouseLeave += new System.EventHandler(this.tree_MouseLeave);
@@ -105,9 +106,9 @@
             // 
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6.Image = global::hci_vestitorii_primaverii.Properties.Resources.spring_background_2;
-            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Location = new System.Drawing.Point(0, -1);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(801, 450);
+            this.pictureBox6.Size = new System.Drawing.Size(801, 451);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 8;
             this.pictureBox6.TabStop = false;
