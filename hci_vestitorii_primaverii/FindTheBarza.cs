@@ -91,6 +91,7 @@ namespace hci_vestitorii_primaverii
             barza1_1.Enabled = false;
             barza2_1.Enabled = false;
             barza3_1.Enabled = false;
+            audio_feedback();
         }
 
         private void barza2_Click(object sender, EventArgs e)
