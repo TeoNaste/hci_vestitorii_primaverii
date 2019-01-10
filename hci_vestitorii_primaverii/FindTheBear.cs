@@ -16,14 +16,16 @@ namespace hci_vestitorii_primaverii
         WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
         private Timer MyTimer;
         int toFind = 3;
+        Dictionary<Bitmap, List<PictureBox>> images;
+        Random r = new Random();
 
         public FindTheBear()
         {
             InitializeComponent();
             audioVA.URL = "audio//info_ursul.aac";
-            urs1.Visible = false;
-            urs2.Visible = false;
-            urs3.Visible = false;
+            disablePictureBoxes();
+            images = new Dictionary<Bitmap, List<PictureBox>>();
+            initializeDict();
 
             this.Width = Screen.PrimaryScreen.Bounds.Width;
             this.Height = Screen.PrimaryScreen.Bounds.Height;
@@ -39,6 +41,39 @@ namespace hci_vestitorii_primaverii
             close_button.Height = (int)(close_button.Height / heightRatio);
 
             close_button.Location = new Point((int)(close_button.Location.X + close_button.Width), (int)(close_button.Location.Y));
+
+        }
+
+	private void disablePictureBoxes()
+        {
+            urs1_1.Visible = false;
+            urs1_2.Visible = false;
+            urs1_3.Visible = false;
+            urs2_1.Visible = false;
+            urs2_2.Visible = false;
+            urs2_3.Visible = false;
+            urs3_1.Visible = false;
+            urs3_2.Visible = false;
+            urs3_3.Visible = false;
+
+        }
+
+        private void initializeDict()
+        {
+            Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("forest_bg");
+            List<PictureBox> list = new List<PictureBox>();
+            list.Add(urs1_1); list.Add(urs1_2); list.Add(urs1_3);
+            images.Add(myImage, list);
+
+            myImage = (Bitmap)Resources.ResourceManager.GetObject("forest_bg2");
+            List<PictureBox> list2 = new List<PictureBox>();
+            list2.Add(urs2_1); list2.Add(urs2_2); list2.Add(urs2_3);
+            images.Add(myImage, list2);
+
+            myImage = (Bitmap)Resources.ResourceManager.GetObject("forest_bg3");
+            List<PictureBox> list3 = new List<PictureBox>();
+            list3.Add(urs3_1); list3.Add(urs3_2); list3.Add(urs3_3);
+            images.Add(myImage, list3);
 
         }
 
@@ -60,44 +95,58 @@ namespace hci_vestitorii_primaverii
         {
             MyTimer.Stop();
             infoBox.Visible = false;
-            //infoBox.Size = new Size(1, 1);
-            urs1.Visible = true;
-            urs2.Visible = true;
-            urs3.Visible = true;
-            this.BackgroundImage = Resources.forest_bg;
+            int rInt = r.Next(0, images.Count);
+            Bitmap image = images.Keys.ElementAt(rInt);
+            this.BackgroundImage = image ;
+            foreach(PictureBox pic in images[image])
+            {
+                pic.Visible = true;
+            }
             audioVA.URL = "audio//cauta_3_ursi.mp3";
             audioVA.controls.play();
         }
 
         private void infoBox_Click(object sender, EventArgs e)
         {
-            audioVA.controls.play();
+            //audioVA.controls.play();
         }
 
         private void urs1_Click(object sender, EventArgs e)
         {
             Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");
-            urs1.Image = myImage;
+            urs1_1.Image = myImage;
+            urs2_1.Image = myImage;
+            urs3_1.Image = myImage;
             toFind--;
-            urs1.Enabled = false;
+            urs1_1.Enabled = false;
+            urs2_1.Enabled = false;
+            urs3_1.Enabled = false;
             audio_feedback();
         }
 
         private void urs2_Click(object sender, EventArgs e)
         {
             Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");
-            urs2.Image = myImage;
+            urs1_2.Image = myImage;
+            urs2_2.Image = myImage;
+            urs3_2.Image = myImage;
             toFind--;
-            urs2.Enabled = false;
+            urs1_2.Enabled = false;
+            urs2_2.Enabled = false;
+            urs3_2.Enabled = false;
             audio_feedback();
         }
 
         private void urs3_Click(object sender, EventArgs e)
         {
             Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");
-            urs3.Image = myImage;
+            urs1_3.Image = myImage;
+            urs2_3.Image = myImage;
+            urs3_3.Image = myImage;
             toFind--;
-            urs3.Enabled = false;
+            urs1_3.Enabled = false;
+            urs2_3.Enabled = false;
+            urs3_3.Enabled = false;
             audio_feedback();
         }
 

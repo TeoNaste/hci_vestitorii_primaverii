@@ -335,6 +335,11 @@
     <Content Include="bin\Debug\audio\ultima_dif.aac" />
     <Content Include="bin\Debug\audio\wow_toate_dif.aac" />
     <Content Include="bin\Debug\Music\totoro.wav" />
+    <None Include="Resources\flori_bg2.png" />
+    <None Include="Resources\village_bg3.jpg" />
+    <None Include="Resources\village_bg2.jpg" />
+    <None Include="Resources\forest_bg3.jpg" />
+    <None Include="Resources\forest_bg2.jpg" />
     <None Include="Resources\trandafiri2.jpg" />
     <None Include="Resources\randunica2.jpg" />
     <None Include="Resources\nextarrow.png" />

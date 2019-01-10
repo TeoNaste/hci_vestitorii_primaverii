@@ -42,6 +42,7 @@ namespace hci_vestitorii_primaverii
             else
             {
                 audioVA.URL = "audio//alege_meniu.wav";
+                audioVA.settings.volume = 100;
             }
         }
 
@@ -49,7 +50,6 @@ namespace hci_vestitorii_primaverii
         {
             player.controls.play();
             audioVA.controls.play();
-            
         }
 
         private void close_button_Click(object sender, EventArgs e)
@@ -137,6 +137,7 @@ namespace hci_vestitorii_primaverii
         {
             FindTheBear find = new FindTheBear();
             this.Hide();
+            audioVA.controls.stop();
             find.Show();
         }
 

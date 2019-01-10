@@ -107,9 +107,9 @@
             // 
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6.Image = global::hci_vestitorii_primaverii.Properties.Resources.spring_background_2;
-            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Location = new System.Drawing.Point(0, -1);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(801, 450);
+            this.pictureBox6.Size = new System.Drawing.Size(801, 451);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 8;
             this.pictureBox6.TabStop = false;

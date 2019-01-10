@@ -14,7 +14,7 @@ namespace hci_vestitorii_primaverii
 {
     public partial class differencesFirstLevel : Form
     {
-        private int differences = 7;
+        private int differences = 5;
         private Timer MyTimer;
         ResourceManager rm = Resources.ResourceManager;
         WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
@@ -24,9 +24,10 @@ namespace hci_vestitorii_primaverii
             InitializeComponent();
             InitializePictureBoxBackColor();
             minieKiss.Visible = false;
-            audioVA.URL = "audio//cele_7_dif.mp3";
+            audioVA.URL = "audio//cele_3_diff.mp3";
+            audioVA.settings.volume = 100;
 
-            this.Width = Screen.PrimaryScreen.Bounds.Width;
+	    this.Width = Screen.PrimaryScreen.Bounds.Width;
             this.Height = Screen.PrimaryScreen.Bounds.Height;
 
             float widthRatio = Screen.PrimaryScreen.Bounds.Width / 800f;
@@ -53,14 +54,9 @@ namespace hci_vestitorii_primaverii
             MyTimer = new Timer();
             MyTimer.Interval = (4 * 1000);
             MyTimer.Tick += new EventHandler(play_button_Click);
-            if (differences == 6)
+            if(differences == 4)
             {
-                audioVA.URL = "audio//inca_6_dif.aac";
-                audioVA.controls.play();
-            }
-            if (differences == 5)
-            {
-                audioVA.URL = "audio//inca_5_dif.aac";
+                audioVA.URL = "audio//inca_4_dif.aac";
                 audioVA.controls.play();
             }
             if (differences == 4)
@@ -183,6 +179,8 @@ namespace hci_vestitorii_primaverii
 
                 this.Location = new Point(this.Left - (this.offset.X - e.X), this.Top - (this.offset.Y - e.Y));
         }
+
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
