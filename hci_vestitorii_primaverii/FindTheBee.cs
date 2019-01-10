@@ -153,7 +153,7 @@ namespace hci_vestitorii_primaverii
             }
             if (toFind == 0)
             {
-                audioVA.URL = "audio//asa_ca_palpitant.aac";
+                audioVA.URL = "audio//bravo.mp3";
                 audioVA.controls.play();
                 MyTimer = new Timer();
                 MyTimer.Interval = (5 * 1000);
