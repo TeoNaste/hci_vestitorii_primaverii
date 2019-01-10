@@ -74,13 +74,6 @@ namespace hci_vestitorii_primaverii
             audioVA.controls.play();
         }
 
-        private void infoBox_Click(object sender, EventArgs e)
-        {
-           // MyTimer.Stop();
-           // audioVA.controls.play();
-            //MyTimer.Start();
-        }
-
         private void barza1_Click(object sender, EventArgs e)
         {
             Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");
@@ -91,6 +84,7 @@ namespace hci_vestitorii_primaverii
             barza1_1.Enabled = false;
             barza2_1.Enabled = false;
             barza3_1.Enabled = false;
+            audio_feedback();
         }
 
         private void barza2_Click(object sender, EventArgs e)
@@ -185,6 +179,11 @@ namespace hci_vestitorii_primaverii
         private void close_button_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void infoBox_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

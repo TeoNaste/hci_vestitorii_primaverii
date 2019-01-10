@@ -72,7 +72,7 @@
             this.barza1_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.barza1_2.TabIndex = 7;
             this.barza1_2.TabStop = false;
-            this.barza1_2.Click += new System.EventHandler(this.barza1_Click);
+            this.barza1_2.Click += new System.EventHandler(this.barza2_Click);
             // 
             // barza1_1
             // 
@@ -83,7 +83,7 @@
             this.barza1_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.barza1_1.TabIndex = 8;
             this.barza1_1.TabStop = false;
-            this.barza1_1.Click += new System.EventHandler(this.barza2_Click);
+            this.barza1_1.Click += new System.EventHandler(this.barza1_Click);
             // 
             // barza1_3
             // 

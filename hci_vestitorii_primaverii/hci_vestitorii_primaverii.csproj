@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>glowing_snowdrop.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -335,6 +338,7 @@
     <Content Include="bin\Debug\audio\ultima_dif.aac" />
     <Content Include="bin\Debug\audio\wow_toate_dif.aac" />
     <Content Include="bin\Debug\Music\totoro.wav" />
+    <Content Include="glowing_snowdrop.ico" />
     <None Include="Resources\flori_bg2.png" />
     <None Include="Resources\village_bg3.jpg" />
     <None Include="Resources\village_bg2.jpg" />

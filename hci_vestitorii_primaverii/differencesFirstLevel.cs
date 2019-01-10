@@ -81,7 +81,7 @@ namespace hci_vestitorii_primaverii
             }
             if (differences == 0)
             {
-                audioVA.URL = "audio//wow_toate_dif.aac";
+                audioVA.URL = "audio//wow_ai_3_dif.mp3";
                 audioVA.controls.play();
                 minieKiss.Visible = true;
                 MyTimer.Start();
@@ -93,44 +93,34 @@ namespace hci_vestitorii_primaverii
             Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
             diff1a.Parent = pictureBox1;
             diff1a.BackColor = Color.Transparent;
-            //diff1a.Image = myImage;
-
+           
             diff1b.Parent = pictureBox1;
             diff1b.BackColor = Color.Transparent;
-            //diff1b.Image = myImage;
-
+           
             diff2a.Parent = pictureBox1;
             diff2a.BackColor = Color.Transparent;
-            //diff2a.Image = myImage;
-
+            
             diff2b.Parent = pictureBox1;
             diff2b.BackColor = Color.Transparent;
-            //diff2b.Image = myImage;
-
+            
             diff3a.Parent = pictureBox1;
             diff3a.BackColor = Color.Transparent;
-            //diff3a.Image = myImage;
-
+            
             diff3b.Parent = pictureBox1;
             diff3b.BackColor = Color.Transparent;
-            //diff3b.Image = myImage;
-
+            
             diff4a.Parent = pictureBox1;
             diff4a.BackColor = Color.Transparent;
-            //diff4a.Image = myImage;
-
+            
             diff4b.Parent = pictureBox1;
             diff4b.BackColor = Color.Transparent;
-            //diff4b.Image = myImage;
-
+            
             diff5a.Parent = pictureBox1;
             diff5a.BackColor = Color.Transparent;
-            //diff5a.Image = myImage;
-
+            
             diff5b.Parent = pictureBox1;
             diff5b.BackColor = Color.Transparent;
-            //diff5b.Image = myImage;
-
+            
             diff6b.Parent = pictureBox1;
             diff6b.BackColor = Color.Transparent;
 
@@ -157,30 +147,6 @@ namespace hci_vestitorii_primaverii
             secondLevel.Show();
             this.Close();
         }
-
-        private bool dragging = false;
-        private Point offset;
-
-        private void differencesFirstLevel_MouseDown(object sender, MouseEventArgs e)
-        {
-            this.dragging = true;
-
-            this.offset = new Point(e.X, e.Y);
-        }
-
-        private void differencesFirstLevel_MouseUp(object sender, MouseEventArgs e)
-        {
-            this.dragging = false;
-        }
-
-        private void differencesFirstLevel_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (this.dragging)
-
-                this.Location = new Point(this.Left - (this.offset.X - e.X), this.Top - (this.offset.Y - e.Y));
-        }
-
-        
 
         private void button2_Click(object sender, EventArgs e)
         {

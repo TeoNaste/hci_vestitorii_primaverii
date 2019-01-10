@@ -45,7 +45,7 @@ namespace hci_vestitorii_primaverii
 
         }
 
-	private void initializeDict()
+	    private void initializeDict()
         {
             Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("flori_bg");
             List<PictureBox> list = new List<PictureBox>();
@@ -153,7 +153,7 @@ namespace hci_vestitorii_primaverii
             }
             if (toFind == 0)
             {
-                audioVA.URL = "audio//asa_ca_palpitant.aac";
+                audioVA.URL = "audio//bravo.mp3";
                 audioVA.controls.play();
                 MyTimer = new Timer();
                 MyTimer.Interval = (5 * 1000);
@@ -170,9 +170,5 @@ namespace hci_vestitorii_primaverii
             this.Close();
         }
 
-        private void infoBox_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
