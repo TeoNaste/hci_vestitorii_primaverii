@@ -64,7 +64,7 @@ namespace hci_vestitorii_primaverii
             MyTimer.Stop();
             infoBox.Visible = false;
             int rInt = r.Next(0, images.Count);
-            Bitmap image = images.Keys.ElementAt(0);
+            Bitmap image = images.Keys.ElementAt(rInt);
             this.BackgroundImage = image;
             foreach (PictureBox pic in images[image])
             {
