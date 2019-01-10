@@ -292,28 +292,6 @@ namespace hci_vestitorii_primaverii
             this.Close();
         }
 
-        private bool dragging = false;
-        private Point offset;
-
-        private void differencesSecondLevel_MouseDown(object sender, MouseEventArgs e)
-        {
-            this.dragging = true;
-
-            this.offset = new Point(e.X, e.Y);
-        }
-
-        private void differencesSecondLevel_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (this.dragging)
-
-                this.Location = new Point(this.Left - (this.offset.X - e.X), this.Top - (this.offset.Y - e.Y));
-        }
-
-        private void differencesSecondLevel_MouseUp(object sender, MouseEventArgs e)
-        {
-            this.dragging = false;
-        }
-
         private void diff7a_Click(object sender, EventArgs e)
         {
             Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
