@@ -35,7 +35,7 @@ namespace hci_vestitorii_primaverii
             InitializeComponent();
             pictureBox1.Image = imgMickeyThinking;
             pictureBox5.Visible = false;
-            infoRandunica.URL = "audio//bravo_info_randunica.mp3";
+            infoRandunica.URL = "audio//info_randunica.mp3";
             infoRandunica.controls.play();
             int MyNumber = a.Next(1, 7);
             if (MyNumber == 1)
