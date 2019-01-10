@@ -15,6 +15,9 @@ namespace hci_vestitorii_primaverii
     {
         WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
         WindowsMediaPlayer bravoPlayer = new WindowsMediaPlayer();
+        WindowsMediaPlayer infoGhiocel = new WindowsMediaPlayer();
+        WindowsMediaPlayer alegeGhiocelul = new WindowsMediaPlayer();
+
         private int imageFound = 0;
         private Timer MyTimer;
         public Random a = new Random();
@@ -31,6 +34,8 @@ namespace hci_vestitorii_primaverii
             InitializeComponent();
             pictureBox1.Image = imgMickeyThinking;
             pictureBox5.Visible = false;
+            infoGhiocel.URL = "audio//info_ghiocelul.aac";
+            infoGhiocel.controls.play();
             audioVA.URL = "audio//alege_ghioceii.aac";
             audioVA.settings.volume = 100;
             int MyNumber = a.Next(1, 7);
@@ -116,6 +121,8 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
+                infoGhiocel.URL = "audio//alege_ghioceii.aac";
+                infoGhiocel.controls.play();
             }
         }
 
@@ -146,6 +153,8 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
+                infoGhiocel.URL = "audio//alege_ghioceii.aac";
+                infoGhiocel.controls.play();
             }
         }
 
@@ -174,6 +183,8 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
+                infoGhiocel.URL = "audio//alege_ghioceii.aac";
+                infoGhiocel.controls.play();
             }
 
         }
@@ -181,6 +192,8 @@ namespace hci_vestitorii_primaverii
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             audioVA.controls.stop();
+            infoGhiocel.controls.stop();
+            alegeGhiocelul.controls.stop();
             mainMenu main = new mainMenu(true);
             main.Show();
             this.Close();

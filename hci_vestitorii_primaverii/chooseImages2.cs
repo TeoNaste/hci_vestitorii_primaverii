@@ -16,6 +16,9 @@ namespace hci_vestitorii_primaverii
     {
         WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
         WindowsMediaPlayer bravoPlayer = new WindowsMediaPlayer();
+        WindowsMediaPlayer infoRandunica = new WindowsMediaPlayer();
+        WindowsMediaPlayer alegeRandunica = new WindowsMediaPlayer();
+
         private int imageFound = 0;
         private Timer MyTimer;
         public Random a = new Random();
@@ -32,6 +35,8 @@ namespace hci_vestitorii_primaverii
             InitializeComponent();
             pictureBox1.Image = imgMickeyThinking;
             pictureBox5.Visible = false;
+            infoRandunica.URL = "audio//info_randunica.aac";
+            infoRandunica.controls.play();
             int MyNumber = a.Next(1, 7);
             if (MyNumber == 1)
             {
@@ -120,6 +125,8 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
+                alegeRandunica.URL = "audio//alege_randunica.wav";
+                alegeRandunica.controls.play();
             }
         }
 
@@ -139,6 +146,7 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyHappy;
                 pictureBox5.Visible = true;
+
             }
             else
             {
@@ -148,6 +156,8 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
+                alegeRandunica.URL = "audio//alege_randunica.wav";
+                alegeRandunica.controls.play();
             }
         }
 
@@ -176,11 +186,15 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
+                alegeRandunica.URL = "audio//alege_randunica.wav";
+                alegeRandunica.controls.play();
             }
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
+            infoRandunica.controls.stop();
+            alegeRandunica.controls.stop();
             audioVA.controls.stop();
             chooseImages3 thirdLevel = new chooseImages3();
             thirdLevel.Show();
