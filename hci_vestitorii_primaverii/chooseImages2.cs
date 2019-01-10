@@ -32,8 +32,8 @@ namespace hci_vestitorii_primaverii
             this.Width = Screen.PrimaryScreen.Bounds.Width;
             this.Height = Screen.PrimaryScreen.Bounds.Height;
 
-            float widthRatio = Screen.PrimaryScreen.Bounds.Width / 800f;
-            float heightRatio = Screen.PrimaryScreen.Bounds.Height / 450f;
+            float widthRatio = Screen.PrimaryScreen.Bounds.Width / 764f;
+            float heightRatio = Screen.PrimaryScreen.Bounds.Height / 401f;
 
             SizeF scale = new SizeF(widthRatio, heightRatio);
 
