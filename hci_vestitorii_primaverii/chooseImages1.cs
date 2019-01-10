@@ -15,6 +15,7 @@ namespace hci_vestitorii_primaverii
     public partial class chooseImages1 : Form
     {
         WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
+        WindowsMediaPlayer audioCopac = new WindowsMediaPlayer();
         private int imageFound = 0;
         private Timer MyTimer;
 
@@ -70,8 +71,8 @@ namespace hci_vestitorii_primaverii
                 pictureBox3.Image = treeautumn;
                 pictureBox2.Image = treespring;
             }
-
-
+            
+            
         }
         private void checkWin()
         {
@@ -112,6 +113,8 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
+                audioCopac.URL = "audio//alege_copacul_inflorit.aac";
+                audioCopac.controls.play();
             }
         }
 
@@ -134,6 +137,8 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
+                audioCopac.URL = "audio//alege_copacul_inflorit.aac";
+                audioCopac.controls.play();
             }
         }
 
@@ -147,6 +152,7 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyHappy;
                 pictureBox5.Visible = true;
+                audioCopac.controls.stop();
             }
             else
             {
@@ -156,11 +162,15 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
+                audioCopac.URL = "audio//alege_copacul_inflorit.aac";
+                audioCopac.controls.play();
             }
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
+            audioVA.controls.stop();
+            audioCopac.controls.stop();
             chooseImages2 secondLevel = new chooseImages2();
             secondLevel.Show();
             this.Close();
