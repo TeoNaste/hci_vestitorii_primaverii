@@ -81,7 +81,7 @@ namespace hci_vestitorii_primaverii
             }
             if (differences == 0)
             {
-                audioVA.URL = "audio//wow_toate_dif.aac";
+                audioVA.URL = "audio//wow_ai_3_dif.mp3";
                 audioVA.controls.play();
                 minieKiss.Visible = true;
                 MyTimer.Start();
