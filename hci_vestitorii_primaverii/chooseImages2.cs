@@ -75,8 +75,10 @@ namespace hci_vestitorii_primaverii
                 pictureBox2.Image = bufnita;
             }
             pictureBox5.Visible = false;
+
             audioVA.URL = "audio//alege_randunica.wav";
 	        audioVA.settings.volume = 100;
+
             this.Width = Screen.PrimaryScreen.Bounds.Width;
             this.Height = Screen.PrimaryScreen.Bounds.Height;
 
@@ -116,12 +118,12 @@ namespace hci_vestitorii_primaverii
                 panel2.BackColor = Color.Transparent;
                 panel3.BackColor = Color.Transparent;
            
-            audioVA.URL = "audio//bravo_info_randunica.mp3";
-            audioVA.controls.play();
+                audioVA.URL = "audio//bravo_info_randunica.mp3";
+                audioVA.controls.play();
 
-            panel1.BackColor = Color.Green;
-            panel2.BackColor = Color.Transparent;
-            panel3.BackColor = Color.Transparent;
+                panel1.BackColor = Color.Green;
+                panel2.BackColor = Color.Transparent;
+                panel3.BackColor = Color.Transparent;
 
                 pictureBox1.Image = imgMickeyHappy;
                 pictureBox5.Visible = true;
