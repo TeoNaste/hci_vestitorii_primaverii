@@ -16,14 +16,41 @@ namespace hci_vestitorii_primaverii
         WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
         private Timer MyTimer;
         int toFind = 3;
+        Dictionary<Bitmap, List<PictureBox>> images;
+        Random r = new Random();
 
         public FindTheBee()
         {
             InitializeComponent();
             audioVA.URL = "audio//info_albine.aac";
-            bee1.Visible = false;
-            bee2.Visible = false;
-            bee3.Visible = false;
+            audioVA.settings.volume = 100;
+            disablePictureBoxes();
+            images = new Dictionary<Bitmap, List<PictureBox>>();
+            initializeDict();
+        }
+
+        private void initializeDict()
+        {
+            Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("flori_bg");
+            List<PictureBox> list = new List<PictureBox>();
+            list.Add(bee1_1); list.Add(bee1_2); list.Add(bee1_3);
+            images.Add(myImage, list);
+
+            myImage = (Bitmap)Resources.ResourceManager.GetObject("flori_bg2");
+            List<PictureBox> list2 = new List<PictureBox>();
+            list2.Add(bee2_1); list2.Add(bee2_2); list2.Add(bee2_3);
+            images.Add(myImage, list2);
+
+        }
+
+        private void disablePictureBoxes()
+        {
+            bee1_1.Visible = false;
+            bee1_2.Visible = false;
+            bee1_3.Visible = false;
+            bee2_1.Visible = false;
+            bee2_2.Visible = false;
+            bee2_3.Visible = false;
         }
 
         private void close_button_Click(object sender, EventArgs e)
@@ -44,10 +71,14 @@ namespace hci_vestitorii_primaverii
         {
             MyTimer.Stop();
             infoBox.Visible = false;
-            bee1.Visible = true;
-            bee2.Visible = true;
-            bee3.Visible = true;
-            this.BackgroundImage = Resources.flori_bg;
+            infoBox.Visible = false;
+            int rInt = r.Next(0, images.Count);
+            Bitmap image = images.Keys.ElementAt(rInt);
+            this.BackgroundImage = image;
+            foreach (PictureBox pic in images[image])
+            {
+                pic.Visible = true;
+            }
             audioVA.URL = "audio//cauta_3_albine.aac";
             audioVA.controls.play();
         }
@@ -62,27 +93,33 @@ namespace hci_vestitorii_primaverii
         private void bee1_Click(object sender, EventArgs e)
         {
             Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");
-            bee1.Image = myImage;
+            bee1_1.Image = myImage;
+            bee2_1.Image = myImage;
             toFind--;
-            bee1.Enabled = false;
+            bee1_1.Enabled = false;
+            bee2_1.Enabled = false;
             audio_feedback();
         }
 
         private void bee2_Click(object sender, EventArgs e)
         {
             Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");
-            bee2.Image = myImage;
+            bee1_2.Image = myImage;
+            bee2_2.Image = myImage;
             toFind--;
-            bee2.Enabled = false;
+            bee1_2.Enabled = false;
+            bee2_2.Enabled = false;
             audio_feedback();
         }
 
         private void bee3_Click(object sender, EventArgs e)
         {
             Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");
-            bee3.Image = myImage;
+            bee1_3.Image = myImage;
+            bee2_3.Image = myImage;
             toFind--;
-            bee3.Enabled = false;
+            bee1_3.Enabled = false;
+            bee2_3.Enabled = false;
             audio_feedback();
         }
 
@@ -117,5 +154,9 @@ namespace hci_vestitorii_primaverii
             this.Close();
         }
 
+        private void infoBox_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
