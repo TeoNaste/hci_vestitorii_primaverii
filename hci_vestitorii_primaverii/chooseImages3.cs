@@ -75,6 +75,16 @@ namespace hci_vestitorii_primaverii
                 pictureBox3.Image = trandafiri;
                 pictureBox2.Image = floareasoarelui;
             }
+		audioVA.settings.volume = 100;
+            this.Width = Screen.PrimaryScreen.Bounds.Width;
+            this.Height = Screen.PrimaryScreen.Bounds.Height;
+
+            float widthRatio = Screen.PrimaryScreen.Bounds.Width / 764f;
+            float heightRatio = Screen.PrimaryScreen.Bounds.Height / 401f;
+
+            SizeF scale = new SizeF(widthRatio, heightRatio);
+
+            this.Scale(scale);
         }
         private void checkWin()
         {

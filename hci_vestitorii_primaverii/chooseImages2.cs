@@ -76,7 +76,17 @@ namespace hci_vestitorii_primaverii
             }
             pictureBox5.Visible = false;
             audioVA.URL = "audio//alege_randunica.wav";
-            audioVA.settings.volume = 100;
+	    audioVA.settings.volume = 100;
+            this.Width = Screen.PrimaryScreen.Bounds.Width;
+            this.Height = Screen.PrimaryScreen.Bounds.Height;
+
+            float widthRatio = Screen.PrimaryScreen.Bounds.Width / 764f;
+            float heightRatio = Screen.PrimaryScreen.Bounds.Height / 401f;
+
+            SizeF scale = new SizeF(widthRatio, heightRatio);
+
+            this.Scale(scale);
+
         }
         private void checkWin()
         {

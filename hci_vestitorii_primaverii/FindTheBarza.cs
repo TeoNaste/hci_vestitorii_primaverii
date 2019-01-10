@@ -27,6 +27,22 @@ namespace hci_vestitorii_primaverii
             disablePictureBoxes();
             images = new Dictionary<Bitmap, List<PictureBox>>();
             initializeDict();
+
+            this.Width = Screen.PrimaryScreen.Bounds.Width;
+            this.Height = Screen.PrimaryScreen.Bounds.Height;
+
+            float widthRatio = Screen.PrimaryScreen.Bounds.Width / 800f;
+            float heightRatio = Screen.PrimaryScreen.Bounds.Height / 450f;
+
+            SizeF scale = new SizeF(widthRatio, heightRatio);
+
+            this.Scale(scale);
+
+            close_button.Width = (int)(close_button.Width / widthRatio);
+            close_button.Height = (int)(close_button.Height / heightRatio);
+
+            close_button.Location = new Point((int)(close_button.Location.X + close_button.Width), (int)(close_button.Location.Y));
+
         }
 
         private void close_button_Click(object sender, EventArgs e)
@@ -65,19 +81,6 @@ namespace hci_vestitorii_primaverii
             //MyTimer.Start();
         }
 
-        private void barza2_Click(object sender, EventArgs e)
-        {
-            Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");
-            barza1_2.Image = myImage;
-            barza2_2.Image = myImage;
-            barza3_2.Image = myImage;
-            toFind--;
-            barza1_2.Enabled = false;
-            barza2_2.Enabled = false;
-            barza3_2.Enabled = false;
-            audio_feedback();
-        }
-
         private void barza1_Click(object sender, EventArgs e)
         {
             Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");
@@ -88,6 +91,18 @@ namespace hci_vestitorii_primaverii
             barza1_1.Enabled = false;
             barza2_1.Enabled = false;
             barza3_1.Enabled = false;
+        }
+
+        private void barza2_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");
+            barza1_2.Image = myImage;
+            barza2_2.Image = myImage;
+            barza3_2.Image = myImage;
+            toFind--;
+            barza1_2.Enabled = false;
+            barza2_2.Enabled = false;
+            barza3_2.Enabled = false;
             audio_feedback();
         }
 
@@ -127,7 +142,7 @@ namespace hci_vestitorii_primaverii
             }
         }
 
-        private void initializeDict()
+	private void initializeDict()
         {
             Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("village_bg");
             List<PictureBox> list = new List<PictureBox>();
