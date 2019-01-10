@@ -49,6 +49,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Location = new System.Drawing.Point(9, 11);
             this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -58,11 +59,9 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::hci_vestitorii_primaverii.Properties.Resources.treewinter2;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(158, 219);
+            this.pictureBox2.Size = new System.Drawing.Size(211, 269);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -70,6 +69,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Location = new System.Drawing.Point(194, 11);
             this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -79,6 +79,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Location = new System.Drawing.Point(4, 4);
             this.pictureBox3.Image = global::hci_vestitorii_primaverii.Properties.Resources.treeautumn2;
             this.pictureBox3.Location = new System.Drawing.Point(3, 3);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -91,6 +92,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.pictureBox4);
             this.panel3.Location = new System.Drawing.Point(382, 11);
             this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -100,6 +102,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Location = new System.Drawing.Point(4, 4);
             this.pictureBox4.Image = global::hci_vestitorii_primaverii.Properties.Resources.treespring2;
             this.pictureBox4.Location = new System.Drawing.Point(3, 3);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -137,7 +140,7 @@
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // close_button
-            // 
+            //
             this.close_button.BackColor = System.Drawing.Color.Transparent;
             this.close_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -149,10 +152,10 @@
             this.close_button.TabIndex = 11;
             this.close_button.UseVisualStyleBackColor = false;
             this.close_button.Click += new System.EventHandler(this.close_button_Click);
-            // 
+            //
             // chooseImages1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.spring_background_3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;

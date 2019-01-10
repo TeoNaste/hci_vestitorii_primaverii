@@ -74,6 +74,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.pictureBox4);
             this.panel3.Location = new System.Drawing.Point(388, 11);
             this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -83,6 +84,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Location = new System.Drawing.Point(4, 4);
             this.pictureBox4.Image = global::hci_vestitorii_primaverii.Properties.Resources.bufnita;
             this.pictureBox4.Location = new System.Drawing.Point(3, 3);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -95,6 +97,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Location = new System.Drawing.Point(200, 11);
             this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -104,6 +107,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Location = new System.Drawing.Point(4, 4);
             this.pictureBox3.Image = global::hci_vestitorii_primaverii.Properties.Resources.vultur;
             this.pictureBox3.Location = new System.Drawing.Point(3, 3);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -116,6 +120,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Location = new System.Drawing.Point(16, 11);
             this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -125,6 +130,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Location = new System.Drawing.Point(4, 4);
             this.pictureBox2.Image = global::hci_vestitorii_primaverii.Properties.Resources.randunica2;
             this.pictureBox2.Location = new System.Drawing.Point(3, 3);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
