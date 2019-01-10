@@ -25,7 +25,7 @@ namespace hci_vestitorii_primaverii
             finish_button.Visible = false;
             minieKiss.Visible = false;
             InitializePictureBoxBackColor();
-            audioVA.URL = "audio//cele_3_dif.mp3";
+            audioVA.URL = "audio//cele_3_diff.mp3";
             audioVA.settings.volume = 100;
         }
 
