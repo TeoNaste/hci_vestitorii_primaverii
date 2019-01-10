@@ -75,7 +75,6 @@
             this.infoBox.Size = new System.Drawing.Size(457, 279);
             this.infoBox.TabIndex = 5;
             this.infoBox.TabStop = false;
-            this.infoBox.Click += new System.EventHandler(this.infoBox_Click);
             // 
             // urs1_1
             // 

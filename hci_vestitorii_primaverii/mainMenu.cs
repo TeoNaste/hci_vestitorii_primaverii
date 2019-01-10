@@ -14,7 +14,6 @@ namespace hci_vestitorii_primaverii
         public mainMenu(bool isBack)
         {
             InitializeComponent();
-            //this.WindowState = FormWindowState.Maximized;
             
             this.Width = Screen.PrimaryScreen.Bounds.Width;
             this.Height = Screen.PrimaryScreen.Bounds.Height;
@@ -75,31 +74,6 @@ namespace hci_vestitorii_primaverii
 
         }
 
-
-        private bool dragging = false;
-        private Point offset;
-
-        private void mainMenu_MouseDown(object sender, MouseEventArgs e)
-        {
-            this.dragging = true;
-
-            this.offset = new Point(e.X, e.Y);
-        }
-
-
-
-        private void mainMenu_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (this.dragging)
-
-                this.Location = new Point(this.Left - (this.offset.X - e.X), this.Top - (this.offset.Y - e.Y));
-        }
-
-        private void mainMenu_MouseUp(object sender, MouseEventArgs e)
-        {
-            this.dragging = false;
-        }
-
         private void start_snowdrop_MouseClick(object sender, MouseEventArgs e)
         {
             chooseImages1 cImg = new chooseImages1();
@@ -156,16 +130,6 @@ namespace hci_vestitorii_primaverii
                 Application.DoEvents();
                 i--;
             }
-        }
-
-        private void swallow_button_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tree_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

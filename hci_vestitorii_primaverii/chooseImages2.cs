@@ -28,7 +28,7 @@ namespace hci_vestitorii_primaverii
             pictureBox1.Image = imgMickeyThinking;
             pictureBox5.Visible = false;
             audioVA.URL = "audio//alege_randunica.wav";
-	    audioVA.settings.volume = 100;
+	        audioVA.settings.volume = 100;
             this.Width = Screen.PrimaryScreen.Bounds.Width;
             this.Height = Screen.PrimaryScreen.Bounds.Height;
 
