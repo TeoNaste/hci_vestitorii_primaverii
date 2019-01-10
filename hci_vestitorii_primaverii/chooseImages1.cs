@@ -34,7 +34,7 @@ namespace hci_vestitorii_primaverii
             pictureBox1.Image = imgMickeyThinking;
             pictureBox5.Visible = false;
             audioVA.URL = "audio//alege_copacul_inflorit.aac";
-	    audioVA.settings.volume = 100;
+	        audioVA.settings.volume = 100;
             this.Width = Screen.PrimaryScreen.Bounds.Width;
             this.Height = Screen.PrimaryScreen.Bounds.Height;
 
@@ -51,7 +51,7 @@ namespace hci_vestitorii_primaverii
             close_button.Location = new Point((int)(close_button.Location.X + close_button.Width), (int)(close_button.Location.Y));
 
             audioVA.settings.volume = 100;
-            audioVA.URL = "audio//3_imagini_primavara.aac";
+            audioVA.controls.play();
             int MyNumber = a.Next(1, 7);
             if (MyNumber == 1)
             {
@@ -137,8 +137,8 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
-                audioCopac.URL = "audio//alege_copacul_inflorit.aac";
-                audioCopac.controls.play();
+                //audioCopac.URL = "audio//alege_copacul_inflorit.aac";
+                //audioCopac.controls.play();
             }
         }
 
@@ -167,16 +167,15 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
-                audioCopac.URL = "audio//alege_copacul_inflorit.aac";
-                audioCopac.controls.play();
+                //audioCopac.URL = "audio//alege_copacul_inflorit.aac";
+                //audioCopac.controls.play();
             }
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            bravoPlayer.URL = "audio//bravo.mp3";
-            bravoPlayer.controls.play();
-            audioVA.URL = "audio//spring_tree.aac";
+           
+            audioVA.URL = "audio//bravo_spring_tree.mp3";
             audioVA.controls.play();
 
             panel1.BackColor = Color.Transparent;
@@ -200,8 +199,8 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
-                audioCopac.URL = "audio//alege_copacul_inflorit.aac";
-                audioCopac.controls.play();
+                //audioCopac.URL = "audio//alege_copacul_inflorit.aac";
+                //audioCopac.controls.play();
             }
         }
 

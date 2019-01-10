@@ -35,7 +35,7 @@ namespace hci_vestitorii_primaverii
             InitializeComponent();
             pictureBox1.Image = imgMickeyThinking;
             pictureBox5.Visible = false;
-            infoRandunica.URL = "audio//info_randunica.aac";
+            infoRandunica.URL = "audio//bravo_info_randunica.mp3";
             infoRandunica.controls.play();
             int MyNumber = a.Next(1, 7);
             if (MyNumber == 1)
@@ -115,9 +115,8 @@ namespace hci_vestitorii_primaverii
                 panel1.BackColor = Color.Green;
                 panel2.BackColor = Color.Transparent;
                 panel3.BackColor = Color.Transparent;
-            bravoPlayer.URL = "audio//bravo.mp3";
-            bravoPlayer.controls.play();
-            audioVA.URL = "audio//info_randunica.aac";
+           
+            audioVA.URL = "audio//bravo_info_randunica.mp3";
             audioVA.controls.play();
 
             panel1.BackColor = Color.Green;
@@ -135,8 +134,8 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
-                alegeRandunica.URL = "audio//alege_randunica.wav";
-                alegeRandunica.controls.play();
+                //alegeRandunica.URL = "audio//alege_randunica.wav";
+                //alegeRandunica.controls.play();
             }
         }
 
@@ -166,8 +165,8 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
-                alegeRandunica.URL = "audio//alege_randunica.wav";
-                alegeRandunica.controls.play();
+                //alegeRandunica.URL = "audio//alege_randunica.wav";
+                //alegeRandunica.controls.play();
             }
         }
 
@@ -196,8 +195,8 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
-                alegeRandunica.URL = "audio//alege_randunica.wav";
-                alegeRandunica.controls.play();
+                //alegeRandunica.URL = "audio//alege_randunica.wav";
+                //alegeRandunica.controls.play();
             }
         }
 

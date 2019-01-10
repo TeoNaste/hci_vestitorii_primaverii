@@ -14,7 +14,6 @@ namespace hci_vestitorii_primaverii
     public partial class chooseImages3 : Form
     {
         WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
-        WindowsMediaPlayer bravoPlayer = new WindowsMediaPlayer();
         WindowsMediaPlayer infoGhiocel = new WindowsMediaPlayer();
         WindowsMediaPlayer alegeGhiocelul = new WindowsMediaPlayer();
 
@@ -131,8 +130,8 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
-                infoGhiocel.URL = "audio//alege_ghioceii.aac";
-                infoGhiocel.controls.play();
+                //infoGhiocel.URL = "audio//alege_ghioceii.aac";
+               // infoGhiocel.controls.play();
             }
         }
 
@@ -143,9 +142,8 @@ namespace hci_vestitorii_primaverii
                 panel1.BackColor = Color.Transparent;
                 panel2.BackColor = Color.Green;
                 panel3.BackColor = Color.Transparent;
-            bravoPlayer.URL = "audio//bravo.mp3";
-            bravoPlayer.controls.play();
-            audioVA.URL = "audio//info_ghiocelul.aac";
+
+            audioVA.URL = "audio//bravo_info_ghiocelul.mp3";
             audioVA.controls.play();
 
             panel1.BackColor = Color.Transparent;
@@ -163,8 +161,8 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
-                infoGhiocel.URL = "audio//alege_ghioceii.aac";
-                infoGhiocel.controls.play();
+                //infoGhiocel.URL = "audio//alege_ghioceii.aac";
+                //infoGhiocel.controls.play();
             }
         }
 
@@ -193,8 +191,8 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
-                infoGhiocel.URL = "audio//alege_ghioceii.aac";
-                infoGhiocel.controls.play();
+                //infoGhiocel.URL = "audio//alege_ghioceii.aac";
+                //infoGhiocel.controls.play();
             }
 
         }
