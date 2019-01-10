@@ -14,7 +14,7 @@ namespace hci_vestitorii_primaverii
 {
     public partial class differencesSecondLevel : Form
     {
-        private int differences = 7;
+        private int differences = 3;
         private Timer MyTimer;
         ResourceManager rm = Resources.ResourceManager;
         WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
