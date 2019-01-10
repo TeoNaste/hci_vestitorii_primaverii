@@ -45,7 +45,7 @@ namespace hci_vestitorii_primaverii
 
         }
 
-	private void initializeDict()
+	    private void initializeDict()
         {
             Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("flori_bg");
             List<PictureBox> list = new List<PictureBox>();
@@ -170,9 +170,5 @@ namespace hci_vestitorii_primaverii
             this.Close();
         }
 
-        private void infoBox_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

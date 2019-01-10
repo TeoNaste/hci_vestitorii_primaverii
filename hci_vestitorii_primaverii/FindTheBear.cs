@@ -106,11 +106,6 @@ namespace hci_vestitorii_primaverii
             audioVA.controls.play();
         }
 
-        private void infoBox_Click(object sender, EventArgs e)
-        {
-            //audioVA.controls.play();
-        }
-
         private void urs1_Click(object sender, EventArgs e)
         {
             Bitmap myImage = (Bitmap)Resources.ResourceManager.GetObject("redBorder");

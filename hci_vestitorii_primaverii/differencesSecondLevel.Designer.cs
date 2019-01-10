@@ -320,9 +320,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "differencesSecondLevel";
             this.Load += new System.EventHandler(this.differencesSecondLevel_Load);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.differencesSecondLevel_MouseDown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.differencesSecondLevel_MouseMove);
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.differencesSecondLevel_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minieKiss)).EndInit();

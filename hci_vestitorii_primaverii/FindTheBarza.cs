@@ -64,7 +64,7 @@ namespace hci_vestitorii_primaverii
             MyTimer.Stop();
             infoBox.Visible = false;
             int rInt = r.Next(0, images.Count);
-            Bitmap image = images.Keys.ElementAt(rInt);
+            Bitmap image = images.Keys.ElementAt(0);
             this.BackgroundImage = image;
             foreach (PictureBox pic in images[image])
             {
@@ -72,13 +72,6 @@ namespace hci_vestitorii_primaverii
             }
             audioVA.URL = "audio//cauta_3_berze.aac";
             audioVA.controls.play();
-        }
-
-        private void infoBox_Click(object sender, EventArgs e)
-        {
-           // MyTimer.Stop();
-           // audioVA.controls.play();
-            //MyTimer.Start();
         }
 
         private void barza1_Click(object sender, EventArgs e)
@@ -185,6 +178,11 @@ namespace hci_vestitorii_primaverii
         private void close_button_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void infoBox_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -51,7 +51,6 @@
             this.tree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tree.TabIndex = 10;
             this.tree.TabStop = false;
-            this.tree.Click += new System.EventHandler(this.tree_Click);
             this.tree.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tree_MouseClick);
             this.tree.MouseEnter += new System.EventHandler(this.tree_MouseEnter);
             this.tree.MouseLeave += new System.EventHandler(this.tree_MouseLeave);
@@ -67,7 +66,6 @@
             this.swallow_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.swallow_button.TabIndex = 9;
             this.swallow_button.TabStop = false;
-            this.swallow_button.Click += new System.EventHandler(this.swallow_button_Click);
             this.swallow_button.MouseClick += new System.Windows.Forms.MouseEventHandler(this.swallow_button_MouseClick);
             this.swallow_button.MouseEnter += new System.EventHandler(this.swallow_button_MouseEnter);
             this.swallow_button.MouseLeave += new System.EventHandler(this.swallow_button_MouseLeave);
@@ -132,9 +130,6 @@
             this.Name = "mainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "mainMenu";
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainMenu_MouseDown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mainMenu_MouseMove);
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mainMenu_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.tree)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.swallow_button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.start_snowdrop)).EndInit();
