@@ -14,6 +14,24 @@ namespace hci_vestitorii_primaverii
         public mainMenu(bool isBack)
         {
             InitializeComponent();
+            //this.WindowState = FormWindowState.Maximized;
+            
+            this.Width = Screen.PrimaryScreen.Bounds.Width;
+            this.Height = Screen.PrimaryScreen.Bounds.Height;
+
+            float widthRatio = Screen.PrimaryScreen.Bounds.Width / 800f;
+            float heightRatio = Screen.PrimaryScreen.Bounds.Height / 450f;
+
+            SizeF scale = new SizeF(widthRatio, heightRatio);
+            
+            this.Scale(scale);
+
+            close_button.Width = (int)(close_button.Width / widthRatio);
+            close_button.Height = (int) (close_button.Height / heightRatio);
+
+            close_button.Location = new Point((int)(close_button.Location.X+close_button.Width), (int)(close_button.Location.Y));
+            
+
             if (!isBack)
             {
                 player.URL = ".//Music//totoro.wav";
@@ -41,7 +59,7 @@ namespace hci_vestitorii_primaverii
 
         private void start_snowdrop_MouseEnter(object sender, EventArgs e)
         {
-            start_snowdrop.Size = new Size(98, 96);
+            start_snowdrop.Size = new Size(start_snowdrop.Width + 7, start_snowdrop.Height + 7);
         }
 
         private void start_snowdrop_MouseLeave(object sender, EventArgs e)
@@ -98,7 +116,7 @@ namespace hci_vestitorii_primaverii
         private void swallow_button_MouseLeave(object sender, EventArgs e)
         {
             int i = 7;
-            while (i >0)
+            while (i > 0)
             {
                 swallow_button.Width--;
                 swallow_button.Height--;
@@ -125,7 +143,7 @@ namespace hci_vestitorii_primaverii
 
         private void tree_MouseEnter(object sender, EventArgs e)
         {
-            tree.Size = new Size(161, 212);
+            tree.Size = new Size(tree.Width + 7, tree.Height + 7);
         }
 
         private void tree_MouseLeave(object sender, EventArgs e)
@@ -138,6 +156,11 @@ namespace hci_vestitorii_primaverii
                 Application.DoEvents();
                 i--;
             }
+        }
+
+        private void swallow_button_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void tree_Click(object sender, EventArgs e)

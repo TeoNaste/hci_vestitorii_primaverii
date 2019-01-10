@@ -45,7 +45,7 @@
             this.tree.BackColor = System.Drawing.Color.Transparent;
             this.tree.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tree.Image = global::hci_vestitorii_primaverii.Properties.Resources.tree;
-            this.tree.Location = new System.Drawing.Point(361, 132);
+            this.tree.Location = new System.Drawing.Point(343, 142);
             this.tree.Name = "tree";
             this.tree.Size = new System.Drawing.Size(154, 205);
             this.tree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -67,6 +67,7 @@
             this.swallow_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.swallow_button.TabIndex = 9;
             this.swallow_button.TabStop = false;
+            this.swallow_button.Click += new System.EventHandler(this.swallow_button_Click);
             this.swallow_button.MouseClick += new System.Windows.Forms.MouseEventHandler(this.swallow_button_MouseClick);
             this.swallow_button.MouseEnter += new System.EventHandler(this.swallow_button_MouseEnter);
             this.swallow_button.MouseLeave += new System.EventHandler(this.swallow_button_MouseLeave);

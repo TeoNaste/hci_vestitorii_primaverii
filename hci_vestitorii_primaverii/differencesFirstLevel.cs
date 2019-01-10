@@ -14,11 +14,10 @@ namespace hci_vestitorii_primaverii
 {
     public partial class differencesFirstLevel : Form
     {
-        private int differences = 5;
+        private int differences = 3;
         private Timer MyTimer;
         ResourceManager rm = Resources.ResourceManager;
         WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
-       
 
         public differencesFirstLevel()
         {
@@ -27,6 +26,22 @@ namespace hci_vestitorii_primaverii
             minieKiss.Visible = false;
             audioVA.URL = "audio//cele_3_diff.mp3";
             audioVA.settings.volume = 100;
+
+	    this.Width = Screen.PrimaryScreen.Bounds.Width;
+            this.Height = Screen.PrimaryScreen.Bounds.Height;
+
+            float widthRatio = Screen.PrimaryScreen.Bounds.Width / 800f;
+            float heightRatio = Screen.PrimaryScreen.Bounds.Height / 450f;
+
+            SizeF scale = new SizeF(widthRatio, heightRatio);
+
+            this.Scale(scale);
+
+            button1.Width = (int)(button1.Width / widthRatio);
+            button1.Height = (int)(button1.Height / heightRatio);
+
+            button1.Location = new Point((int)(button1.Location.X + button1.Width), (int)(button1.Location.Y));
+
         }
 
         private void differencesFirstLevel_Load(object sender, EventArgs e)
@@ -116,10 +131,20 @@ namespace hci_vestitorii_primaverii
             diff5b.BackColor = Color.Transparent;
             //diff5b.Image = myImage;
 
-            
+            diff6b.Parent = pictureBox1;
+            diff6b.BackColor = Color.Transparent;
+
+            diff6a.Parent = pictureBox1;
+            diff6a.BackColor = Color.Transparent;
+
+            diff7b.Parent = pictureBox1;
+            diff7b.BackColor = Color.Transparent;
+
+            diff7a.Parent = pictureBox1;
+            diff7a.BackColor = Color.Transparent;
         }
 
-        private void close_button_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -155,10 +180,7 @@ namespace hci_vestitorii_primaverii
                 this.Location = new Point(this.Left - (this.offset.X - e.X), this.Top - (this.offset.Y - e.Y));
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -287,6 +309,54 @@ namespace hci_vestitorii_primaverii
             diff4b.Enabled = false;
             checkWin();
 
+        }
+
+        private void diff7a_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            diff7a.Image = myImage;
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff7b.Image = myImage;
+            diff7a.Enabled = false;
+            diff7b.Enabled = false;
+            checkWin();
+        }
+
+        private void diff7b_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            diff7a.Image = myImage;
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff7b.Image = myImage;
+            diff7a.Enabled = false;
+            diff7b.Enabled = false;
+            checkWin();
+        }
+
+        private void diff6a_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            diff6a.Image = myImage;
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff6b.Image = myImage;
+            diff6a.Enabled = false;
+            diff6b.Enabled = false;
+            checkWin();
+        }
+
+        private void diff6b_Click(object sender, EventArgs e)
+        {
+            Bitmap myImage = (Bitmap)rm.GetObject("redBorder");
+            diff6a.Image = myImage;
+            differences--;
+            rimainingDifferences.Text = differences.ToString();
+            diff6b.Image = myImage;
+            diff6a.Enabled = false;
+            diff6b.Enabled = false;
+            checkWin();
         }
     }
 }

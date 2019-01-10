@@ -30,7 +30,7 @@ namespace hci_vestitorii_primaverii
             pictureBox2.Image = imgMickeyThinking;
             pictureBox3.Image = imgMickeyThinking;
             audioVA.URL = "audio//3_imagini_primavara.aac";
-            
+
         }
 
         private void checkWin()
