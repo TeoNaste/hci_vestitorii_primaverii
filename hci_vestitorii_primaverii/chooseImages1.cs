@@ -33,7 +33,7 @@ namespace hci_vestitorii_primaverii
             InitializeComponent();
             pictureBox1.Image = imgMickeyThinking;
             pictureBox5.Visible = false;
-            audioVA.URL = "audio//alege_copacul_inflorit.aac";
+            audioVA.URL = "audio//alege_copacul_inflorit.mp3";
 	        audioVA.settings.volume = 100;
             this.Width = Screen.PrimaryScreen.Bounds.Width;
             this.Height = Screen.PrimaryScreen.Bounds.Height;

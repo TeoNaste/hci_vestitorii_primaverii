@@ -35,7 +35,7 @@ namespace hci_vestitorii_primaverii
             pictureBox5.Visible = false;
             infoGhiocel.URL = "audio//info_ghiocelul.aac";
             infoGhiocel.controls.play();
-            audioVA.URL = "audio//alege_ghioceii.aac";
+            audioVA.URL = "audio//alege_ghioceii.mp3";
             audioVA.settings.volume = 100;
             int MyNumber = a.Next(1, 7);
             if (MyNumber == 1)
