@@ -70,7 +70,6 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(4, 4);
             this.pictureBox4.Image = global::hci_vestitorii_primaverii.Properties.Resources.floareasoarelui;
             this.pictureBox4.Location = new System.Drawing.Point(3, 3);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
@@ -94,9 +93,8 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::hci_vestitorii_primaverii.Properties.Resources.ghiocei;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(158, 219);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -117,9 +115,8 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::hci_vestitorii_primaverii.Properties.Resources.trandafiri2;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(158, 219);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -145,7 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.spring_background_3;
+            this.BackgroundImage = global::hci_vestitorii_primaverii.Properties.Resources.background1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(764, 401);
             this.Controls.Add(this.pictureBox5);
