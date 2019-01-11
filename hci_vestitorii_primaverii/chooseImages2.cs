@@ -16,69 +16,27 @@ namespace hci_vestitorii_primaverii
     {
         WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
         WindowsMediaPlayer bravoPlayer = new WindowsMediaPlayer();
-        WindowsMediaPlayer infoRandunica = new WindowsMediaPlayer();
-        WindowsMediaPlayer alegeRandunica = new WindowsMediaPlayer();
-
         private int imageFound = 0;
         private Timer MyTimer;
-        public Random a = new Random();
-
         ResourceManager rm = Resources.ResourceManager;
         Bitmap imgMickeyHappy = Properties.Resources.MickeyHappy;
         Bitmap imgMickeyThinking = Properties.Resources.MickeyThinking;
+
         Bitmap randunica = Properties.Resources.randunica2;
         Bitmap vultur = Properties.Resources.vultur;
         Bitmap bufnita = Properties.Resources.bufnita;
+
+        Dictionary<Bitmap, String> images = new Dictionary<Bitmap, string>();
+        Random random = new Random();
+        int rInt1, rInt2, rInt3;
 
         public chooseImages2()
         {
             InitializeComponent();
             pictureBox1.Image = imgMickeyThinking;
             pictureBox5.Visible = false;
-            infoRandunica.URL = "audio//info_randunica.mp3";
-            infoRandunica.controls.play();
-            int MyNumber = a.Next(1, 7);
-            if (MyNumber == 1)
-            {
-                pictureBox2.Image = randunica;
-                pictureBox3.Image = vultur;
-                pictureBox4.Image = bufnita;
-            }
-            if (MyNumber == 2)
-            {
-                pictureBox2.Image = randunica;
-                pictureBox4.Image = vultur;
-                pictureBox3.Image = bufnita;
-            }
-            if (MyNumber == 3)
-            {
-                pictureBox3.Image = randunica;
-                pictureBox2.Image = vultur;
-                pictureBox4.Image = bufnita;
-            }
-            if (MyNumber == 4)
-            {
-                pictureBox3.Image = randunica;
-                pictureBox4.Image = vultur;
-                pictureBox2.Image = bufnita;
-            }
-            if (MyNumber == 5)
-            {
-                pictureBox4.Image = randunica;
-                pictureBox2.Image = vultur;
-                pictureBox3.Image = bufnita;
-            }
-            if (MyNumber == 6)
-            {
-                pictureBox4.Image = randunica;
-                pictureBox3.Image = vultur;
-                pictureBox2.Image = bufnita;
-            }
-            pictureBox5.Visible = false;
-
             audioVA.URL = "audio//alege_randunica.mp3";
 	        audioVA.settings.volume = 100;
-
             this.Width = Screen.PrimaryScreen.Bounds.Width;
             this.Height = Screen.PrimaryScreen.Bounds.Height;
 
@@ -89,7 +47,41 @@ namespace hci_vestitorii_primaverii
 
             this.Scale(scale);
 
+            initDictionary();
+            initPictures();
+
         }
+
+        private void initPictures()
+        {
+
+            Bitmap img;
+
+            rInt1 = random.Next(0, images.Count);
+            img = images.Keys.ElementAt(rInt1);
+            pictureBox2.Image = img;
+            images.Remove(img);
+
+            rInt2 = random.Next(0, images.Count);
+            img = images.Keys.ElementAt(rInt2);
+            pictureBox3.Image = img;
+            images.Remove(img);
+
+            rInt3 = random.Next(0, images.Count);
+            img = images.Keys.ElementAt(rInt3);
+            pictureBox4.Image = img;
+            images.Remove(img);
+
+            initDictionary();
+        }
+
+        private void initDictionary()
+        {
+            images.Add(randunica, "audio//info_randunica.aac");
+            images.Add(vultur, "audio//acest_vultur.mp3");
+            images.Add(bufnita, "audio//aceasta_bufnita.mp3");
+        }
+
         private void checkWin()
         {
             MyTimer = new Timer();
@@ -112,23 +104,10 @@ namespace hci_vestitorii_primaverii
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            if (pictureBox2.Image == randunica)
-            {
-                panel1.BackColor = Color.Green;
-                panel2.BackColor = Color.Transparent;
-                panel3.BackColor = Color.Transparent;
-           
-                audioVA.URL = "audio//bravo_info_randunica.mp3";
-                audioVA.controls.play();
+            audioVA.URL = images[(Bitmap)pictureBox2.Image];
+            audioVA.controls.play();
 
-                panel1.BackColor = Color.Green;
-                panel2.BackColor = Color.Transparent;
-                panel3.BackColor = Color.Transparent;
-
-                pictureBox1.Image = imgMickeyHappy;
-                pictureBox5.Visible = true;
-            }
-            else
+            if (randunica != pictureBox2.Image)
             {
                 panel1.BackColor = Color.Red;
                 panel2.BackColor = Color.Transparent;
@@ -136,76 +115,70 @@ namespace hci_vestitorii_primaverii
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
-                //alegeRandunica.URL = "audio//alege_randunica.wav";
-                //alegeRandunica.controls.play();
+            }
+            else
+            {
+                panel1.BackColor = Color.Green;
+                panel2.BackColor = Color.Transparent;
+                panel3.BackColor = Color.Transparent;
+
+                pictureBox1.Image = imgMickeyHappy;
+                pictureBox5.Visible = true;
             }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            audioVA.URL = "audio//acest_vultur.mp3";
+            audioVA.URL = images[(Bitmap)pictureBox3.Image];
             audioVA.controls.play();
 
-            panel1.BackColor = Color.Transparent;
-            panel2.BackColor = Color.Red;
-            panel3.BackColor = Color.Transparent;
-            if (pictureBox3.Image == randunica)
+            if (randunica != pictureBox3.Image)
             {
-                panel1.BackColor = Color.Transparent;
-                panel2.BackColor = Color.Green;
-                panel3.BackColor = Color.Transparent;
-
-                pictureBox1.Image = imgMickeyHappy;
-                pictureBox5.Visible = true;
-
-            }
-            else
-            {
-                panel1.BackColor = Color.Transparent;
                 panel2.BackColor = Color.Red;
+                panel1.BackColor = Color.Transparent;
                 panel3.BackColor = Color.Transparent;
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
-                //alegeRandunica.URL = "audio//alege_randunica.wav";
-                //alegeRandunica.controls.play();
+            }
+            else
+            {
+                panel2.BackColor = Color.Green;
+                panel1.BackColor = Color.Transparent;
+                panel3.BackColor = Color.Transparent;
+
+                pictureBox1.Image = imgMickeyHappy;
+                pictureBox5.Visible = true;
             }
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            audioVA.URL = "audio//aceasta_bufnita.mp3";
+            audioVA.URL = images[(Bitmap)pictureBox4.Image];
             audioVA.controls.play();
 
-            panel1.BackColor = Color.Transparent;
-            panel2.BackColor = Color.Transparent;
-            panel3.BackColor = Color.Red;
-            if (pictureBox4.Image == randunica)
+            if (randunica != pictureBox4.Image)
             {
-                panel1.BackColor = Color.Transparent;
-                panel2.BackColor = Color.Transparent;
-                panel3.BackColor = Color.Green;
-
-                pictureBox1.Image = imgMickeyHappy;
-                pictureBox5.Visible = true;
-            }
-            else
-            {
-                panel1.BackColor = Color.Transparent;
-                panel2.BackColor = Color.Transparent;
                 panel3.BackColor = Color.Red;
+                panel2.BackColor = Color.Transparent;
+                panel1.BackColor = Color.Transparent;
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
-                //alegeRandunica.URL = "audio//alege_randunica.wav";
-                //alegeRandunica.controls.play();
+            }
+            else
+            {
+                panel3.BackColor = Color.Green;
+                panel1.BackColor = Color.Transparent;
+                panel2.BackColor = Color.Transparent;
+
+                pictureBox1.Image = imgMickeyHappy;
+                pictureBox5.Visible = true;
             }
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            infoRandunica.controls.stop();
-            alegeRandunica.controls.stop();
             audioVA.controls.stop();
             chooseImages3 thirdLevel = new chooseImages3();
             thirdLevel.Show();

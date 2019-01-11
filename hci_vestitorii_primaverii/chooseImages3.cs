@@ -14,16 +14,17 @@ namespace hci_vestitorii_primaverii
     public partial class chooseImages3 : Form
     {
         WindowsMediaPlayer audioVA = new WindowsMediaPlayer();
-        WindowsMediaPlayer infoGhiocel = new WindowsMediaPlayer();
-        WindowsMediaPlayer alegeGhiocelul = new WindowsMediaPlayer();
-
+        WindowsMediaPlayer bravoPlayer = new WindowsMediaPlayer();
         private int imageFound = 0;
         private Timer MyTimer;
-        public Random a = new Random();
-
         ResourceManager rm = Resources.ResourceManager;
         Bitmap imgMickeyHappy = Properties.Resources.MickeyHappy;
         Bitmap imgMickeyThinking = Properties.Resources.MickeyThinking;
+
+        Dictionary<Bitmap, String> images = new Dictionary<Bitmap, string>();
+        Random random = new Random();
+        int rInt1, rInt2, rInt3;
+
         Bitmap ghiocei = Properties.Resources.ghiocei;
         Bitmap trandafiri = Properties.Resources.trandafiri2;
         Bitmap floareasoarelui = Properties.Resources.floareasoarelui;
@@ -33,48 +34,8 @@ namespace hci_vestitorii_primaverii
             InitializeComponent();
             pictureBox1.Image = imgMickeyThinking;
             pictureBox5.Visible = false;
-            infoGhiocel.URL = "audio//info_ghiocelul.aac";
-            infoGhiocel.controls.play();
             audioVA.URL = "audio//alege_ghioceii.mp3";
-            audioVA.settings.volume = 100;
-            int MyNumber = a.Next(1, 7);
-            if (MyNumber == 1)
-            {
-                pictureBox2.Image = ghiocei;
-                pictureBox3.Image = trandafiri;
-                pictureBox4.Image = floareasoarelui;
-            }
-            if (MyNumber == 2)
-            {
-                pictureBox2.Image = ghiocei;
-                pictureBox4.Image = trandafiri;
-                pictureBox3.Image = floareasoarelui;
-            }
-            if (MyNumber == 3)
-            {
-                pictureBox3.Image = ghiocei;
-                pictureBox2.Image = trandafiri;
-                pictureBox4.Image = floareasoarelui;
-            }
-            if (MyNumber == 4)
-            {
-                pictureBox3.Image = ghiocei;
-                pictureBox4.Image = trandafiri;
-                pictureBox2.Image = floareasoarelui;
-            }
-            if (MyNumber == 5)
-            {
-                pictureBox4.Image = ghiocei;
-                pictureBox2.Image = trandafiri;
-                pictureBox3.Image = floareasoarelui;
-            }
-            if (MyNumber == 6)
-            {
-                pictureBox4.Image = ghiocei;
-                pictureBox3.Image = trandafiri;
-                pictureBox2.Image = floareasoarelui;
-            }
-		audioVA.settings.volume = 100;
+		    audioVA.settings.volume = 100;
             this.Width = Screen.PrimaryScreen.Bounds.Width;
             this.Height = Screen.PrimaryScreen.Bounds.Height;
 
@@ -84,7 +45,41 @@ namespace hci_vestitorii_primaverii
             SizeF scale = new SizeF(widthRatio, heightRatio);
 
             this.Scale(scale);
+
+            initDictionary();
+            initPictures();
         }
+
+        private void initPictures()
+        {
+
+            Bitmap img;
+
+            rInt1 = random.Next(0, images.Count);
+            img = images.Keys.ElementAt(rInt1);
+            pictureBox2.Image = img;
+            images.Remove(img);
+
+            rInt2 = random.Next(0, images.Count);
+            img = images.Keys.ElementAt(rInt2);
+            pictureBox3.Image = img;
+            images.Remove(img);
+
+            rInt3 = random.Next(0, images.Count);
+            img = images.Keys.ElementAt(rInt3);
+            pictureBox4.Image = img;
+            images.Remove(img);
+
+            initDictionary();
+        }
+
+        private void initDictionary()
+        {
+            images.Add(ghiocei, "audio//info_ghiocelul.aac");
+            images.Add(trandafiri, "audio//acest_transafir.mp3");
+            images.Add(floareasoarelui, "audio//aceasta_floarea_soarelui.mp3");
+        }
+
         private void checkWin()
         {
             MyTimer = new Timer();
@@ -107,7 +102,19 @@ namespace hci_vestitorii_primaverii
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            if (pictureBox2.Image == ghiocei)
+            audioVA.URL = images[(Bitmap)pictureBox2.Image];
+            audioVA.controls.play();
+
+            if (ghiocei != pictureBox2.Image)
+            {
+                panel1.BackColor = Color.Red;
+                panel2.BackColor = Color.Transparent;
+                panel3.BackColor = Color.Transparent;
+
+                pictureBox1.Image = imgMickeyThinking;
+                pictureBox5.Visible = false;
+            }
+            else
             {
                 panel1.BackColor = Color.Green;
                 panel2.BackColor = Color.Transparent;
@@ -116,83 +123,55 @@ namespace hci_vestitorii_primaverii
                 pictureBox1.Image = imgMickeyHappy;
                 pictureBox5.Visible = true;
             }
-            else
-            {
-                panel1.BackColor = Color.Red;
-                panel2.BackColor = Color.Transparent;
-                panel3.BackColor = Color.Transparent;
-            audioVA.URL = "audio//acest_transafir.mp3";
-            audioVA.controls.play();
-
-            panel1.BackColor = Color.Red;
-            panel2.BackColor = Color.Transparent;
-            panel3.BackColor = Color.Transparent;
-
-                pictureBox1.Image = imgMickeyThinking;
-                pictureBox5.Visible = false;
-                //infoGhiocel.URL = "audio//alege_ghioceii.aac";
-               // infoGhiocel.controls.play();
-            }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            if (pictureBox3.Image == ghiocei)
-            {
-                panel1.BackColor = Color.Transparent;
-                panel2.BackColor = Color.Green;
-                panel3.BackColor = Color.Transparent;
-
-            audioVA.URL = "audio//bravo_info_ghiocelul.mp3";
+            audioVA.URL = images[(Bitmap)pictureBox3.Image];
             audioVA.controls.play();
 
-            panel1.BackColor = Color.Transparent;
-            panel2.BackColor = Color.Green;
-            panel3.BackColor = Color.Transparent;
-
-                pictureBox1.Image = imgMickeyHappy;
-                pictureBox5.Visible = true;
-            }
-            else
+            if (ghiocei != pictureBox3.Image)
             {
-                panel1.BackColor = Color.Transparent;
                 panel2.BackColor = Color.Red;
+                panel1.BackColor = Color.Transparent;
                 panel3.BackColor = Color.Transparent;
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
-                //infoGhiocel.URL = "audio//alege_ghioceii.aac";
-                //infoGhiocel.controls.play();
+            }
+            else
+            {
+                panel2.BackColor = Color.Green;
+                panel1.BackColor = Color.Transparent;
+                panel3.BackColor = Color.Transparent;
+
+                pictureBox1.Image = imgMickeyHappy;
+                pictureBox5.Visible = true;
             }
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            audioVA.URL = "audio//aceasta_floarea_soarelui.mp3";
+            audioVA.URL = images[(Bitmap)pictureBox4.Image];
             audioVA.controls.play();
 
-            panel1.BackColor = Color.Transparent;
-            panel2.BackColor = Color.Transparent;
-            panel3.BackColor = Color.Red;
-            if (pictureBox4.Image == ghiocei)
+            if (ghiocei != pictureBox4.Image)
             {
-                panel1.BackColor = Color.Transparent;
-                panel2.BackColor = Color.Transparent;
-                panel3.BackColor = Color.Green;
-
-                pictureBox1.Image = imgMickeyHappy;
-                pictureBox5.Visible = true;
-            }
-            else
-            {
-                panel1.BackColor = Color.Transparent;
-                panel2.BackColor = Color.Transparent;
                 panel3.BackColor = Color.Red;
+                panel1.BackColor = Color.Transparent;
+                panel2.BackColor = Color.Transparent;
 
                 pictureBox1.Image = imgMickeyThinking;
                 pictureBox5.Visible = false;
-                //infoGhiocel.URL = "audio//alege_ghioceii.aac";
-                //infoGhiocel.controls.play();
+            }
+            else
+            {
+                panel3.BackColor = Color.Green;
+                panel1.BackColor = Color.Transparent;
+                panel2.BackColor = Color.Transparent;
+
+                pictureBox1.Image = imgMickeyHappy;
+                pictureBox5.Visible = true;
             }
 
         }
@@ -200,8 +179,6 @@ namespace hci_vestitorii_primaverii
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             audioVA.controls.stop();
-            infoGhiocel.controls.stop();
-            alegeGhiocelul.controls.stop();
             mainMenu main = new mainMenu(true);
             main.Show();
             this.Close();
