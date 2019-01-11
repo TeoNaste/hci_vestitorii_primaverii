@@ -51,6 +51,7 @@
             this.tree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tree.TabIndex = 10;
             this.tree.TabStop = false;
+            this.tree.Click += new System.EventHandler(this.tree_Click);
             this.tree.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tree_MouseClick);
             this.tree.MouseEnter += new System.EventHandler(this.tree_MouseEnter);
             this.tree.MouseLeave += new System.EventHandler(this.tree_MouseLeave);

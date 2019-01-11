@@ -35,7 +35,7 @@ namespace hci_vestitorii_primaverii
             {
                 player.URL = ".//Music//totoro.wav";
                 player.settings.setMode("loop", true);
-                player.settings.volume = 10;
+                player.settings.volume = 3;
                 audioVA.URL = "audio//hai_sa_meniu.wav";
             }
             else
@@ -133,6 +133,11 @@ namespace hci_vestitorii_primaverii
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tree_Click(object sender, EventArgs e)
         {
 
         }
