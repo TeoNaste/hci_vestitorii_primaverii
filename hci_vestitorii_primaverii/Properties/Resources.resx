@@ -154,14 +154,11 @@
   <data name="bees" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bees.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="flori_bg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flori_bg2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MickeyHappy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MickeyHappy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="finish_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\finish_button.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="vultur" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vultur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="next_button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\next_button.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,6 +202,9 @@
   <data name="berze" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\berze.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="next_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\next_button.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="barza" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\barza.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -220,8 +220,8 @@
   <data name="treeautumn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\treeautumn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="next_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\next_button.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="vultur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vultur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="forest_bg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\forest_bg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,6 +250,9 @@
   <data name="village_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\village_bg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="spring_background_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\spring_background_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -274,11 +277,14 @@
   <data name="spring_background_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\spring_background_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="trandafiri2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trandafiri2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="spring_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\spring_background.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="trandafiri2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trandafiri2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="finish_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finish_button.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="village_bg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\village_bg2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -292,7 +298,7 @@
   <data name="village_bg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\village_bg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="flori_bg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flori_bg2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

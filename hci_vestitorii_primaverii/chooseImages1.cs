@@ -34,7 +34,7 @@ namespace hci_vestitorii_primaverii
             InitializeComponent();
             pictureBox1.Image = imgMickeyThinking;
             pictureBox5.Visible = false;
-            audioVA.URL = "audio//alege_copacul_inflorit.aac";
+            audioVA.URL = "audio//alege_copacul_inflorit.mp3";
 	        audioVA.settings.volume = 100;
             this.Width = Screen.PrimaryScreen.Bounds.Width;
             this.Height = Screen.PrimaryScreen.Bounds.Height;
@@ -57,7 +57,7 @@ namespace hci_vestitorii_primaverii
 
         private void initPictures()
         {
-            
+
             Bitmap img;
 
             rInt1 = random.Next(0, images.Count);
@@ -81,7 +81,7 @@ namespace hci_vestitorii_primaverii
         private void initDictionary()
         {
             images.Add(treeautumn, "audio//aceasta_toamna.mp3");
-            images.Add(treespring, "audio//spring_tree.aac");
+            images.Add(treespring, "audio//bravo_spring_tree.mp3");
             images.Add(treewinter, "audio//aceasta_iarna.mp3");
         }
 

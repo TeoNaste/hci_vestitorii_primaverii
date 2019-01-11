@@ -34,7 +34,7 @@ namespace hci_vestitorii_primaverii
             InitializeComponent();
             pictureBox1.Image = imgMickeyThinking;
             pictureBox5.Visible = false;
-            audioVA.URL = "audio//alege_ghioceii.aac";
+            audioVA.URL = "audio//alege_ghioceii.mp3";
 		    audioVA.settings.volume = 100;
             this.Width = Screen.PrimaryScreen.Bounds.Width;
             this.Height = Screen.PrimaryScreen.Bounds.Height;
@@ -75,7 +75,7 @@ namespace hci_vestitorii_primaverii
 
         private void initDictionary()
         {
-            images.Add(ghiocei, "audio//info_ghiocelul.aac");
+            images.Add(ghiocei, "audio//bravo_info_ghiocelul.mp3");
             images.Add(trandafiri, "audio//acest_transafir.mp3");
             images.Add(floareasoarelui, "audio//aceasta_floarea_soarelui.mp3");
         }
