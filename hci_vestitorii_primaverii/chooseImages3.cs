@@ -75,7 +75,7 @@ namespace hci_vestitorii_primaverii
 
         private void initDictionary()
         {
-            images.Add(ghiocei, "audio//info_ghiocelul.aac");
+            images.Add(ghiocei, "audio//bravo_info_ghiocelul.mp3");
             images.Add(trandafiri, "audio//acest_transafir.mp3");
             images.Add(floareasoarelui, "audio//aceasta_floarea_soarelui.mp3");
         }

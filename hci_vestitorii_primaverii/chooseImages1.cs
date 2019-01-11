@@ -81,7 +81,7 @@ namespace hci_vestitorii_primaverii
         private void initDictionary()
         {
             images.Add(treeautumn, "audio//aceasta_toamna.mp3");
-            images.Add(treespring, "audio//spring_tree.aac");
+            images.Add(treespring, "audio//bravo_spring_tree.mp3");
             images.Add(treewinter, "audio//aceasta_iarna.mp3");
         }
 

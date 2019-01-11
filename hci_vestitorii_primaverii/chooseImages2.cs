@@ -77,7 +77,7 @@ namespace hci_vestitorii_primaverii
 
         private void initDictionary()
         {
-            images.Add(randunica, "audio//info_randunica.aac");
+            images.Add(randunica, "audio//bravo_info_randunica.mp3");
             images.Add(vultur, "audio//acest_vultur.mp3");
             images.Add(bufnita, "audio//aceasta_bufnita.mp3");
         }
